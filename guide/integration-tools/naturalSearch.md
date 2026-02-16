@@ -5,7 +5,7 @@ icon: /static/icons/products/naturalSearch.svg
 ---
 # ![](/static/icons/products/naturalSearch.svg){width="40"} Buscador natural
 
-El [buscador natural](https://biteral.net/natural-search) permite a vuestros usuarios realizar preguntas, escribir lo que están buscando o describir sus necesidades utilizando lenguaje natural para obtener una lista de los productos que encajan con lo que están buscando.
+El [buscador natural](https://biteral.ai/natural-search) permite a vuestros usuarios realizar preguntas, escribir lo que están buscando o describir sus necesidades utilizando lenguaje natural para obtener una lista de los productos que encajan con lo que están buscando.
 
 Como no utilizamos sistemas tradicionales de búsqueda basados en palabras clave, diccionarios, extracción de frecuencia o analizadores sintácticos, los resultados incluyen productos que guardan una relación contextual lógica con la necesidad que el cliente expresó, incluso si no utilizó ninguna de las palabras de la descripción de vuestro producto.
 

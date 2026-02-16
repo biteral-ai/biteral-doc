@@ -11,8 +11,8 @@ Si utilizas PHP, es muy recomendable utilizar el [SDK de Biteral para PHP](/php-
 
 ### Antes de empezar
 
-1. Crea una cuenta en [Biteral](https://biteral.net/signup)
-1. Obtén vuestra API key de pruebas desde el [dashboard](https://biteral.net/dashboard)
+1. Crea una cuenta en [Biteral](https://biteral.ai/signup)
+1. Obtén vuestra API key de pruebas desde el [dashboard](https://biteral.ai/dashboard)
 
 ==- Limitaciones de la API key de pruebas
 La API key de pruebas os permite utilizar Biteral gratuitamente, ideal para realizar pruebas desde vuestro entorno de desarrollo y ver resultados reales sobre cómo funcionaría Biteral con vuestro sistema. Sin embargo, la API key de pruebas tiene algunos límites:
@@ -29,7 +29,7 @@ Algunos endpoints sólo pueden recibir cierto número de peticiones por día. Al
 
 ### Cómo conectar
 
-Realiza peticiones [!badge variant="light" text="HTTPS"] a [!badge variant="light" text="https:\/\/api.biteral.net"] incluyendo los siguientes headers:
+Realiza peticiones [!badge variant="light" text="HTTPS"] a [!badge variant="light" text="https:\/\/api.biteral.ai"] incluyendo los siguientes headers:
 
 - [!badge variant="warning" text="X-API-Key"] Vuestra API key
 - [!badge variant="warning" text="X-API-Version"] La versión principal de la API que vas a utilizar, por ejemplo: [!badge variant="light" text="1"]
@@ -37,7 +37,7 @@ Realiza peticiones [!badge variant="light" text="HTTPS"] a [!badge variant="ligh
 +++ Curl
 ```shell
 curl \
-    -G https://api.biteral.net/status \
+    -G https://api.biteral.ai/status \
     -H 'X-API-Key: ux3HzRTaLGKvZjTb7ufaFUgJPvXbcNX7DWbnWAAUxQjHYqZJ' \
     -H 'X-API-Version: 1'
 ```
@@ -65,7 +65,7 @@ Los endpoints [!badge variant="success" text="POST"], [!badge variant="success" 
 Otros endpoints del tipo [!badge variant="success" text="GET"] o [!badge variant="success" text="DELETE"] aceptan datos a través de los parámetros en la URL de la petición. Por ejemplo, ésta es la URL para una petición [!badge variant="success" text="GET"] al endpoint [!badge /products](/api/endpoints/products/get) que obtiene los datos de un producto:
 
 ```
-https://api.biteral.net/products?code=B00YUU43VS
+https://api.biteral.ai/products?code=B00YUU43VS
 ```
 
 Todos los endpoints responden siempre en formato JSON, por ejemplo:

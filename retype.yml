@@ -1,7 +1,7 @@
 input: .
 output: .retype
 
-url: docs.biteral.net # Use your website address here
+url: docs.biteral.ai # Use your website address here
 
 start:
   # Uncomment the next line to try Retype Pro features
@@ -21,16 +21,16 @@ links:
     link: https://github.com/biteral-net
     icon: static/icons/github.svg
   - text: Api status
-    link: https://status.biteral.net
+    link: https://status.biteral.ai
     icon: static/icons/status.svg
 
 footer:
   copyright: "&copy; Biteral {{ year }}"
   links:
     - text: Aviso legal
-      link: https://biteral.net/legal-notice
+      link: https://biteral.ai/legal-notice
     - text: Política de privacidad y protección de datos
-      link: https://biteral.net/privacy-policy-and-data-protection
+      link: https://biteral.ai/privacy-policy-and-data-protection
 
 generator:
   paths: root

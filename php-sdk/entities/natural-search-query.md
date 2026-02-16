@@ -6,7 +6,7 @@ order: 800
 ---
 # NaturalSearchQuery
 
-Representa una petición de búsqueda para el [buscador natural](https://biteral.net/natural-search).
+Representa una petición de búsqueda para el [buscador natural](https://biteral.ai/natural-search).
 
 ### Propiedades
 

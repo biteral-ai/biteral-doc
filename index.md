@@ -13,5 +13,5 @@ Esta documentación está orientada a desarrolladores y describe los métodos di
 
 [!ref icon="arrow-right" text="Integración de herramientas"](/guide/integration-tools/intro)
 
-> Integra las herramientas de Biteral como el [buscador natural](https://biteral.net/natural-search), las [recomendaciones personalizadas](https://biteral.net/personalized-recommend), el [análisis de tendencias](https://biteral.net/trend-analysis) o las [etiquetas de cliente](http://biteral.net/profile-tags) en vuestro sistema.
+> Integra las herramientas de Biteral como el [buscador natural](https://biteral.ai/natural-search), las [recomendaciones personalizadas](https://biteral.ai/personalized-recommend), el [análisis de tendencias](https://biteral.ai/trend-analysis) o las [etiquetas de cliente](http://biteral.ai/profile-tags) en vuestro sistema.
 > Por ejemplo, con una simple petición a la API o una línea de código usando el SDK, podéis obtener productos recomendados para un cliente o los resultados de una búsqueda.
