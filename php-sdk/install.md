@@ -7,7 +7,7 @@ order: 1000
 
 El SDK de Biteral PHP es un package para composer que te permite integrar con facilidad Biteral en proyectos PHP versión 5.6 y superiores.
 
-[!ref SDK de Biteral en GitHub](https://github.com/biteral-net/biteral-sdk-php)
+[!ref SDK de Biteral en GitHub](https://github.com/biteral-ai/biteral-sdk-php)
 
 Añade el SDK a tu proyecto:
 
