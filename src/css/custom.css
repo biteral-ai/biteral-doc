@@ -1,0 +1,88 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --ifm-color-primary: #0016FF;
+    --ifm-color-primary-dark: #0016FF;
+    --ifm-color-primary-darker: #0016FF;
+    --ifm-color-primary-darkest: #0016FF;
+    --ifm-color-primary-light: #0016FF;
+    --ifm-color-primary-lighter: #0016FF;
+    --ifm-color-primary-lightest: #0016FF;
+    --ifm-code-font-size: 80%;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+    --ifm-navbar-link-color: var(--ifm-color-primary);
+
+    --ifm-font-family-base: 'Inconsolata';
+    --ifm-font-size-base: 10.5pt;
+    --ifm-font-weight-bold: 800;
+
+    --ifm-heading-font-weight:700;
+    --ifm-line-height-base: 1.4em;
+    /* --ifm-heading-font-family: 'Radio Canada'; */
+    --ifm-heading-font-family: 'Inter';
+    --ifm-heading-line-height: 1.2em;
+
+    --ifm-global-spacing: 20px;
+    --ifm-spacing-horizontal: 40px;
+
+    --ifm-navbar-shadow: 0 1px 0 var(--ifm-toc-border-color);
+    --ifm-navbar-background-color: var(--ifm-background-color);
+
+    font-weight: 500;
+
+    .table-of-contents {
+        font-size: var(--ifm-font-size-base);
+    }
+}
+
+[data-theme='dark'] {
+    --ifm-color-primary: #507bfe;
+    --ifm-color-primary-dark: #235AFF;
+    --ifm-color-primary-darker: #235AFF;
+    --ifm-color-primary-darkest: #235AFF;
+    --ifm-color-primary-light: #235AFF;
+    --ifm-color-primary-lighter: #235AFF;
+    --ifm-color-primary-lightest: #235AFF;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+    --ifm-background-color: #00002A;
+
+    /* Background for cards, sidebars, and dropdowns */
+    --ifm-background-surface-color: #040D47;
+
+    /* Optional: Adjust the border colors to match your new background */
+    --ifm-border-color: #000943;
+
+    --ifm-heading-color: #fff;
+    --ifm-font-color-base: #fff;
+
+    --ifm-toc-border-color: #232b5f;
+}
+
+.navbar {
+    --ifm-navbar-padding-horizontal: 10px;
+}
+
+.navbar__link > svg {
+    display: none;
+}
+
+.navbar__brand {
+    font-family: var(--ifm-heading-font-family);
+    font-size: 13.5pt;
+    font-weight: 400;
+}
+
+.navbar__inner .clean-btn > svg {
+    color: var(--ifm-color-primary);
+    width: 20px;
+}

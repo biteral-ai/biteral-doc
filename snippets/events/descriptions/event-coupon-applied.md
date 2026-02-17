@@ -1,1 +1,0 @@
-Se ha aplicado un cupón de descuento.

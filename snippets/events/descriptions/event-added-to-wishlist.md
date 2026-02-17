@@ -1,1 +1,0 @@
-Se ha añadido un producto a la lista de productos deseados.

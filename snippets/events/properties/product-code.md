@@ -1,1 +1,0 @@
-Vuestro código interno identificador del producto. Debe coincidir con el que especificaste al añadir el producto a Biteral. Por ejemplo: `N30122`

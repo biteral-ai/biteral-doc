@@ -1,1 +1,0 @@
-Se ha visualizado la página donde se muestran los productos de una categoría en concreto.
