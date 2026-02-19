@@ -12,14 +12,14 @@ Biteral utiliza información sobre vuestros clientes para para alimentar herrami
 <Tabs>
 <TabItem value="php" label={<Badge icon="code" text="SDK PHP" transparent />}>
 
-Llama a <Badge variant="info" text="customers()->ingest" to="/php-sdk/customers/add-customers" /> con un objeto <Badge variant="info" text="CustomerPayload" to="/php-sdk/payloads/customer-payload" /> como parámetro.
+Llama a <Badge variant="sdk php method" text="customers()->ingest" to="/php-sdk/customers/add-customers" /> con un objeto <Badge variant="sdk php payload" text="CustomerPayload" to="/php-sdk/payloads/customer-payload" /> como parámetro.
 
 <Button text="Cargar un cliente con PHP" to="/php-sdk/customers/add-customers" />
 
 </TabItem>
 <TabItem value="api" label={<Badge icon="technology/api" text="API" transparent />}>
 
-Haz una petición <Badge variant="http-post" text="POST" /> al endpoint <Badge>/customers</Badge>(/api/endpoints/customers/post)
+Haz una petición <Badge variant="http-post" text="POST" /> al endpoint <Badge variant="api-endpoint" text="/customers" to="/api/endpoints/customers/post" />
 
 <Button text="Cargar un cliente con la API" to="/api/endpoints/customers/post" />
 

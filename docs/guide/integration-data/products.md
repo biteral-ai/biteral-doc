@@ -12,7 +12,7 @@ Lo más recomendable es comenzar cargando todos los productos disponibles en vue
 <Tabs>
 <TabItem value="php" label={<Badge icon="code" text="SDK PHP" transparent />}>
 
-Una vez hayas [instalado el SDK](/php-sdk/install), llama a <Badge variant="info" text="products()->ingest" to="/php-sdk/products/add-products" /> con un objeto <Badge variant="info" text="ProductPayload" to="/php-sdk/payloads/product-payload" /> como parámetro.
+Una vez hayas [instalado el SDK](/php-sdk/install), llama a <Badge variant="sdk php method" text="products()->ingest" to="/php-sdk/products/add-products" /> con un objeto <Badge variant="php sdk payload" text="ProductPayload" to="/php-sdk/payloads/product-payload" /> como parámetro.
 
 <Button text="Cargar un producto con PHP" to="/php-sdk/products/add-products" />
 
@@ -21,7 +21,8 @@ Una vez hayas [instalado el SDK](/php-sdk/install), llama a <Badge variant="info
 
 Una vez hayas aprendido [cómo conectar con la API](/api/connect), haz una petición <Badge variant="http-post" text="POST" /> al endpoint <Badge variant="api-endpoint" text="/products" to="/api/endpoints/products/post" />
 
-[!ref icon="arrow-right" text="Cargar un producto con la API"](/api/endpoints/products/post)
+<Button text="Cargar un producto con la API" to="/api/endpoints/products/post" />
+
 </TabItem>
 </Tabs>
 
@@ -29,12 +30,12 @@ Una vez hayas aprendido [cómo conectar con la API](/api/connect), haz una petic
 
 Al cargar todo vuestro catálogo, realizar una petición por cada producto sería muy lento. En su lugar, utiliza el método de carga masiva de productos:
 
-[!ref icon="arrow-right" text="Carga masiva con PHP"](/php-sdk/products/add-products-batch)
-[!ref icon="arrow-right" text="Carga masiva con la API"](/api/endpoints/products/post/#cargar-varios-productos-a-la-vez)
+<Button text="Carga masiva con PHP" to="/php-sdk/products/add-products-batch" />
+<Button text="Carga masiva con la API" to="/api/endpoints/products/post/#cargar-varios-productos-a-la-vez" />
 
 ### Otras operaciones con productos
 
 También puedes realizar otras operaciones con productos, como modificarlos, desactivarlos o eliminarlos:
 
-[!ref icon="arrow-right" text="Otras operaciones con productos con PHP"](/php-sdk/products/update-products)
-[!ref icon="arrow-right" text="Otras operaciones con productos con la API"](/api/endpoints/products/post)
+<Button text="Otras operaciones con productos con PHP" to="/php-sdk/products/update-products" />
+<Button text="Otras operaciones con productos con la API" to="/api/endpoints/products/post" />

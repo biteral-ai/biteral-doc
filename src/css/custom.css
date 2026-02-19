@@ -56,7 +56,12 @@
     --color-warning: #ff9500;
     --color-critical: #f33fae;
 
-    --color-api: #4d27f6;
+    --color-api: #7a27f6;
+    --color-sdk: #d2fbff;
+    --color-payload: #b1f3a3;
+    --color-entity: #dff3a3;
+    --color-parameter: #74e1ff;
+    --color-locked: #d3c6ff;
 
     --color-http-post: var(--color-warning);
     --color-http-get: var(--color-success);

@@ -3,6 +3,9 @@
 
     --badgeBackgroundColor: var(--badgeBaseColor);
     --badgeForegroundColor: hsl(from var(--badgeBaseColor) h s calc(l * .35));
+
+    --badgeBorderColor: transparent;
+
     --badgeGap: 0.25rem;
 
     display: inline-flex;
@@ -12,6 +15,7 @@
 
     background: var(--badgeBackgroundColor);
     color: var(--badgeForegroundColor);
+    border: solid var(--badgeBorderColor) 1px;
 
     padding: 0.25em .3em;
 
@@ -36,6 +40,22 @@
     --badgeBaseColor: var(--color-success);
 }
 
+.badge.warning {
+    --badgeBaseColor: var(--color-warning);
+}
+
+.badge.sdk {
+    --badgeBaseColor: var(--color-sdk);
+}
+
+.badge.payload {
+    --badgeBaseColor: var(--color-payload);
+}
+
+.badge.entity {
+    --badgeBaseColor: var(--color-entity);
+}
+
 .badge.api-endpoint {
     --badgeBaseColor: var(--color-api);
     --badgeForegroundColor: #fff;
@@ -51,6 +71,21 @@
 
 .badge.http-delete {
     --badgeBaseColor: var(--color-http-delete);
+}
+
+.badge.parameter {
+    --badgeBaseColor: var(--color-parameter);
+}
+
+.badge.locked {
+    --badgeBaseColor: var(--color-locked);
+}
+
+.badge.value {
+    background: transparent;
+    --badgeForegroundColor: currentColor;
+    --badgeBorderColor: currentColor;
+    border-style: dotted;
 }
 
 .badge.transparent {

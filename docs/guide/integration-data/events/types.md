@@ -33,19 +33,19 @@ import EventPropertyBrandCode from '@site/src/components/events/properties/brand
 
 ##### Parámetros
 
-<Badge variant="danger" icon="lock" text="type" />
-: <Badge variant="warning" text="EventAddedToCart" />
+<Badge variant="parameter locked" icon="lock" text="type" />
+: <Badge variant="value" text="EventAddedToCart" />
 
-<Badge icon="screen-full" text="timestamp" />
+<Badge variant="parameter" icon="parameter" text="timestamp" />
 : <EventPropertyTimestamp />
 
-<Badge variant="danger" icon="lock" text="customerCode" />
+<Badge variant="parameter locked" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-<Badge variant="danger" icon="lock" text="productCode" />
+<Badge variant="parameter locked" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
-<Badge icon="screen-full" text="quantity" />
+<Badge variant="parameter" icon="parameter" text="quantity" />
 : La cantidad de unidades de este producto añadidas al carrito. Si no se especifica, el valor por defecto es `1`
 
 </details>
@@ -58,19 +58,19 @@ import EventPropertyBrandCode from '@site/src/components/events/properties/brand
 
 ##### Parámetros
 
-<Badge variant="danger" icon="lock" text="type" />
-: <Badge variant="warning" text="EventRemovedFromCart" />
+<Badge variant="parameter locked" icon="lock" text="type" />
+: <Badge variant="value" text="EventRemovedFromCart" />
 
-<Badge icon="screen-full" text="timestamp" />
+<Badge variant="parameter" icon="parameter" text="timestamp" />
 : <EventPropertyTimestamp />
 
-<Badge variant="danger" icon="lock" text="customerCode" />
+<Badge variant="parameter locked" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-<Badge variant="danger" icon="lock" text="productCode" />
+<Badge variant="parameter locked" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
-<Badge icon="screen-full" text="quantity" />
+<Badge variant="parameter" icon="parameter" text="quantity" />
 : La cantidad de unidades de este producto retiradas del carrito. Si no se especifica, el valor por defecto es `1`
 
 </details>
@@ -83,16 +83,16 @@ import EventPropertyBrandCode from '@site/src/components/events/properties/brand
 
 ##### Parámetros
 
-<Badge variant="danger" icon="lock" text="type" />
-: <Badge variant="warning" text="EventAddedToWishlist" />
+<Badge variant="parameter locked" icon="lock" text="type" />
+: <Badge variant="value" text="EventAddedToWishlist" />
 
-<Badge icon="screen-full" text="timestamp" />
+<Badge variant="parameter" icon="parameter" text="timestamp" />
 : <EventPropertyTimestamp />
 
-<Badge variant="danger" icon="lock" text="customerCode" />
+<Badge variant="parameter locked" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-<Badge variant="danger" icon="lock" text="productCode" />
+<Badge variant="parameter locked" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
 </details>
@@ -105,16 +105,16 @@ import EventPropertyBrandCode from '@site/src/components/events/properties/brand
 
 ##### Parámetros
 
-<Badge variant="danger" icon="lock" text="type" />
-: <Badge variant="warning" text="EventRemovedFromWishlist" />
+<Badge variant="parameter locked" icon="lock" text="type" />
+: <Badge variant="value" text="EventRemovedFromWishlist" />
 
-<Badge icon="screen-full" text="timestamp" />
+<Badge variant="parameter" icon="parameter" text="timestamp" />
 : <EventPropertyTimestamp />
 
-<Badge variant="danger" icon="lock" text="customerCode" />
+<Badge variant="parameter locked" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-<Badge variant="danger" icon="lock" text="productCode" />
+<Badge variant="parameter locked" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
 </details>
@@ -127,19 +127,19 @@ import EventPropertyBrandCode from '@site/src/components/events/properties/brand
 
 ##### Parámetros
 
-<Badge variant="danger" icon="lock" text="type" />
-: <Badge variant="warning" text="EventSale" />
+<Badge variant="parameter locked" icon="lock" text="type" />
+: <Badge variant="value" text="EventSale" />
 
-<Badge icon="screen-full" text="timestamp" />
+<Badge variant="parameter" icon="parameter" text="timestamp" />
 : <EventPropertyTimestamp />
 
-<Badge variant="danger" icon="lock" text="customerCode" />
+<Badge variant="parameter locked" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-<Badge variant="danger" icon="lock" text="productCode" />
+<Badge variant="parameter locked" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
-<Badge icon="screen-full" text="quantity" />
+<Badge variant="parameter" icon="parameter" text="quantity" />
 : La cantidad de unidades de este producto compradas. Si no se especifica, el valor por defecto es `1`
 
 </details>
@@ -156,16 +156,16 @@ Debe enviarse cuando el cliente solicita la devolución, aunque ésta no sea ace
 
 ##### Parámetros
 
-<Badge variant="danger" icon="lock" text="type" />
-: <Badge variant="warning" text="EventReturnRequested" />
+<Badge variant="parameter locked" icon="lock" text="type" />
+: <Badge variant="value" text="EventReturnRequested" />
 
-<Badge icon="screen-full" text="timestamp" />
+<Badge variant="parameter" icon="parameter" text="timestamp" />
 : <EventPropertyTimestamp />
 
-<Badge variant="danger" icon="lock" text="customerCode" />
+<Badge variant="parameter locked" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-<Badge variant="danger" icon="lock" text="productCode" />
+<Badge variant="parameter locked" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
 </details>
@@ -178,16 +178,16 @@ Debe enviarse cuando el cliente solicita la devolución, aunque ésta no sea ace
 
 ##### Parámetros
 
-<Badge variant="danger" icon="lock" text="type" />
-: <Badge variant="warning" text="EventProductViewed" />
+<Badge variant="parameter locked" icon="lock" text="type" />
+: <Badge variant="value" text="EventProductViewed" />
 
-<Badge icon="screen-full" text="timestamp" />
+<Badge variant="parameter" icon="parameter" text="timestamp" />
 : <EventPropertyTimestamp />
 
-<Badge variant="danger" icon="lock" text="customerCode" />
+<Badge variant="parameter locked" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-<Badge variant="danger" icon="lock" text="productCode" />
+<Badge variant="parameter locked" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
 </details>
@@ -200,16 +200,16 @@ Debe enviarse cuando el cliente solicita la devolución, aunque ésta no sea ace
 
 ##### Parámetros
 
-<Badge variant="danger" icon="lock" text="type" />
-: <Badge variant="warning" text="EventCategoryViewed" />
+<Badge variant="parameter locked" icon="lock" text="type" />
+: <Badge variant="value" text="EventCategoryViewed" />
 
-<Badge icon="screen-full" text="timestamp" />
+<Badge variant="parameter" icon="parameter" text="timestamp" />
 : <EventPropertyTimestamp />
 
-<Badge variant="danger" icon="lock" text="customerCode" />
+<Badge variant="parameter locked" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-<Badge variant="danger" icon="lock" text="categoryCode" />
+<Badge variant="parameter locked" icon="lock" text="categoryCode" />
 : <EventPropertyCategoryCode />
 
 </details>
@@ -222,16 +222,16 @@ Debe enviarse cuando el cliente solicita la devolución, aunque ésta no sea ace
 
 ##### Parámetros
 
-<Badge variant="danger" icon="lock" text="type" />
-: <Badge variant="warning" text="EventBrandViewed" />
+<Badge variant="parameter locked" icon="lock" text="type" />
+: <Badge variant="value" text="EventBrandViewed" />
 
-<Badge icon="screen-full" text="timestamp" />
+<Badge variant="parameter" icon="parameter" text="timestamp" />
 : <EventPropertyTimestamp />
 
-<Badge variant="danger" icon="lock" text="customerCode" />
+<Badge variant="parameter locked" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-<Badge variant="danger" icon="lock" text="brandCode" />
+<Badge variant="parameter locked" icon="lock" text="brandCode" />
 : <EventPropertyBrandCode />
 
 </details>
@@ -248,16 +248,16 @@ Este evento debe enviarse si vuestro web tiene su propio buscador textual. Si ut
 
 ##### Parámetros
 
-<Badge variant="danger" icon="lock" text="type" />
-: <Badge variant="warning" text="EventSearch" />
+<Badge variant="parameter locked" icon="lock" text="type" />
+: <Badge variant="value" text="EventSearch" />
 
-<Badge icon="screen-full" text="timestamp" />
+<Badge variant="parameter" icon="parameter" text="timestamp" />
 : <EventPropertyTimestamp />
 
-<Badge variant="danger" icon="lock" text="customerCode" />
+<Badge variant="parameter locked" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-<Badge variant="danger" icon="lock" text="query" />
+<Badge variant="parameter locked" icon="lock" text="query" />
 : El texto de la búsqueda tal como lo escribió el cliente.
 
 </details>
@@ -270,19 +270,19 @@ Este evento debe enviarse si vuestro web tiene su propio buscador textual. Si ut
 
 ##### Parámetros
 
-<Badge variant="danger" icon="lock" text="type" />
-: <Badge variant="warning" text="EventFilterApplied" />
+<Badge variant="parameter locked" icon="lock" text="type" />
+: <Badge variant="value" text="EventFilterApplied" />
 
-<Badge icon="screen-full" text="timestamp" />
+<Badge variant="parameter" icon="parameter" text="timestamp" />
 : <EventPropertyTimestamp />
 
-<Badge variant="danger" icon="lock" text="customerCode" />
+<Badge variant="parameter locked" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-<Badge variant="danger" icon="lock" text="filterName" />
+<Badge variant="parameter locked" icon="lock" text="filterName" />
 : El nombre del filtro, por ejemplo: `color`
 
-<Badge variant="danger" icon="lock" text="filterValue" />
+<Badge variant="parameter locked" icon="lock" text="filterValue" />
 : El valor del filtro, por ejemplo: `rojo`
 
 </details>
@@ -295,19 +295,19 @@ Este evento debe enviarse si vuestro web tiene su propio buscador textual. Si ut
 
 ##### Parámetros
 
-<Badge variant="danger" icon="lock" text="type" />
-: <Badge variant="warning" text="EventOrderApplied" />
+<Badge variant="parameter locked" icon="lock" text="type" />
+: <Badge variant="value" text="EventOrderApplied" />
 
-<Badge icon="screen-full" text="timestamp" />
+<Badge variant="parameter" icon="parameter" text="timestamp" />
 : <EventPropertyTimestamp />
 
-<Badge variant="danger" icon="lock" text="customerCode" />
+<Badge variant="parameter locked" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-<Badge variant="danger" icon="lock" text="orderDescription" />
+<Badge variant="parameter locked" icon="lock" text="orderDescription" />
 : La descripción del orden aplicado. Puede ser cualquier palabra o frase que describa el orden, por ejemplo: `price`, `newest products first`, `screen size`, etcétera.
 
-<Badge icon="screen-full" text="orderDirection" />
+<Badge variant="parameter" icon="parameter" text="orderDirection" />
 : Si es relevante, la dirección del orden: `asc` para dirección ascendente, `desc` para dirección descendente
 
 </details>
@@ -324,13 +324,13 @@ Debe enviarse sólo cuando el código del cupón introducido por el cliente haya
 
 ##### Parámetros
 
-<Badge variant="danger" icon="lock" text="type" />
-: <Badge variant="warning" text="EventCouponApplied" />
+<Badge variant="parameter locked" icon="lock" text="type" />
+: <Badge variant="value" text="EventCouponApplied" />
 
-<Badge icon="screen-full" text="timestamp" />
+<Badge variant="parameter" icon="parameter" text="timestamp" />
 : <EventPropertyTimestamp />
 
-<Badge variant="danger" icon="lock" text="customerCode" />
+<Badge variant="parameter locked" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
 </details>
@@ -343,19 +343,19 @@ Debe enviarse sólo cuando el código del cupón introducido por el cliente haya
 
 ##### Parámetros
 
-<Badge variant="danger" icon="lock" text="type" />
-: <Badge variant="warning" text="EventReviewWritten" />
+<Badge variant="parameter locked" icon="lock" text="type" />
+: <Badge variant="value" text="EventReviewWritten" />
 
-<Badge icon="screen-full" text="timestamp" />
+<Badge variant="parameter" icon="parameter" text="timestamp" />
 : <EventPropertyTimestamp />
 
-<Badge variant="danger" icon="lock" text="customerCode" />
+<Badge variant="parameter locked" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-<Badge variant="danger" icon="lock" text="productCode" />
+<Badge variant="parameter locked" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
-<Badge icon="screen-full" text="review" />
+<Badge variant="parameter" icon="parameter" text="review" />
 : El texto de la review, tal como la escribió el cliente.
 
 </details>
@@ -372,19 +372,19 @@ Debe enviarse cuando un cliente solicita ser notificado cuando un producto vuelv
 
 ##### Parámetros
 
-<Badge variant="danger" icon="lock" text="type" />
-: <Badge variant="warning" text="EventStockAlertRequested" />
+<Badge variant="parameter locked" icon="lock" text="type" />
+: <Badge variant="value" text="EventStockAlertRequested" />
 
-<Badge icon="screen-full" text="timestamp" />
+<Badge variant="parameter" icon="parameter" text="timestamp" />
 : <EventPropertyTimestamp />
 
-<Badge variant="danger" icon="lock" text="customerCode" />
+<Badge variant="parameter locked" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-<Badge variant="danger" icon="lock" text="productCode" />
+<Badge variant="parameter locked" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
-<Badge icon="screen-full" text="review" />
+<Badge variant="parameter" icon="parameter" text="review" />
 : El texto de la review, tal como la escribió el cliente.
 
 </details>
