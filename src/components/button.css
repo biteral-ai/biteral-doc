@@ -1,0 +1,46 @@
+.button {
+    --buttonBaseColor: var(--foregroundColor);
+
+    --buttonForegroundColor: var(--buttonBaseColor);
+    --buttonBackgroundColor: transparent;
+    --buttonBorderColor: var(--buttonForegroundColor);
+    --buttonGap: 0.5rem;
+    --buttonBorderRadius: 7px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: var(--buttonGap);
+    vertical-align: absmiddle;
+
+    background: var(--buttonBackgroundColor);
+    color: var(--buttonForegroundColor);
+
+    border: solid var(--buttonBorderColor) 1px;
+
+    font-size: var(--ifm-font-size-base);
+
+    padding: 0.35em .8em;
+
+    font-weight: 600;
+
+    border-radius: var(--buttonBorderRadius);
+
+    &:hover {
+        --buttonBaseColor: var(--ifm-color-primary);
+    }
+
+    &:active {
+        --buttonBaseColor: hsl(from var(--ifm-color-primary) h s calc(l * 1.5));
+    }
+}
+
+.button > .icon {
+    width: 1em;
+    height: 1em;
+}
+
+.button.primary {
+    --buttonBaseColor: var(--ifm-color-primary);
+    --buttonBackgroundColor: var(--buttonBaseColor);
+    --buttonForegroundColor: #fff;
+}

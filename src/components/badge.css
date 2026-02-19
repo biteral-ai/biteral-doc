@@ -2,22 +2,26 @@
     --badgeBaseColor: var(--ifm-color-emphasis-200);
 
     --badgeBackgroundColor: var(--badgeBaseColor);
-    --badgeForegroundColor: hsl(from var(--badgeBaseColor) h s calc(l * .4));
+    --badgeForegroundColor: hsl(from var(--badgeBaseColor) h s calc(l * .35));
+    --badgeGap: 0.25rem;
 
     display: inline-flex;
     align-items: center;
-    gap: 0.25rem;
-    vertical-align: text-bottom;
+    gap: var(--badgeGap);
+    vertical-align: absmiddle;
 
     background: var(--badgeBackgroundColor);
     color: var(--badgeForegroundColor);
 
     padding: 0.25em .3em;
+
+    font-size: inherit;
+    font-weight: 700;
 }
 
 .badge > .icon {
-    width: 1em;
-    height: 1em;
+    width: 1.2em;
+    height: 1.2em;
 }
 
 .badge.light {
@@ -30,4 +34,10 @@
 
 .badge.success {
     --badgeBaseColor: var(--color-success);
+}
+
+.badge.transparent {
+    background: transparent;
+    --badgeForegroundColor: currentColor;
+    --badgeGap: 0.35rem;
 }

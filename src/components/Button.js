@@ -2,9 +2,9 @@ import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link'; // Import the Docusaurus Link
 import Icon from './Icon';
-import './badge.css';
+import './button.css';
 
-export default function Badge({ children, text, variant, icon, transparent, to }) {
+export default function Button({ children, text, variant, icon = 'go', to }) {
     const content = (
         <>
             {icon && <Icon name={icon} />}
@@ -12,7 +12,7 @@ export default function Badge({ children, text, variant, icon, transparent, to }
         </>
     );
 
-    const classes = clsx('badge', variant, transparent ? 'transparent' : null, {
+    const classes = clsx('button', variant, {
         'badge--link': !!to // Optional: class for hover effects
     });
 
