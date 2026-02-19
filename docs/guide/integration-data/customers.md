@@ -19,7 +19,7 @@ Llama a <Badge variant="info" text="customers()->ingest" to="/php-sdk/customers/
 </TabItem>
 <TabItem value="api" label={<Badge icon="technology/api" text="API" transparent />}>
 
-Haz una petición <Badge variant="success" text="POST" /> al endpoint <Badge>/customers</Badge>(/api/endpoints/customers/post)
+Haz una petición <Badge variant="http-post" text="POST" /> al endpoint <Badge>/customers</Badge>(/api/endpoints/customers/post)
 
 <Button text="Cargar un cliente con la API" to="/api/endpoints/customers/post" />
 

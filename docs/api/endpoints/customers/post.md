@@ -3,7 +3,7 @@ sidebar_label: Post
 sidebar_position: 1
 icon: arrow-right
 ---
-# /customers <Badge variant="success" text="POST" />
+# <Badge variant="api-endpoint" text="/customers" /> <Badge variant="http-post" text="POST" />
 
 Crear o modificar un cliente.
 

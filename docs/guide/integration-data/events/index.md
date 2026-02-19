@@ -16,7 +16,7 @@ Llama a <Badge variant="info" text="events()->ingest" />(/php-sdk/events/send-ev
 </TabItem>
 <TabItem value="**Con la API**" label="**Con la API**">
 
-Haz una petición <Badge variant="success" text="POST" /> al endpoint <Badge>/events</Badge>(/api/endpoints/events/post)
+Haz una petición <Badge variant="http-post" text="POST" /> al endpoint <Badge>/events</Badge>(/api/endpoints/events/post)
 
 [!ref icon="arrow-right" text="Enviar un evento con la API"](/api/endpoints/events/post)
 

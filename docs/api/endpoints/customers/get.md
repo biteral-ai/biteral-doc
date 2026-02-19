@@ -3,7 +3,7 @@ sidebar_label: Get
 sidebar_position: 2
 icon: arrow-right
 ---
-# /customers <Badge variant="success" text="GET" />
+# <Badge variant="api-endpoint" text="/customers" /> <Badge variant="http-get" text="GET" />
 
 Obtener un cliente.
 

@@ -38,7 +38,7 @@ foreach ($products as $product) {
 
 </TabItem>
 <TabItem value="API" label="API">
-Una vez hayas [cargado vuestros productos](/guide/integration-data/products), haz una petición <Badge variant="success" text="GET" /> al endpoint <Badge>/natural-search</Badge>(/api/endpoints/natural-search/get) pasando la búsqueda en el parámetro <Badge variant="warning" text="query" />, por ejemplo: `Un regalo para alguien a quien le encanta cocinar`
+Una vez hayas [cargado vuestros productos](/guide/integration-data/products), haz una petición <Badge variant="http-get" text="GET" /> al endpoint <Badge>/natural-search</Badge>(/api/endpoints/natural-search/get) pasando la búsqueda en el parámetro <Badge variant="warning" text="query" />, por ejemplo: `Un regalo para alguien a quien le encanta cocinar`
 
 Y obtendrás los productos que coinciden así:
 

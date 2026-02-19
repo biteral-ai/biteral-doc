@@ -5,7 +5,7 @@ icon: arrow-right
 ---
 import LotsOfEvents from '@site/src/components/note_lots_of_events.md';
 
-# /events <Badge variant="success" text="POST" />
+# <Badge variant="api-endpoint" text="/events" /> <Badge variant="http-post" text="POST" />
 
 Enviar un evento.
 

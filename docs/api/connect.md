@@ -59,7 +59,7 @@ print_r($status);
 
 ### Enviar y recibir datos en la API
 
-Los endpoints <Badge variant="success" text="POST" />, <Badge variant="success" text="PUT" /> y <Badge variant="success" text="PATCH" /> normalmente aceptan los datos en formato JSON a través del `body` de la petición. Por ejemplo, éste es el cuerpo de una petición <Badge variant="success" text="POST" /> al endpoint <Badge>/products</Badge>(/api/endpoints/products/post) para enviar un producto a Biteral:
+Los endpoints <Badge variant="http-post" text="POST" />, <Badge variant="success" text="PUT" /> y <Badge variant="success" text="PATCH" /> normalmente aceptan los datos en formato JSON a través del `body` de la petición. Por ejemplo, éste es el cuerpo de una petición <Badge variant="http-post" text="POST" /> al endpoint <Badge>/products</Badge>(/api/endpoints/products/post) para enviar un producto a Biteral:
 
 ```json
 {
@@ -69,7 +69,7 @@ Los endpoints <Badge variant="success" text="POST" />, <Badge variant="success" 
 }
 ```
 
-Otros endpoints del tipo <Badge variant="success" text="GET" /> o <Badge variant="success" text="DELETE" /> aceptan datos a través de los parámetros en la URL de la petición. Por ejemplo, ésta es la URL para una petición <Badge variant="success" text="GET" /> al endpoint <Badge>/products</Badge>(/api/endpoints/products/get) que obtiene los datos de un producto:
+Otros endpoints del tipo <Badge variant="http-get" text="GET" /> o <Badge variant="http-delete" text="DELETE" /> aceptan datos a través de los parámetros en la URL de la petición. Por ejemplo, ésta es la URL para una petición <Badge variant="http-get" text="GET" /> al endpoint <Badge>/products</Badge>(/api/endpoints/products/get) que obtiene los datos de un producto:
 
 ```
 https://api.biteral.ai/products?code=B00YUU43VS

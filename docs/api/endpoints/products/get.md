@@ -3,7 +3,7 @@ sidebar_label: Get
 sidebar_position: 2
 icon: arrow-right
 ---
-# /products <Badge variant="success" text="GET" />
+# <Badge variant="api-endpoint" text="/products" /> <Badge variant="http-get" text="GET" />
 
 Obtener un producto.
 

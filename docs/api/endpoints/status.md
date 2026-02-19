@@ -2,7 +2,7 @@
 title: /status
 sidebar_position: 1
 ---
-# /status <Badge variant="success" text="GET" />
+# <Badge variant="api-endpoint" text="/status" /> <Badge variant="http-get" text="GET" />
 
 Obtiene información sobre el estado de la API y otros parámetros útiles como tus credenciales, la versión que estás utilizando y las versiones disponibles.
 

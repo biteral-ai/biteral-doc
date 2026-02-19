@@ -3,7 +3,7 @@ sidebar_label: Post
 sidebar_position: 1
 icon: arrow-right
 ---
-# /products <Badge variant="success" text="POST" />
+# <Badge variant="api-endpoint" text="/products" /> <Badge variant="http-post" text="POST" />
 
 Crear o modificar un producto.
 

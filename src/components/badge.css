@@ -36,6 +36,23 @@
     --badgeBaseColor: var(--color-success);
 }
 
+.badge.api-endpoint {
+    --badgeBaseColor: var(--color-api);
+    --badgeForegroundColor: #fff;
+}
+
+.badge.http-post {
+    --badgeBaseColor: var(--color-http-post);
+}
+
+.badge.http-get {
+    --badgeBaseColor: var(--color-http-get);
+}
+
+.badge.http-delete {
+    --badgeBaseColor: var(--color-http-delete);
+}
+
 .badge.transparent {
     background: transparent;
     --badgeForegroundColor: currentColor;

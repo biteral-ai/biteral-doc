@@ -10,16 +10,16 @@ Lo más recomendable es comenzar cargando todos los productos disponibles en vue
 ### Cargar tu primer producto
 
 <Tabs>
-<TabItem value=":icon-file-code: **Con PHP**" label=":icon-file-code: **Con PHP**">
+<TabItem value="php" label={<Badge icon="code" text="SDK PHP" transparent />}>
 
-Una vez hayas [instalado el SDK](/php-sdk/install), llama a <Badge variant="info" text="products()->ingest" />(/php-sdk/products/add-products) con un objeto <Badge variant="info" text="ProductPayload" />(/php-sdk/payloads/product-payload) como parámetro.
+Una vez hayas [instalado el SDK](/php-sdk/install), llama a <Badge variant="info" text="products()->ingest" to="/php-sdk/products/add-products" /> con un objeto <Badge variant="info" text="ProductPayload" to="/php-sdk/payloads/product-payload" /> como parámetro.
 
-[!ref icon="arrow-right" text="Cargar un producto con PHP"](/php-sdk/products/add-products)
+<Button text="Cargar un producto con PHP" to="/php-sdk/products/add-products" />
 
 </TabItem>
-<TabItem value="** Con la API**" label="** Con la API**">
+<TabItem value="api" label={<Badge icon="technology/api" text="API" transparent />}>
 
-Una vez hayas aprendido [cómo conectar con la API](/api/connect), haz una petición <Badge variant="success" text="POST" /> al endpoint <Badge>/products</Badge>(/api/endpoints/products/post)
+Una vez hayas aprendido [cómo conectar con la API](/api/connect), haz una petición <Badge variant="http-post" text="POST" /> al endpoint <Badge variant="api-endpoint" text="/products" to="/api/endpoints/products/post" />
 
 [!ref icon="arrow-right" text="Cargar un producto con la API"](/api/endpoints/products/post)
 </TabItem>

@@ -3,7 +3,7 @@ sidebar_label: Delete
 sidebar_position: 3
 icon: arrow-right
 ---
-# /customers <Badge variant="success" text="DELETE" />
+# <Badge variant="api-endpoint" text="/customers" /> <Badge variant="http-delete" text="DELETE" />
 
 Eliminar un cliente.
 

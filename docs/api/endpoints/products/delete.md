@@ -3,7 +3,7 @@ sidebar_label: Delete
 sidebar_position: 3
 icon: arrow-right
 ---
-# /products <Badge variant="success" text="DELETE" />
+# <Badge variant="api-endpoint" text="/products" /> <Badge variant="http-delete" text="DELETE" />
 
 Eliminar un producto.
 

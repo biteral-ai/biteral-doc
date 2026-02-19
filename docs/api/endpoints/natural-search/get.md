@@ -3,7 +3,7 @@ sidebar_label: Get
 sidebar_position: 1
 icon: arrow-right
 ---
-# /natural-search <Badge variant="success" text="GET" />
+# <Badge variant="api-endpoint" text="/natural-search" /> <Badge variant="http-get" text="GET" />
 
 Obtener una lista de productos que encajan con una búsqueda realizada en lenguage natural.
 
