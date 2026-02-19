@@ -86,3 +86,7 @@
     color: var(--ifm-color-primary);
     width: 20px;
 }
+
+.breadcrumbs__item--active .breadcrumbs__link {
+    color: inherit;
+}
