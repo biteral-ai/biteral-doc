@@ -1,4 +1,5 @@
 {
-    "label": "Events",
+    "label": "Eventos",
+    "position": 3,
     "key": "php-sdk-events"
 }

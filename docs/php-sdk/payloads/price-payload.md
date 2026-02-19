@@ -1,8 +1,5 @@
 ---
-label: PricePayload
-expanded: false
-icon: arrow-right
-order: 998
+sidebar_position: 4
 ---
 # PricePayload
 

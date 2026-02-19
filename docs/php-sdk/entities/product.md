@@ -1,8 +1,5 @@
 ---
-label: Product
-expanded: false
-icon: arrow-right
-order: 1000
+sidebar_position: 2
 ---
 # Product
 

@@ -1,4 +1,5 @@
 {
-    "label": "Customers",
-    "key": "api-customers"
+    "label": "/customers",
+    "key": "api-customers",
+    "position": 3
 }

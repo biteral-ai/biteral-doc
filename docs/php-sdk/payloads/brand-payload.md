@@ -1,8 +1,5 @@
 ---
-label: BrandPayload
-expanded: false
-icon: arrow-right
-order: 980
+sidebar_position: 6
 ---
 # BrandPayload
 

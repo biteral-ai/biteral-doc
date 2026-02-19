@@ -1,6 +1,6 @@
 ---
-order: 890
-label: Recomendaciones
+title: Recomendaciones
+sidebar_position: 3
 icon: /static/icons/products/personalizedRecommend.svg
 hidden: true
 ---

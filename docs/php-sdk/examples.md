@@ -1,7 +1,7 @@
 ---
-label: Ejemplos
+title: Ejemplos
+position: 6
 icon: arrow-right
-order: 100
 ---
 El SDK incluye varios ejemplos en [/examples](https://github.com/biteral-ai/biteral-sdk-php/tree/main/examples) que puedes utilizar como referencia.
 

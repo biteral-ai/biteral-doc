@@ -1,6 +1,6 @@
 ---
-label: Clientes
-order: 980
+title: Clientes
+sidebar_position: 3
 icon: /static/icons/customer.svg
 ---
 # Integrar clientes

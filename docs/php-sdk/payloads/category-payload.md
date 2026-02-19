@@ -1,8 +1,5 @@
 ---
-label: CategoryPayload
-expanded: false
-icon: arrow-right
-order: 990
+sidebar_position: 5
 ---
 # CategoryPayload
 

@@ -1,7 +1,6 @@
 ---
-label: Versiones
-order: 900
-icon: arrow-right
+title: Versiones
+sidebar_position: 2
 ---
 # Versiones
 

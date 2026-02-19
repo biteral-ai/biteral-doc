@@ -1,4 +1,5 @@
 {
-    "label": "Products",
-    "key": "api-products"
+    "label": "/products",
+    "key": "api-products",
+    "position": 2
 }

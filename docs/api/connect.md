@@ -1,7 +1,6 @@
 ---
-label: Conectar
-icon: arrow-right
-order: 1000
+title: Conectar
+sidebar_position: 1
 ---
 # Conectar con la API
 

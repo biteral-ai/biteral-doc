@@ -1,4 +1,5 @@
 {
-    "label": "Customers",
+    "label": "Clientes",
+    "position": 3,
     "key": "php-sdk-customers"
 }

@@ -1,5 +1,5 @@
 ---
-label: Tipos de eventos
+title: Tipos de eventos
 expanded: false
 icon: arrow-right
 order: 1000

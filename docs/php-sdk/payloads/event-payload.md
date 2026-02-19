@@ -1,8 +1,5 @@
 ---
-label: EventPayload
-expanded: false
-icon: arrow-right
-order: 960
+sidebar_position: 8
 ---
 # EventPayload
 

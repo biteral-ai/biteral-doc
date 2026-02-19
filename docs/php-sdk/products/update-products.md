@@ -1,7 +1,7 @@
 ---
-label: Actualizar productos
+title: Actualizar productos
 expanded: false
-order: 990
+sidebar_position: 3
 icon: arrow-right
 ---
 Para cambiar los datos de un producto que ya cargaste, llama a [!badge variant="light" text="products()->ingest()"] nuevamente, pero esta vez especifica sólo los datos que cambian. También puedes especificar los demás datos si te resulta más cómodo, aunque no hayan cambiado.

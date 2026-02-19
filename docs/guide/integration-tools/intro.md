@@ -1,7 +1,7 @@
 ---
-label: Introducción
+title: Introducción
 expanded: true
-order: 1000
+sidebar_position: 1
 icon: arrow-right
 ---
 # Integrar herramientas

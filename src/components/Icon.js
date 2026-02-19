@@ -1,6 +1,7 @@
 import React, { Suspense, useMemo } from 'react';
+import './icon.css';
 
-export default function Icon({ name, size = 20, ...props }) {
+export default function Icon({ name, size = 20, className, ...props }) {
   // We use useMemo to prevent re-loading the component on every render
   const SVGIcon = useMemo(() => {
     return React.lazy(() =>
@@ -11,8 +12,8 @@ export default function Icon({ name, size = 20, ...props }) {
   }, [name]);
 
   return (
-    <Suspense fallback={<div style={{ width: size, height: size }} />}>
-      <SVGIcon width={size} height={size} {...props} />
+    <Suspense fallback={<div style={{ width: size, height: size }} className={`icon ${className || ''}`} />}>
+      <SVGIcon width={size} height={size} className={`icon ${className || ''}`} {...props} />
     </Suspense>
   );
 }

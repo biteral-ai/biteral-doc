@@ -1,7 +1,7 @@
 ---
-label: Desactivar productos
+title: Desactivar productos
 expanded: false
-order: 980
+sidebar_position: 4
 icon: arrow-right
 ---
 # Desactivar productos temporalmente

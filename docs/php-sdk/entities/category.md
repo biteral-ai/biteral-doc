@@ -1,8 +1,5 @@
 ---
-label: Category
-expanded: false
-icon: arrow-right
-order: 990
+sidebar_position: 3
 ---
 # Category
 

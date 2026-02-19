@@ -1,6 +1,6 @@
 ---
-order: 900
-label: Buscador natural
+title: Buscador natural
+sidebar_position: 2
 icon: /static/icons/products/naturalSearch.svg
 ---
 # Buscador natural

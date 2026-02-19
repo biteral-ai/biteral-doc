@@ -1,8 +1,5 @@
 ---
-label: CustomerPayload
-expanded: false
-icon: arrow-right
-order: 970
+sidebar_position: 7
 ---
 # CustomerPayload
 

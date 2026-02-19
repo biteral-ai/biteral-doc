@@ -1,7 +1,7 @@
 ---
-label: Enviar eventos en grupo
+title: Enviar eventos en grupo
 expanded: false
-order: 995
+sidebar_position: 2
 icon: arrow-right
 ---
 import LotsOfEvents from '@site/src/components/note_lots_of_events.md';

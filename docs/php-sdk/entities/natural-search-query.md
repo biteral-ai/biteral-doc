@@ -1,8 +1,5 @@
 ---
-label: NaturalSearchQuery
-expanded: false
-icon: arrow-right
-order: 800
+sidebar_position: 6
 ---
 # NaturalSearchQuery
 

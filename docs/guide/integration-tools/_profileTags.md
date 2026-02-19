@@ -1,6 +1,6 @@
 ---
-order: 860
-label: Etiquetas de cliente
+title: Etiquetas de cliente
+sidebar_position: 4
 icon: /static/icons/products/profileTags.svg
 hidden: true
 ---

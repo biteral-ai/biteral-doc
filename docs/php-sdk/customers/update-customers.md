@@ -1,7 +1,7 @@
 ---
-label: Actualizar clientes
+title: Actualizar clientes
 expanded: false
-order: 990
+sidebar_position: 3
 icon: arrow-right
 ---
 Para cambiar los datos de un cliente que ya cargaste, llama a [!badge variant="light" text="customers()->ingest()"] nuevamente, pero esta vez especifica sólo los datos que cambian. También puedes especificar los demás datos si te resulta más cómodo, aunque no hayan cambiado.

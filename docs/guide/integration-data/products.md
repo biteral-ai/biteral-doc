@@ -1,6 +1,6 @@
 ---
-label: Productos
-order: 990
+title: Productos
+sidebar_position: 2
 icon: /static/icons/product.svg
 ---
 # Integrar productos

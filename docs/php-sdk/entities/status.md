@@ -1,8 +1,5 @@
 ---
-label: Status
-expanded: false
-icon: arrow-right
-order: 1100
+sidebar_position: 1
 ---
 # Status
 

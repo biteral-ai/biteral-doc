@@ -1,7 +1,7 @@
 ---
-label: Enviar eventos
+title: Enviar eventos
 expanded: false
-order: 1000
+sidebar_position: 1
 icon: arrow-right
 ---
 # Enviar eventos

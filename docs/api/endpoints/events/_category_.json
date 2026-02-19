@@ -1,4 +1,5 @@
 {
-    "label": "Events",
-    "key": "api-events"
+    "label": "/events",
+    "key": "api-events",
+    "position": 4
 }

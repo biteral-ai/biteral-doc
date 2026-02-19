@@ -1,4 +1,5 @@
 {
-    "label": "Products",
+    "label": "Productos",
+    "position": 2,
     "key": "php-sdk-products"
 }

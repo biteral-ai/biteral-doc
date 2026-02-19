@@ -1,6 +1,6 @@
 ---
-label: Introducción
-order: 1000
+title: Introducción
+sidebar_position: 1
 icon: arrow-right
 ---
 # Integrar datos

@@ -1,8 +1,5 @@
 ---
-label: ProductAttributePayload
-expanded: false
-icon: arrow-right
-order: 999
+sidebar_position: 3
 ---
 # ProductAttributePayload
 

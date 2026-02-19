@@ -1,7 +1,7 @@
 ---
-label: Desactivar clientes
+title: Desactivar clientes
 expanded: false
-order: 980
+sidebar_position: 4
 icon: arrow-right
 ---
 # Desactivar clientes temporalmente

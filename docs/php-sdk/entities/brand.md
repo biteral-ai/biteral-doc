@@ -1,8 +1,5 @@
 ---
-label: Brand
-expanded: false
-icon: arrow-right
-order: 980
+sidebar_position: 4
 ---
 # Brand
 

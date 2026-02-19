@@ -1,7 +1,7 @@
 ---
-label: Carga masiva
+title: Carga masiva
 expanded: false
-order: 995
+sidebar_position: 2
 icon: arrow-right
 ---
 # Carga masiva de clientes

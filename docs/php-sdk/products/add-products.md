@@ -1,7 +1,7 @@
 ---
-label: Cargar productos
+title: Cargar productos
 expanded: false
-order: 1000
+sidebar_position: 1
 icon: arrow-right
 ---
 # Cargar productos

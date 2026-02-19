@@ -1,8 +1,5 @@
 ---
-label: ApiVersion
-expanded: false
-icon: arrow-right
-order: 1010
+sidebar_position: 1
 ---
 # ApiVersion
 

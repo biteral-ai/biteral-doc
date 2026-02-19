@@ -1,7 +1,7 @@
 ---
-label: Instalación
+title: Instalación
+sidebar_position: 1
 icon: arrow-right
-order: 1000
 ---
 # Instalar el SDK para PHP
 

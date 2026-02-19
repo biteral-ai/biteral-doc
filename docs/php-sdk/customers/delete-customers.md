@@ -1,7 +1,7 @@
 ---
-label: Eliminar clientes
+title: Eliminar clientes
 expanded: false
-order: 970
+sidebar_position: 5
 icon: arrow-right
 ---
 # Eliminar clientes
