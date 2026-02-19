@@ -9,18 +9,21 @@ Lo más recomendable es comenzar cargando todos los productos disponibles en vue
 
 ### Cargar tu primer producto
 
-==- :icon-file-code: **Con PHP**
+<Tabs>
+<TabItem value=":icon-file-code: **Con PHP**" label=":icon-file-code: **Con PHP**">
 
-Una vez hayas [instalado el SDK](/php-sdk/install), llama a [!badge variant="info" text="products()->ingest"](/php-sdk/products/add-products) con un objeto [!badge variant="info" text="ProductPayload"](/php-sdk/payloads/product-payload) como parámetro.
+Una vez hayas [instalado el SDK](/php-sdk/install), llama a <Badge variant="info" text="products()->ingest" />(/php-sdk/products/add-products) con un objeto <Badge variant="info" text="ProductPayload" />(/php-sdk/payloads/product-payload) como parámetro.
 
 [!ref icon="arrow-right" text="Cargar un producto con PHP"](/php-sdk/products/add-products)
 
-==- ** Con la API**
+</TabItem>
+<TabItem value="** Con la API**" label="** Con la API**">
 
-Una vez hayas aprendido [cómo conectar con la API](/api/connect), haz una petición [!badge variant="success" text="POST"] al endpoint [!badge /products](/api/endpoints/products/post)
+Una vez hayas aprendido [cómo conectar con la API](/api/connect), haz una petición <Badge variant="success" text="POST" /> al endpoint <Badge>/products</Badge>(/api/endpoints/products/post)
 
 [!ref icon="arrow-right" text="Cargar un producto con la API"](/api/endpoints/products/post)
-==-
+</TabItem>
+</Tabs>
 
 ### Cargar muchos productos a la vez
 

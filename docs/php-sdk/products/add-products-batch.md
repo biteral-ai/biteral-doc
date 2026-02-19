@@ -6,9 +6,9 @@ icon: arrow-right
 ---
 # Carga masiva de productos
 
-Si necesitas cargar muchos productos en Biteral, llamar a [!badge variant="light" text="products()->ingest()"] por cada producto que quieres cargar es lento, y puede provocar errores por consumo excesivo de memoria.
+Si necesitas cargar muchos productos en Biteral, llamar a <Badge variant="light" text="products()->ingest()" /> por cada producto que quieres cargar es lento, y puede provocar errores por consumo excesivo de memoria.
 
-En su lugar, usa [!badge variant="light" text="productsBatchIngest()->ingest()"], que está diseñado específicamente para cargas masivas. Este método agrupa los productos de forma óptima para maximizar la velocidad y reducir el riesgo de problemas relacionados con el uso de recursos. Mira cómo funciona:
+En su lugar, usa <Badge variant="light" text="productsBatchIngest()->ingest()" />, que está diseñado específicamente para cargas masivas. Este método agrupa los productos de forma óptima para maximizar la velocidad y reducir el riesgo de problemas relacionados con el uso de recursos. Mira cómo funciona:
 
 ```php
 // Obtén un objeto ProductsBatchIngestService para poder reutilizarlo

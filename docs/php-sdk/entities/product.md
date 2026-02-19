@@ -9,8 +9,8 @@ Representa uno de vuestros productos en Biteral. Además de los datos que habéi
 
 ||
 ---|---|---
-[!badge icon="screen-full" text="id"]|string|Id del producto en Biteral. Por ejemplo: `pro_hs14jd193K1ndJ`
-[!badge icon="screen-full" text="projectId"]|string|Id del proyecto en Biteral al que pertenece el producto. Por ejemplo: `prj_18vn8R74uvSijf`
-[!badge icon="screen-full" text="createdAt"]|DateTimeImmutable|Fecha de creación del producto.
-[!badge icon="screen-full" text="updatedAt"]|DateTimeImmutable|Fecha en la que el producto se actualizó por última vez.
-[!badge icon="screen-full" text="payload"]|[!badge variant="info" text="ProductPayload"](/php-sdk/payloads/product-payload)|Payload de los datos del producto
+<Badge icon="screen-full" text="id" />|string|Id del producto en Biteral. Por ejemplo: `pro_hs14jd193K1ndJ`
+<Badge icon="screen-full" text="projectId" />|string|Id del proyecto en Biteral al que pertenece el producto. Por ejemplo: `prj_18vn8R74uvSijf`
+<Badge icon="screen-full" text="createdAt" />|DateTimeImmutable|Fecha de creación del producto.
+<Badge icon="screen-full" text="updatedAt" />|DateTimeImmutable|Fecha en la que el producto se actualizó por última vez.
+<Badge icon="screen-full" text="payload" />|<Badge variant="info" text="ProductPayload" />(/php-sdk/payloads/product-payload)|Payload de los datos del producto

@@ -2,11 +2,12 @@
 title: /status
 sidebar_position: 1
 ---
-# /status [!badge variant="success" text="GET"] [!badge variant="success" text="v1"]
+# /status <Badge variant="success" text="GET" />
 
 Obtiene información sobre el estado de la API y otros parámetros útiles como tus credenciales, la versión que estás utilizando y las versiones disponibles.
 
-+++ :icon-project-roadmap: Resultado
+<Tabs>
+<TabItem value=":icon-project-roadmap: Resultado" label=":icon-project-roadmap: Resultado">
 ```json
 {
     "object": "status",
@@ -37,4 +38,5 @@ Obtiene información sobre el estado de la API y otros parámetros útiles como 
     "environment": "prod"
 }
 ```
-+++
+</TabItem>
+</Tabs>

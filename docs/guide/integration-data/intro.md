@@ -9,26 +9,21 @@ Biteral analiza los datos de vuestros productos y el comportamiento de vuestros 
 
 Aunque podéis enviarnos los datos en un archivo Excel o CSV, lo más recomendable es hacerlo a través de la API o el SDK para PHP. Esto garantiza la máxima flexibilidad y permite que Biteral funcione en tiempo real, adaptándose siempre a los datos más recientes.
 
-!!!
+:::info
 En muchos casos, esta inmediatez es clave: por ejemplo, Biteral puede sugerir productos más adecuados justo después de una compra, aprovechando el momento de mayor interés del cliente.
-!!!
+:::
 
 Éstos son los tres tipos de datos clave que debes enviar a Biteral:
 
-||| ** Productos**
-Los artículos que ofrecéis: nombre, descripción, precio, características, etc.
-||| ** Clientes**
-Identificadores internos para el seguimiento de cada cliente: ubicación, tipo de cliente, etc.
-||| ** Eventos**
-Acciones que los clientes realizan: visitas a productos, compras, añadir al carrito, etc.
-|||
+| **<Icon name="product" /> Productos** | **<Icon name="customer" /> Clientes** | **<Icon name="event" /> Eventos** |
+| :--- | :--- | :--- |
+| Los artículos que ofrecéis: nombre, descripción, precio, características, etc.| Identificadores internos para el seguimiento: ubicación, tipo de cliente, etc. | Acciones que realizan: visitas, compras, añadir al carrito, etc. |
+
 
 ### Métodos de integración
 
-||| **:icon-file-code: SDK PHP**
-Si trabajas con PHP, te recomendamos utilizar el [SDK de Biteral para PHP](/php-sdk/install). Es la forma más sencilla, flexible y segura de integrar la plataforma.
-||| ** Api**
-Utiliza la [API de Biteral](/api/connect) desde cualquier plataforma o lenguaje de programación conectando directamente.
-|||
+| **<Icon name="code" /> SDK PHP** | **<Icon name="technology/api" /> API** |
+| :--- | :--- |
+| Si trabajas con PHP, te recomendamos utilizar el [SDK de Biteral para PHP](/php-sdk/install). Es la forma más sencilla, flexible y segura de integrar la plataforma.| Utiliza la [API de Biteral](/api/connect) desde cualquier plataforma o lenguaje de programación conectando directamente. |
 
 Como primer paso, continúa a la siguiente página para aprender cómo enviar tus primeros productos a Biteral:

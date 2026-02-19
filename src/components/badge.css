@@ -1,0 +1,33 @@
+.badge {
+    --badgeBaseColor: var(--ifm-color-emphasis-200);
+
+    --badgeBackgroundColor: var(--badgeBaseColor);
+    --badgeForegroundColor: hsl(from var(--badgeBaseColor) h s calc(l * .4));
+
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    vertical-align: text-bottom;
+
+    background: var(--badgeBackgroundColor);
+    color: var(--badgeForegroundColor);
+
+    padding: 0.25em .3em;
+}
+
+.badge > .icon {
+    width: 1em;
+    height: 1em;
+}
+
+.badge.light {
+    --badgeBaseColor: var(--ifm-color-emphasis-200);
+}
+
+.badge.info {
+    --badgeBaseColor: var(--ifm-color-info-contrast-background);
+}
+
+.badge.success {
+    --badgeBaseColor: var(--color-success);
+}

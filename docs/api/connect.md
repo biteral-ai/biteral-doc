@@ -13,7 +13,8 @@ Si utilizas PHP, es muy recomendable utilizar el [SDK de Biteral para PHP](/php-
 1. Crea una cuenta en [Biteral](https://biteral.ai/signup)
 1. Obtén vuestra API key de pruebas desde el [dashboard](https://biteral.ai/dashboard)
 
-==- Limitaciones de la API key de pruebas
+<details>
+<summary>Limitaciones de la API key de pruebas</summary>
 La API key de pruebas os permite utilizar Biteral gratuitamente, ideal para realizar pruebas desde vuestro entorno de desarrollo y ver resultados reales sobre cómo funcionaría Biteral con vuestro sistema. Sin embargo, la API key de pruebas tiene algunos límites:
 
 !!!warning Límite de peticiones por segundo estricto
@@ -24,34 +25,41 @@ Algunos endpoints tienen el máximo de peticiones por segundo limitado, así que
 Algunos endpoints sólo pueden recibir cierto número de peticiones por día. Al utilizar una API key de pruebas, si alcanzas este límite obtendrás también un código de respuesta `429 Too Many Requests`
 !!!
 
-===
+</details>
 
 ### Cómo conectar
 
-Realiza peticiones [!badge variant="light" text="HTTPS"] a [!badge variant="light" text="https:\/\/api.biteral.ai"] incluyendo los siguientes headers:
+Realiza peticiones <Badge variant="light" text="HTTPS" /> a <Badge variant="light" text="https:\/\/api.biteral.ai" /> incluyendo los siguientes headers:
 
-- [!badge variant="warning" text="X-API-Key"] Vuestra API key
-- [!badge variant="warning" text="X-API-Version"] La versión principal de la API que vas a utilizar, por ejemplo: [!badge variant="light" text="1"]
+- <Badge variant="warning" text="X-API-Key" /> Vuestra API key
+- <Badge variant="warning" text="X-API-Version" /> La versión principal de la API que vas a utilizar, por ejemplo: <Badge variant="light" text="1" />
 
-+++ Curl
+<Tabs>
+<TabItem value="Curl" label="Curl">
+
 ```shell
 curl \
     -G https://api.biteral.ai/status \
     -H 'X-API-Key: ux3HzRTaLGKvZjTb7ufaFUgJPvXbcNX7DWbnWAAUxQjHYqZJ' \
     -H 'X-API-Version: 1'
 ```
-+++ PHP
+
+</TabItem>
+<TabItem value="PHP" label="PHP">
+
 ```php
 use Biteral\Client;
 $client = new Client('ux3HzRTaLGKvZjTb7ufaFUgJPvXbcNX7DWbnWAAUxQjHYqZJ');
 $status = $client->getInfo();
 print_r($status);
 ```
-+++
+
+</TabItem>
+</Tabs>
 
 ### Enviar y recibir datos en la API
 
-Los endpoints [!badge variant="success" text="POST"], [!badge variant="success" text="PUT"] y [!badge variant="success" text="PATCH"] normalmente aceptan los datos en formato JSON a través del `body` de la petición. Por ejemplo, éste es el cuerpo de una petición [!badge variant="success" text="POST"] al endpoint [!badge /products](/api/endpoints/products/post) para enviar un producto a Biteral:
+Los endpoints <Badge variant="success" text="POST" />, <Badge variant="success" text="PUT" /> y <Badge variant="success" text="PATCH" /> normalmente aceptan los datos en formato JSON a través del `body` de la petición. Por ejemplo, éste es el cuerpo de una petición <Badge variant="success" text="POST" /> al endpoint <Badge>/products</Badge>(/api/endpoints/products/post) para enviar un producto a Biteral:
 
 ```json
 {
@@ -61,7 +69,7 @@ Los endpoints [!badge variant="success" text="POST"], [!badge variant="success" 
 }
 ```
 
-Otros endpoints del tipo [!badge variant="success" text="GET"] o [!badge variant="success" text="DELETE"] aceptan datos a través de los parámetros en la URL de la petición. Por ejemplo, ésta es la URL para una petición [!badge variant="success" text="GET"] al endpoint [!badge /products](/api/endpoints/products/get) que obtiene los datos de un producto:
+Otros endpoints del tipo <Badge variant="success" text="GET" /> o <Badge variant="success" text="DELETE" /> aceptan datos a través de los parámetros en la URL de la petición. Por ejemplo, ésta es la URL para una petición <Badge variant="success" text="GET" /> al endpoint <Badge>/products</Badge>(/api/endpoints/products/get) que obtiene los datos de un producto:
 
 ```
 https://api.biteral.ai/products?code=B00YUU43VS

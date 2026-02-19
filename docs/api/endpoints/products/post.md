@@ -1,13 +1,14 @@
 ---
-label: Post
-order: 100
+sidebar_label: Post
+sidebar_position: 1
 icon: arrow-right
 ---
-# /products [!badge variant="success" text="POST"] [!badge variant="success" text="v1"]
+# /products <Badge variant="success" text="POST" />
 
 Crear o modificar un producto.
 
-+++ :icon-project-roadmap: JSON request body
+<Tabs>
+<TabItem value=":icon-project-roadmap: JSON request body" label=":icon-project-roadmap: JSON request body">
 
 ```json
 {
@@ -46,22 +47,23 @@ Crear o modificar un producto.
 }
 ```
 
-+++ :icon-book: Documentación
+</TabItem>
+<TabItem value=":icon-book: Documentación" label=":icon-book: Documentación">
 
-[!badge variant="danger" icon="lock" text="code"]
-: Código de producto, por ejemplo `N39291` [!badge variant="light" icon="arrow-both" text="255"]
+<Badge variant="danger" icon="lock" text="code" />
+: Código de producto, por ejemplo `N39291` <Badge variant="light" icon="arrow-both" text="255" />
 
-[!badge variant="warning" text="isActive"]
+<Badge variant="warning" text="isActive" />
 : Indica si el producto está habilitado para ser utilizado por los servicios de Biteral, como recomendaciones, búsqueda o análisis. Si no se incluye este campo al enviar o actualizar el producto, se asume automáticamente que el producto está activo `true`. Poner isActive a `false` permite mantener el producto en el sistema sin que participe en ningún procesamiento o resultado de los servicios.
 
-[!badge variant="danger" icon="lock" text="title"]
-: Título del producto. [!badge variant="light" icon="arrow-both" text="10000"]
+<Badge variant="danger" icon="lock" text="title" />
+: Título del producto. <Badge variant="light" icon="arrow-both" text="10000" />
 
-[!badge variant="warning" text="description"]
-: Descripción del producto. [!badge variant="light" icon="arrow-both" text="60000"]
+<Badge variant="warning" text="description" />
+: Descripción del producto. <Badge variant="light" icon="arrow-both" text="60000" />
 
-[!badge variant="warning" text="price"]
-: El precio del producto. Un objeto JSON donde [!badge variant="danger" icon="lock" text="amount"] es el precio del producto, y [!badge variant="danger" icon="lock" text="currency"] es la moneda en la que se expresa el precio, según el estándar [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217). Por ejemplo:
+<Badge variant="warning" text="price" />
+: El precio del producto. Un objeto JSON donde <Badge variant="danger" icon="lock" text="amount" /> es el precio del producto, y <Badge variant="danger" icon="lock" text="currency" /> es la moneda en la que se expresa el precio, según el estándar [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217). Por ejemplo:
 ```json
     {
         "amount": "49.95",
@@ -69,8 +71,8 @@ Crear o modificar un producto.
     }
 ```
 
-[!badge variant="warning" text="attributes"]
-: Los atributos del producto. Un array de objetos JSON donde [!badge variant="danger" icon="lock" text="title"] [!badge variant="light" icon="arrow-both" text="255"] es el título del atributo y [!badge variant="warning" text="value"] [!badge variant="light" icon="arrow-both" text="60000"] es su valor. Por ejemplo:
+<Badge variant="warning" text="attributes" />
+: Los atributos del producto. Un array de objetos JSON donde <Badge variant="danger" icon="lock" text="title" /> <Badge variant="light" icon="arrow-both" text="255" /> es el título del atributo y <Badge variant="warning" text="value" /> <Badge variant="light" icon="arrow-both" text="60000" /> es su valor. Por ejemplo:
 ```json
     [
         {"title": "Material", "value": "Cuero"},
@@ -82,8 +84,8 @@ Crear o modificar un producto.
     ]
 ```
 
-[!badge variant="warning" text="brand"]
-: La marca del producto. Un objeto JSON donde [!badge variant="danger" icon="lock" text="code"] [!badge variant="light" icon="arrow-both" text="255"] es el código de la marca y [!badge variant="warning" text="name"] [!badge variant="light" icon="arrow-both" text="255"] su nombre. Por ejemplo:
+<Badge variant="warning" text="brand" />
+: La marca del producto. Un objeto JSON donde <Badge variant="danger" icon="lock" text="code" /> <Badge variant="light" icon="arrow-both" text="255" /> es el código de la marca y <Badge variant="warning" text="name" /> <Badge variant="light" icon="arrow-both" text="255" /> su nombre. Por ejemplo:
 ```json
     {
         "code": "OW142398",
@@ -91,8 +93,8 @@ Crear o modificar un producto.
     }
 ```
 
-[!badge variant="warning" text="category"]
-: La categoría del producto. Un objeto JSON donde [!badge variant="danger" icon="lock" text="code"] [!badge variant="light" icon="arrow-both" text="255"] es el código de la categoría, [!badge variant="warning" text="title"] [!badge variant="light" icon="arrow-both" text="255"] el título y [!badge variant="warning" text="description"] [!badge variant="light" icon="arrow-both" text="60000"] su descripción. Por ejemplo:
+<Badge variant="warning" text="category" />
+: La categoría del producto. Un objeto JSON donde <Badge variant="danger" icon="lock" text="code" /> <Badge variant="light" icon="arrow-both" text="255" /> es el código de la categoría, <Badge variant="warning" text="title" /> <Badge variant="light" icon="arrow-both" text="255" /> el título y <Badge variant="warning" text="description" /> <Badge variant="light" icon="arrow-both" text="60000" /> su descripción. Por ejemplo:
 ```json
     {
         "code": "MC418298",
@@ -101,14 +103,14 @@ Crear o modificar un producto.
     }
 ```
 
-[!badge variant="warning" text="imageUrl"]
+<Badge variant="warning" text="imageUrl" />
 : La URL de la imagen del producto, preferiblemente una imagen de aproximadamente 600 píxeles de ancho. Por ejemplo: `https://m.media-amazon.com/images/I/61cELGQXXhL._AC_UL320_.jpg`
 
-[!badge variant="warning" text="url"]
+<Badge variant="warning" text="url" />
 : La URL pública del producto. Por ejemplo: `https://www.amazon.es/Hitmars-Zapatillas-Deportivas-Transpirables-Sneakers/dp/B0CYGMZVL7`
 
-[!badge variant="warning" text="metadata"]
-: Datos adicionales que te resulten útiles cuando recibas el producto como resultado de las herramientas de Biteral. Un objeto JSON [!badge variant="light" icon="arrow-both" text="60000"]. Por ejemplo:
+<Badge variant="warning" text="metadata" />
+: Datos adicionales que te resulten útiles cuando recibas el producto como resultado de las herramientas de Biteral. Un objeto JSON <Badge variant="light" icon="arrow-both" text="60000" />. Por ejemplo:
 ```json
     {
         "videoUrl": "https://m.media-amazon.com/videos/C/dk14lkKlsnw._AC_UL1080_.mp4",
@@ -118,7 +120,8 @@ Crear o modificar un producto.
     }
 ```
 
-+++
+</TabItem>
+</Tabs>
 
 ### Actualizar un producto
 

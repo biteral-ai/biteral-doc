@@ -26,121 +26,127 @@ import EventPropertyProductCode from '@site/src/components/events/properties/pro
 import EventPropertyCategoryCode from '@site/src/components/events/properties/category-code.md';
 import EventPropertyBrandCode from '@site/src/components/events/properties/brand-code.md';
 
-==- **EventAddedToCart**
+<details>
+<summary>**EventAddedToCart**</summary>
 
 <EventDescriptionEventAddedtoCart />
 
 ##### Parámetros
 
-[!badge variant="danger" icon="lock" text="type"]
-: [!badge variant="warning" text="EventAddedToCart"]
+<Badge variant="danger" icon="lock" text="type" />
+: <Badge variant="warning" text="EventAddedToCart" />
 
-[!badge icon="screen-full" text="timestamp"]
+<Badge icon="screen-full" text="timestamp" />
 : <EventPropertyTimestamp />
 
-[!badge variant="danger" icon="lock" text="customerCode"]
+<Badge variant="danger" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-[!badge variant="danger" icon="lock" text="productCode"]
+<Badge variant="danger" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
-[!badge icon="screen-full" text="quantity"]
+<Badge icon="screen-full" text="quantity" />
 : La cantidad de unidades de este producto añadidas al carrito. Si no se especifica, el valor por defecto es `1`
 
-==-
+</details>
 
 
-==- **EventRemovedFromCart**
+<details>
+<summary>**EventRemovedFromCart**</summary>
 
 <EventDescriptionEventRemovedFromCart />
 
 ##### Parámetros
 
-[!badge variant="danger" icon="lock" text="type"]
-: [!badge variant="warning" text="EventRemovedFromCart"]
+<Badge variant="danger" icon="lock" text="type" />
+: <Badge variant="warning" text="EventRemovedFromCart" />
 
-[!badge icon="screen-full" text="timestamp"]
+<Badge icon="screen-full" text="timestamp" />
 : <EventPropertyTimestamp />
 
-[!badge variant="danger" icon="lock" text="customerCode"]
+<Badge variant="danger" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-[!badge variant="danger" icon="lock" text="productCode"]
+<Badge variant="danger" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
-[!badge icon="screen-full" text="quantity"]
+<Badge icon="screen-full" text="quantity" />
 : La cantidad de unidades de este producto retiradas del carrito. Si no se especifica, el valor por defecto es `1`
 
-==-
+</details>
 
 
-==- **EventAddedToWishlist**
+<details>
+<summary>**EventAddedToWishlist**</summary>
 
 <EventDescriptionEventAddedToWishlist />
 
 ##### Parámetros
 
-[!badge variant="danger" icon="lock" text="type"]
-: [!badge variant="warning" text="EventAddedToWishlist"]
+<Badge variant="danger" icon="lock" text="type" />
+: <Badge variant="warning" text="EventAddedToWishlist" />
 
-[!badge icon="screen-full" text="timestamp"]
+<Badge icon="screen-full" text="timestamp" />
 : <EventPropertyTimestamp />
 
-[!badge variant="danger" icon="lock" text="customerCode"]
+<Badge variant="danger" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-[!badge variant="danger" icon="lock" text="productCode"]
+<Badge variant="danger" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
-==-
+</details>
 
 
-==- **EventRemovedFromWishlist**
+<details>
+<summary>**EventRemovedFromWishlist**</summary>
 
 <EventDescriptionEventRemovedFromWishlist />
 
 ##### Parámetros
 
-[!badge variant="danger" icon="lock" text="type"]
-: [!badge variant="warning" text="EventRemovedFromWishlist"]
+<Badge variant="danger" icon="lock" text="type" />
+: <Badge variant="warning" text="EventRemovedFromWishlist" />
 
-[!badge icon="screen-full" text="timestamp"]
+<Badge icon="screen-full" text="timestamp" />
 : <EventPropertyTimestamp />
 
-[!badge variant="danger" icon="lock" text="customerCode"]
+<Badge variant="danger" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-[!badge variant="danger" icon="lock" text="productCode"]
+<Badge variant="danger" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
-==-
+</details>
 
 
-==- **EventSale**
+<details>
+<summary>**EventSale**</summary>
 
 <EventDescriptionEventSale />
 
 ##### Parámetros
 
-[!badge variant="danger" icon="lock" text="type"]
-: [!badge variant="warning" text="EventSale"]
+<Badge variant="danger" icon="lock" text="type" />
+: <Badge variant="warning" text="EventSale" />
 
-[!badge icon="screen-full" text="timestamp"]
+<Badge icon="screen-full" text="timestamp" />
 : <EventPropertyTimestamp />
 
-[!badge variant="danger" icon="lock" text="customerCode"]
+<Badge variant="danger" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-[!badge variant="danger" icon="lock" text="productCode"]
+<Badge variant="danger" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
-[!badge icon="screen-full" text="quantity"]
+<Badge icon="screen-full" text="quantity" />
 : La cantidad de unidades de este producto compradas. Si no se especifica, el valor por defecto es `1`
 
-==-
+</details>
 
 
-==- **EventReturnRequested**
+<details>
+<summary>**EventReturnRequested**</summary>
 
 <EventDescriptionEventReturnRequested />
 
@@ -150,85 +156,89 @@ Debe enviarse cuando el cliente solicita la devolución, aunque ésta no sea ace
 
 ##### Parámetros
 
-[!badge variant="danger" icon="lock" text="type"]
-: [!badge variant="warning" text="EventReturnRequested"]
+<Badge variant="danger" icon="lock" text="type" />
+: <Badge variant="warning" text="EventReturnRequested" />
 
-[!badge icon="screen-full" text="timestamp"]
+<Badge icon="screen-full" text="timestamp" />
 : <EventPropertyTimestamp />
 
-[!badge variant="danger" icon="lock" text="customerCode"]
+<Badge variant="danger" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-[!badge variant="danger" icon="lock" text="productCode"]
+<Badge variant="danger" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
-==-
+</details>
 
 
-==- **EventProductViewed**
+<details>
+<summary>**EventProductViewed**</summary>
 
 <EventDescriptionEventProductViewed />
 
 ##### Parámetros
 
-[!badge variant="danger" icon="lock" text="type"]
-: [!badge variant="warning" text="EventProductViewed"]
+<Badge variant="danger" icon="lock" text="type" />
+: <Badge variant="warning" text="EventProductViewed" />
 
-[!badge icon="screen-full" text="timestamp"]
+<Badge icon="screen-full" text="timestamp" />
 : <EventPropertyTimestamp />
 
-[!badge variant="danger" icon="lock" text="customerCode"]
+<Badge variant="danger" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-[!badge variant="danger" icon="lock" text="productCode"]
+<Badge variant="danger" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
-==-
+</details>
 
 
-==- **EventCategoryViewed**
+<details>
+<summary>**EventCategoryViewed**</summary>
 
 <EventDescriptionEventCategoryViewed />
 
 ##### Parámetros
 
-[!badge variant="danger" icon="lock" text="type"]
-: [!badge variant="warning" text="EventCategoryViewed"]
+<Badge variant="danger" icon="lock" text="type" />
+: <Badge variant="warning" text="EventCategoryViewed" />
 
-[!badge icon="screen-full" text="timestamp"]
+<Badge icon="screen-full" text="timestamp" />
 : <EventPropertyTimestamp />
 
-[!badge variant="danger" icon="lock" text="customerCode"]
+<Badge variant="danger" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-[!badge variant="danger" icon="lock" text="categoryCode"]
+<Badge variant="danger" icon="lock" text="categoryCode" />
 : <EventPropertyCategoryCode />
 
-==-
+</details>
 
 
-==- **EventBrandViewed**
+<details>
+<summary>**EventBrandViewed**</summary>
 
 <EventDescriptionEventBrandViewed />
 
 ##### Parámetros
 
-[!badge variant="danger" icon="lock" text="type"]
-: [!badge variant="warning" text="EventBrandViewed"]
+<Badge variant="danger" icon="lock" text="type" />
+: <Badge variant="warning" text="EventBrandViewed" />
 
-[!badge icon="screen-full" text="timestamp"]
+<Badge icon="screen-full" text="timestamp" />
 : <EventPropertyTimestamp />
 
-[!badge variant="danger" icon="lock" text="customerCode"]
+<Badge variant="danger" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-[!badge variant="danger" icon="lock" text="brandCode"]
+<Badge variant="danger" icon="lock" text="brandCode" />
 : <EventPropertyBrandCode />
 
-==-
+</details>
 
 
-==- **EventSearch**
+<details>
+<summary>**EventSearch**</summary>
 
 <EventDescriptionEventSearch />
 
@@ -238,70 +248,73 @@ Este evento debe enviarse si vuestro web tiene su propio buscador textual. Si ut
 
 ##### Parámetros
 
-[!badge variant="danger" icon="lock" text="type"]
-: [!badge variant="warning" text="EventSearch"]
+<Badge variant="danger" icon="lock" text="type" />
+: <Badge variant="warning" text="EventSearch" />
 
-[!badge icon="screen-full" text="timestamp"]
+<Badge icon="screen-full" text="timestamp" />
 : <EventPropertyTimestamp />
 
-[!badge variant="danger" icon="lock" text="customerCode"]
+<Badge variant="danger" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-[!badge variant="danger" icon="lock" text="query"]
+<Badge variant="danger" icon="lock" text="query" />
 : El texto de la búsqueda tal como lo escribió el cliente.
 
-==-
+</details>
 
 
-==- **EventFilterApplied**
+<details>
+<summary>**EventFilterApplied**</summary>
 
 <EventDescriptionEventFilterApplied />
 
 ##### Parámetros
 
-[!badge variant="danger" icon="lock" text="type"]
-: [!badge variant="warning" text="EventFilterApplied"]
+<Badge variant="danger" icon="lock" text="type" />
+: <Badge variant="warning" text="EventFilterApplied" />
 
-[!badge icon="screen-full" text="timestamp"]
+<Badge icon="screen-full" text="timestamp" />
 : <EventPropertyTimestamp />
 
-[!badge variant="danger" icon="lock" text="customerCode"]
+<Badge variant="danger" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-[!badge variant="danger" icon="lock" text="filterName"]
+<Badge variant="danger" icon="lock" text="filterName" />
 : El nombre del filtro, por ejemplo: `color`
 
-[!badge variant="danger" icon="lock" text="filterValue"]
+<Badge variant="danger" icon="lock" text="filterValue" />
 : El valor del filtro, por ejemplo: `rojo`
 
-==-
+</details>
 
 
-==- **EventOrderApplied**
+<details>
+<summary>**EventOrderApplied**</summary>
 
 <EventDescriptionEventOrderApplied />
 
 ##### Parámetros
 
-[!badge variant="danger" icon="lock" text="type"]
-: [!badge variant="warning" text="EventOrderApplied"]
+<Badge variant="danger" icon="lock" text="type" />
+: <Badge variant="warning" text="EventOrderApplied" />
 
-[!badge icon="screen-full" text="timestamp"]
+<Badge icon="screen-full" text="timestamp" />
 : <EventPropertyTimestamp />
 
-[!badge variant="danger" icon="lock" text="customerCode"]
+<Badge variant="danger" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-[!badge variant="danger" icon="lock" text="orderDescription"]
+<Badge variant="danger" icon="lock" text="orderDescription" />
 : La descripción del orden aplicado. Puede ser cualquier palabra o frase que describa el orden, por ejemplo: `price`, `newest products first`, `screen size`, etcétera.
 
-[!badge icon="screen-full" text="orderDirection"]
+<Badge icon="screen-full" text="orderDirection" />
 : Si es relevante, la dirección del orden: `asc` para dirección ascendente, `desc` para dirección descendente
 
-==-
+</details>
 
 
-==- **EventCouponApplied**
+<details>
+<summary>**EventCouponApplied**</summary>
 
 <EventDescriptionEventCouponApplied />
 
@@ -311,43 +324,45 @@ Debe enviarse sólo cuando el código del cupón introducido por el cliente haya
 
 ##### Parámetros
 
-[!badge variant="danger" icon="lock" text="type"]
-: [!badge variant="warning" text="EventCouponApplied"]
+<Badge variant="danger" icon="lock" text="type" />
+: <Badge variant="warning" text="EventCouponApplied" />
 
-[!badge icon="screen-full" text="timestamp"]
+<Badge icon="screen-full" text="timestamp" />
 : <EventPropertyTimestamp />
 
-[!badge variant="danger" icon="lock" text="customerCode"]
+<Badge variant="danger" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-==-
+</details>
 
 
-==- **EventReviewWritten**
+<details>
+<summary>**EventReviewWritten**</summary>
 
 <EventDescriptionEventReviewWritten />
 
 ##### Parámetros
 
-[!badge variant="danger" icon="lock" text="type"]
-: [!badge variant="warning" text="EventReviewWritten"]
+<Badge variant="danger" icon="lock" text="type" />
+: <Badge variant="warning" text="EventReviewWritten" />
 
-[!badge icon="screen-full" text="timestamp"]
+<Badge icon="screen-full" text="timestamp" />
 : <EventPropertyTimestamp />
 
-[!badge variant="danger" icon="lock" text="customerCode"]
+<Badge variant="danger" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-[!badge variant="danger" icon="lock" text="productCode"]
+<Badge variant="danger" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
-[!badge icon="screen-full" text="review"]
+<Badge icon="screen-full" text="review" />
 : El texto de la review, tal como la escribió el cliente.
 
-==-
+</details>
 
 
-==- **EventStockAlertRequested**
+<details>
+<summary>**EventStockAlertRequested**</summary>
 
 <EventDescriptionEventStockAlertRequested />
 
@@ -357,19 +372,19 @@ Debe enviarse cuando un cliente solicita ser notificado cuando un producto vuelv
 
 ##### Parámetros
 
-[!badge variant="danger" icon="lock" text="type"]
-: [!badge variant="warning" text="EventStockAlertRequested"]
+<Badge variant="danger" icon="lock" text="type" />
+: <Badge variant="warning" text="EventStockAlertRequested" />
 
-[!badge icon="screen-full" text="timestamp"]
+<Badge icon="screen-full" text="timestamp" />
 : <EventPropertyTimestamp />
 
-[!badge variant="danger" icon="lock" text="customerCode"]
+<Badge variant="danger" icon="lock" text="customerCode" />
 : <EventPropertyCustomerCode />
 
-[!badge variant="danger" icon="lock" text="productCode"]
+<Badge variant="danger" icon="lock" text="productCode" />
 : <EventPropertyProductCode />
 
-[!badge icon="screen-full" text="review"]
+<Badge icon="screen-full" text="review" />
 : El texto de la review, tal como la escribió el cliente.
 
-==-
+</details>

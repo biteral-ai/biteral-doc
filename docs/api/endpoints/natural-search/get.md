@@ -1,21 +1,23 @@
 ---
-label: Get
-order: 70
+sidebar_label: Get
+sidebar_position: 1
 icon: arrow-right
 ---
-# /natural-search [!badge variant="success" text="GET"] [!badge variant="success" text="v1"]
+# /natural-search <Badge variant="success" text="GET" />
 
 Obtener una lista de productos que encajan con una búsqueda realizada en lenguage natural.
 
-+++ :icon-tasklist: Parámetros
+<Tabs>
+<TabItem value=":icon-tasklist: Parámetros" label=":icon-tasklist: Parámetros">
 
-[!badge variant="danger" icon="lock" text="query"]
+<Badge variant="danger" icon="lock" text="query" />
 : La cadena escrita por el usuario para encontrar productos en lenguaje natural, por ejemplo `Un regalo para un aficionado a la cocina`
 
-[!badge variant="warning" text="limit"]
+<Badge variant="warning" text="limit" />
 : Limita el número máximo de productos a obtener, por ejemplo `5`. Por defecto, se obtienen `10` productos como máximo.
 
-+++ :icon-project-roadmap: Resultado
+</TabItem>
+<TabItem value=":icon-project-roadmap: Resultado" label=":icon-project-roadmap: Resultado">
 
 ```json
 {
@@ -77,4 +79,5 @@ Obtener una lista de productos que encajan con una búsqueda realizada en lengua
 }
 ```
 
-+++
+</TabItem>
+</Tabs>

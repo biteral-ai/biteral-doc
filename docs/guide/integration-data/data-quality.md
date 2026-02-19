@@ -13,7 +13,7 @@ Si no puedes proporcionar datos de calidad en todos los campos (título, descrip
 
 ### Ejemplos de títulos
 
-[!badge variant="danger" icon="circle-slash" text="Mala calidad"] | [!badge variant="success" icon="check" text="Buena calidad"]
+<Badge variant="danger" icon="circle-slash" text="Mala calidad" /> | <Badge variant="success" icon="check" text="Buena calidad" />
 --- | ---
 `Camiseta` | `Camiseta técnica de running para mujer, transpirable, color azul marino`
 `Móvil Android` | `Smartphone Samsung Galaxy A54 5G, 128 GB, pantalla AMOLED 6.4”`
@@ -24,7 +24,7 @@ Si no puedes proporcionar datos de calidad en todos los campos (título, descrip
 
 ### Ejemplos de descripciones
 
-[!badge variant="danger" icon="circle-slash" text="Mala calidad"] | [!badge variant="success" icon="check" text="Buena calidad"]
+<Badge variant="danger" icon="circle-slash" text="Mala calidad" /> | <Badge variant="success" icon="check" text="Buena calidad" />
 --- | ---
 `Chaqueta cómoda y bonita para invierno. Ideal para el frío.` | `Chaqueta acolchada impermeable para mujer, perfecta para climas fríos y húmedos. Con capucha ajustable, bolsillos laterales con cremallera y forro térmico suave. Disponible en tallas S a XL. Ideal para uso diario o actividades al aire libre.`
 `Teléfono con buena cámara y muchas funciones. Muy rápido.` | `El Samsung Galaxy A54 5G cuenta con una pantalla AMOLED de 6.4” FHD+, cámara triple de hasta 50 MP, 128 GB de almacenamiento interno y batería de 5000 mAh. Ideal para fotografía, redes sociales y juegos. Incluye cargador y funda transparente.`
@@ -34,14 +34,14 @@ Si no puedes proporcionar datos de calidad en todos los campos (título, descrip
 ### Ejemplos de atributos
 
 
-||| [!badge variant="danger" icon="circle-slash" text="Mala calidad"]
+||| <Badge variant="danger" icon="circle-slash" text="Mala calidad" />
 **Cámara fotográfica**
 
 - :icon-circle-slash: **`Zoom`** `Sí`
 - :icon-circle-slash: **`Vídeo`** `Sí`
 - :icon-circle-slash: **`Sensor`** `24.2 MP`
 
-||| [!badge variant="success" icon="check" text="Buena calidad"]
+||| <Badge variant="success" icon="check" text="Buena calidad" />
 
 **Cámara fotográfica**
 
@@ -51,13 +51,13 @@ Si no puedes proporcionar datos de calidad en todos los campos (título, descrip
 
 |||
 
-||| [!badge variant="danger" icon="circle-slash" text="Mala calidad"]
+||| <Badge variant="danger" icon="circle-slash" text="Mala calidad" />
 **Colchón**
 
 - :icon-circle-slash: **`Tamaño`** `Cama grande`
 - :icon-circle-slash: **`Material`** `Espuma viscoelástica`
 
-||| [!badge variant="success" icon="check" text="Buena calidad"]
+||| <Badge variant="success" icon="check" text="Buena calidad" />
 
 **Colchón**
 
@@ -66,7 +66,7 @@ Si no puedes proporcionar datos de calidad en todos los campos (título, descrip
 
 |||
 
-||| [!badge variant="danger" icon="circle-slash" text="Mala calidad"]
+||| <Badge variant="danger" icon="circle-slash" text="Mala calidad" />
 
 **Gel de ducha**
 
@@ -74,7 +74,7 @@ Si no puedes proporcionar datos de calidad en todos los campos (título, descrip
 - :icon-circle-slash: **`Tipo de piel`** `Todo tipo`
 - :icon-circle-slash: **`Envase`** `500ml`
 
-||| [!badge variant="success" icon="check" text="Buena calidad"]
+||| <Badge variant="success" icon="check" text="Buena calidad" />
 
 **Gel de ducha**
 

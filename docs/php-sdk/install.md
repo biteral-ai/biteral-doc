@@ -28,7 +28,7 @@ y ya puedes realizar peticiones, como por ejemplo:
 $status = $client->status()->get();
 ```
 
-[!badge status()->get()] devuelve una entidad [!badge variant="info" text="Status"](/php-sdk/entities/status) con la que puedes obtener información sobre la conexión o el estado de la API, y es una forma sencilla de comprobar que la conexión con Biteral funciona correctamente. Por ejemplo:
+<Badge>status()->get()</Badge> devuelve una entidad <Badge variant="info" text="Status" />(/php-sdk/entities/status) con la que puedes obtener información sobre la conexión o el estado de la API, y es una forma sencilla de comprobar que la conexión con Biteral funciona correctamente. Por ejemplo:
 
 ```php
 if ($status->latestStableMajorApiVersion === $status->requestMajorApiVersion) {

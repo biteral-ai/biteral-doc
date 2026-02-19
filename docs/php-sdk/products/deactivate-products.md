@@ -10,7 +10,7 @@ En algunas ocasiones es posible que necesites desactivar temporalmente algunos p
 
 > Por ejemplo, lo más probable es que no desees obtener productos que están **fuera de stock** en los resultados de la búsqueda natural.
 
-En tales casos, pon [!badge icon="screen-full" text="isActive"] en tu producto a `false`:
+En tales casos, pon <Badge icon="screen-full" text="isActive" /> en tu producto a `false`:
 
 ```php
 use Biteral\Payload\Product\ProductPayload;
@@ -24,8 +24,8 @@ $productPayload =
 $client->products()->ingest($productPayload);
 ```
 
-Cuando el producto vuelva a estar disponible, reactívalo poniendo [!badge icon="screen-full" text="isActive"] a `true`
+Cuando el producto vuelva a estar disponible, reactívalo poniendo <Badge icon="screen-full" text="isActive" /> a `true`
 
 !!!
-Cuando cargas un producto por primera vez, [!badge icon="screen-full" text="isActive"] será `true` si no especificas lo contrario.
+Cuando cargas un producto por primera vez, <Badge icon="screen-full" text="isActive" /> será `true` si no especificas lo contrario.
 !!!

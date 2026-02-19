@@ -1,23 +1,25 @@
 ---
-label: Get
-order: 70
+sidebar_label: Get
+sidebar_position: 2
 icon: arrow-right
 ---
-# /products [!badge variant="success" text="GET"] [!badge variant="success" text="v1"]
+# /products <Badge variant="success" text="GET" />
 
 Obtener un producto.
 
-+++ :icon-tasklist: Parámetros
+<Tabs>
+<TabItem value=":icon-tasklist: Parámetros" label=":icon-tasklist: Parámetros">
 
 Especifica uno de estos dos parámetros para obtener un producto a través de su código o de su Id en Biteral:
 
-[!badge variant="warning" text="code"]
+<Badge variant="warning" text="code" />
 : Código de producto, por ejemplo `N39291`
 
-[!badge variant="warning" text="id"]
+<Badge variant="warning" text="id" />
 : Identificador del producto en Biteral, por ejemplo: `pro_f28Jfk0i28iXIs`
 
-+++ :icon-project-roadmap: Resultado
+</TabItem>
+<TabItem value=":icon-project-roadmap: Resultado" label=":icon-project-roadmap: Resultado">
 
 ```json
 {
@@ -129,4 +131,5 @@ Especifica uno de estos dos parámetros para obtener un producto a través de su
 }
 ```
 
-+++
+</TabItem>
+</Tabs>

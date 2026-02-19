@@ -8,7 +8,7 @@ icon: arrow-right
 
 En algunas ocasiones es posible que necesites desactivar temporalmente algunos clientes de forma que no formen parte de los datos que manejan las herramientas de Biteral.
 
-En tales casos, pon [!badge icon="screen-full" text="isActive"] en tu cliente a `false`:
+En tales casos, pon <Badge icon="screen-full" text="isActive" /> en tu cliente a `false`:
 
 ```php
 use Biteral\Payload\Customer\CustomerPayload;
@@ -22,8 +22,8 @@ $customerPayload =
 $client->customers()->ingest($customerPayload);
 ```
 
-Cuando el cliente vuelva a estar disponible, reactívalo poniendo [!badge icon="screen-full" text="isActive"] a `true`
+Cuando el cliente vuelva a estar disponible, reactívalo poniendo <Badge icon="screen-full" text="isActive" /> a `true`
 
 !!!
-Cuando cargas un cliente por primera vez, [!badge icon="screen-full" text="isActive"] será `true` si no especificas lo contrario.
+Cuando cargas un cliente por primera vez, <Badge icon="screen-full" text="isActive" /> será `true` si no especificas lo contrario.
 !!!

@@ -15,8 +15,9 @@ Como la búsqueda de productos se basa en información conceptualizada, los resu
 
 ### Realizar una búsqueda natural
 
-+++ PHP SDK
-Una vez hayas [cargado vuestros productos](/guide/integration-data/products), llama a [!badge variant="info" text="naturalSearch()->query"](/php-sdk/products/add-products) con un objeto [!badge variant="info" text="NaturalSearchQuery"](/php-sdk/entities/natural-search-query) como parámetro:
+<Tabs>
+<TabItem value="PHP SDK" label="PHP SDK">
+Una vez hayas [cargado vuestros productos](/guide/integration-data/products), llama a <Badge variant="info" text="naturalSearch()->query" />(/php-sdk/products/add-products) con un objeto <Badge variant="info" text="NaturalSearchQuery" />(/php-sdk/entities/natural-search-query) como parámetro:
 
 ```php
 $products =
@@ -27,7 +28,7 @@ $products =
     );
 ```
 
-Y obtendrás un array de objetos [!badge variant="info" text="Product"](/php-sdk/entities/product) como resultado:
+Y obtendrás un array de objetos <Badge variant="info" text="Product" />(/php-sdk/entities/product) como resultado:
 
 ```php
 foreach ($products as $product) {
@@ -35,8 +36,9 @@ foreach ($products as $product) {
 }
 ```
 
-+++ API
-Una vez hayas [cargado vuestros productos](/guide/integration-data/products), haz una petición [!badge variant="success" text="GET"] al endpoint [!badge /natural-search](/api/endpoints/natural-search/get) pasando la búsqueda en el parámetro [!badge variant="warning" text="query"], por ejemplo: `Un regalo para alguien a quien le encanta cocinar`
+</TabItem>
+<TabItem value="API" label="API">
+Una vez hayas [cargado vuestros productos](/guide/integration-data/products), haz una petición <Badge variant="success" text="GET" /> al endpoint <Badge>/natural-search</Badge>(/api/endpoints/natural-search/get) pasando la búsqueda en el parámetro <Badge variant="warning" text="query" />, por ejemplo: `Un regalo para alguien a quien le encanta cocinar`
 
 Y obtendrás los productos que coinciden así:
 
@@ -100,4 +102,5 @@ Y obtendrás los productos que coinciden así:
 }
 ```
 
-+++
+</TabItem>
+</Tabs>

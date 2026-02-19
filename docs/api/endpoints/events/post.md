@@ -1,15 +1,16 @@
 ---
-label: Post
-order: 100
+sidebar_label: Post
+sidebar_position: 1
 icon: arrow-right
 ---
 import LotsOfEvents from '@site/src/components/note_lots_of_events.md';
 
-# /events [!badge variant="success" text="POST"] [!badge variant="success" text="v1"]
+# /events <Badge variant="success" text="POST" />
 
 Enviar un evento.
 
-+++ :icon-project-roadmap: JSON request body
+<Tabs>
+<TabItem value=":icon-project-roadmap: JSON request body" label=":icon-project-roadmap: JSON request body">
 
 ```json
 {
@@ -21,15 +22,17 @@ Enviar un evento.
 }
 ```
 
-+++ :icon-book: Documentación
+</TabItem>
+<TabItem value=":icon-book: Documentación" label=":icon-book: Documentación">
 
-[!badge variant="danger" icon="lock" text="type"]
+<Badge variant="danger" icon="lock" text="type" />
 : Tipo de evento, de entre los [tipos de eventos disponibles](/guide/integration-data/events/types). Por ejemplo `EventAddedToCart`.
 
-[!badge variant="warning" text="timestamp"]
+<Badge variant="warning" text="timestamp" />
 : El momento en el que se produjo el evento. Si no lo especificas, se utilizará el momento actual. Una cadena [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601), por ejemplo: `2025-11-18T07:21:16.527Z`
 
-+++
+</TabItem>
+</Tabs>
 
 Recuerda que cada tipo `type` de evento requiere parámetros adicionales diferentes, consulta la guía de eventos disponibles para saber qué parametros debes añadir a cada tipo de evento:
 

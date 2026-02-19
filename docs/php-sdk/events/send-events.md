@@ -14,7 +14,7 @@ Hay varios [tipos de eventos](/guide/integration-data/events/types/) que debes e
 
 ### Enviar un evento
 
-Llama a [!badge variant="info" text="events()->ingest"](/php-sdk/events/send-events) con un objeto [!badge variant="info" text="EventPayload"](/php-sdk/payloads/event-payload) como parámetro. Consulta los [tipos de eventos disponibles](/guide/integration-data/events/types) para saber qué parametros adicionales debes añadir al objeto:
+Llama a <Badge variant="info" text="events()->ingest" />(/php-sdk/events/send-events) con un objeto <Badge variant="info" text="EventPayload" />(/php-sdk/payloads/event-payload) como parámetro. Consulta los [tipos de eventos disponibles](/guide/integration-data/events/types) para saber qué parametros adicionales debes añadir al objeto:
 
 ```php
 use Biteral\Payload\Event\EventSalePayload;

@@ -10,7 +10,7 @@ El SDK para PHP permite cargar clientes en Biteral, modificarlos y eliminarlos, 
 
 ### Crear un cliente
 
-Llama a [!badge variant="light" text="customers()->ingest()"] con un objeto [!badge variant="info" text="CustomerPayload"](/php-sdk/payloads/customer-payload) como parámetro:
+Llama a <Badge variant="light" text="customers()->ingest()" /> con un objeto <Badge variant="info" text="CustomerPayload" />(/php-sdk/payloads/customer-payload) como parámetro:
 
 ```php
 use Biteral\Entity\Customer\CustomerGender;

@@ -9,19 +9,22 @@ Biteral utiliza información sobre vuestros clientes para para alimentar herrami
 
 ### Cargar un cliente
 
-==- :icon-file-code: **Con PHP**
+<Tabs>
+<TabItem value=":icon-file-code: **Con PHP**" label=":icon-file-code: **Con PHP**">
 
-Llama a [!badge variant="info" text="customers()->ingest"](/php-sdk/customers/add-customers) con un objeto [!badge variant="info" text="CustomerPayload"](/php-sdk/payloads/customer-payload) como parámetro.
+Llama a <Badge variant="info" text="customers()->ingest" />(/php-sdk/customers/add-customers) con un objeto <Badge variant="info" text="CustomerPayload" />(/php-sdk/payloads/customer-payload) como parámetro.
 
 [!ref icon="arrow-right" text="Cargar un cliente con PHP"](/php-sdk/customers/add-customers)
 
-==- **Con la API**
+</TabItem>
+<TabItem value="**Con la API**" label="**Con la API**">
 
-Haz una petición [!badge variant="success" text="POST"] al endpoint [!badge /customers](/api/endpoints/customers/post)
+Haz una petición <Badge variant="success" text="POST" /> al endpoint <Badge>/customers</Badge>(/api/endpoints/customers/post)
 
 [!ref icon="arrow-right" text="Cargar un cliente con la API"](/api/endpoints/customers/post)
 
-==-
+</TabItem>
+</Tabs>
 
 ### Cargar muchos clientes a la vez
 
