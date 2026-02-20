@@ -8,7 +8,7 @@ icon: arrow-right
 Crear o modificar un producto.
 
 <Tabs>
-<TabItem value=":icon-project-roadmap: JSON request body" label=":icon-project-roadmap: JSON request body">
+<TabItem value="result" label={<Badge icon="json" text="JSON request body" transparent />}>
 
 ```json
 {
@@ -48,86 +48,142 @@ Crear o modificar un producto.
 ```
 
 </TabItem>
-<TabItem value=":icon-book: Documentación" label=":icon-book: Documentación">
+<TabItem value="documentation" label={<Badge icon="parameter" text="Documentation" transparent />}>
 
-<Badge variant="danger" icon="lock" text="code" />
-: Código de producto, por ejemplo `N39291` <Badge variant="light" icon="arrow-both" text="255" />
+<table>
+    <thead>
+        <tr>
+            <th>Parámetro</th>
+            <th>Descripción</th>
+        </tr>
+    </thead>
+    <tbody>
 
-<Badge variant="warning" text="isActive" />
-: Indica si el producto está habilitado para ser utilizado por los servicios de Biteral, como recomendaciones, búsqueda o análisis. Si no se incluye este campo al enviar o actualizar el producto, se asume automáticamente que el producto está activo `true`. Poner isActive a `false` permite mantener el producto en el sistema sin que participe en ningún procesamiento o resultado de los servicios.
+        <tr>
+            <td><Badge variant="api parameter required" icon="required" text="code" /></td>
+            <td>Código de producto, por ejemplo <Badge variant="value" text="N39291" /></td>
+        </tr>
 
-<Badge variant="danger" icon="lock" text="title" />
-: Título del producto. <Badge variant="light" icon="arrow-both" text="10000" />
+        <tr>
+            <td><Badge variant="api parameter" icon="parameter" text="isActive" /></td>
+            <td>
+                Indica si el producto está habilitado para ser utilizado por los servicios de Biteral, como recomendaciones, búsqueda o análisis. Si no se incluye este campo al enviar o actualizar el producto, se asume automáticamente que el producto está activo <Badge variant="value" text="true" />. Poner <Badge variant="api parameter" text="isActive" /> a <Badge variant="value" text="false" /> permite mantener el producto en el sistema sin que participe en ningún procesamiento ni aparezca en ningún resultado.
+            </td>
+        </tr>
 
-<Badge variant="warning" text="description" />
-: Descripción del producto. <Badge variant="light" icon="arrow-both" text="60000" />
+        <tr>
+            <td><Badge variant="api parameter required" icon="required" text="title" /></td>
+            <td>Título del producto. <Badge variant="value-restriction" icon="max-length" text="10000" /></td>
+        </tr>
 
-<Badge variant="warning" text="price" />
-: El precio del producto. Un objeto JSON donde <Badge variant="danger" icon="lock" text="amount" /> es el precio del producto, y <Badge variant="danger" icon="lock" text="currency" /> es la moneda en la que se expresa el precio, según el estándar [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217). Por ejemplo:
-```json
-    {
-        "amount": "49.95",
-        "currency": "EUR"
-    }
-```
+        <tr>
+            <td><Badge variant="api parameter" icon="parameter" text="description" /></td>
+            <td>Descripción del producto. <Badge variant="value-restriction" icon="max-length" text="60000" /></td>
+        </tr>
 
-<Badge variant="warning" text="attributes" />
-: Los atributos del producto. Un array de objetos JSON donde <Badge variant="danger" icon="lock" text="title" /> <Badge variant="light" icon="arrow-both" text="255" /> es el título del atributo y <Badge variant="warning" text="value" /> <Badge variant="light" icon="arrow-both" text="60000" /> es su valor. Por ejemplo:
-```json
-    [
-        {"title": "Material", "value": "Cuero"},
-        {"title": "Color", "value": "negro con detalles en gris"},
-        {"title": "Tallas disponibles", "value": "39, 40, 41, 42, 43, 44"},
-        {"title": "Suela", "value": "goma antideslizante"},
-        {"title": "Peso", "value": "850g (par, talla 42)"},
-        {"title": "Uso recomendado", "value": "Uso diario y entrenamiento ligero"},
-    ]
-```
+        <tr>
+            <td><Badge variant="api parameter" icon="parameter" text="price" /></td>
+            <td>
+                El precio del producto. Un objeto JSON donde <Badge variant="property required" icon="required" text="amount" /> es el precio del producto, y <Badge variant="property required" icon="required" text="currency" /> es la moneda en la que se expresa el precio, según el estándar [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217). Por ejemplo:
 
-<Badge variant="warning" text="brand" />
-: La marca del producto. Un objeto JSON donde <Badge variant="danger" icon="lock" text="code" /> <Badge variant="light" icon="arrow-both" text="255" /> es el código de la marca y <Badge variant="warning" text="name" /> <Badge variant="light" icon="arrow-both" text="255" /> su nombre. Por ejemplo:
-```json
-    {
-        "code": "OW142398",
-        "name": "Nike"
-    }
-```
+                ```json
+                {
+                    "amount": "49.95",
+                    "currency": "EUR"
+                }
+                ```
+            </td>
+        </tr>
 
-<Badge variant="warning" text="category" />
-: La categoría del producto. Un objeto JSON donde <Badge variant="danger" icon="lock" text="code" /> <Badge variant="light" icon="arrow-both" text="255" /> es el código de la categoría, <Badge variant="warning" text="title" /> <Badge variant="light" icon="arrow-both" text="255" /> el título y <Badge variant="warning" text="description" /> <Badge variant="light" icon="arrow-both" text="60000" /> su descripción. Por ejemplo:
-```json
-    {
-        "code": "MC418298",
-        "title": "Zapatillas deportivas",
-        "description": "Calzado diseñado para ofrecer comodidad, soporte y rendimiento en actividades físicas o deportivas. Estas zapatillas también se adaptan al uso urbano y diario gracias a sus diseños modernos y materiales versátiles. Incluyen características como suelas antideslizantes, tejidos transpirables y estilos que combinan funcionalidad con moda."
-    }
-```
+        <tr>
+            <td><Badge variant="api parameter" icon="parameter" text="attributes" /></td>
+            <td>
+                Los atributos del producto. Un array de objetos JSON donde <Badge variant="property required" icon="required" text="title" /> <Badge variant="value-restriction" icon="max-length" text="255" /> es el título del atributo y <Badge variant="property" icon="required" text="value" /> <Badge variant="value-restriction" icon="max-length" text="60000" /> es su valor. Por ejemplo:
 
-<Badge variant="warning" text="imageUrl" />
-: La URL de la imagen del producto, preferiblemente una imagen de aproximadamente 600 píxeles de ancho. Por ejemplo: `https://m.media-amazon.com/images/I/61cELGQXXhL._AC_UL320_.jpg`
+                ```json
+                [
+                    {"title": "Material", "value": "Cuero"},
+                    {"title": "Color", "value": "negro con detalles en gris"},
+                    {"title": "Tallas disponibles", "value": "39, 40, 41, 42, 43, 44"},
+                    {"title": "Suela", "value": "goma antideslizante"},
+                    {"title": "Peso", "value": "850g (par, talla 42)"},
+                    {"title": "Uso recomendado", "value": "Uso diario y entrenamiento ligero"},
+                ]
+                ```
+            </td>
+        </tr>
 
-<Badge variant="warning" text="url" />
-: La URL pública del producto. Por ejemplo: `https://www.amazon.es/Hitmars-Zapatillas-Deportivas-Transpirables-Sneakers/dp/B0CYGMZVL7`
+        <tr>
+            <td><Badge variant="api parameter" icon="parameter" text="brand" /></td>
+            <td>
+                La marca del producto. Un objeto JSON donde <Badge variant="property required" icon="required" text="code" /> <Badge variant="value-restriction" icon="max-length" text="255" /> es el código de la marca y <Badge variant="property" text="name" /> <Badge variant="value-restriction" icon="max-length" text="255" /> su nombre. Por ejemplo:
 
-<Badge variant="warning" text="metadata" />
-: Datos adicionales que te resulten útiles cuando recibas el producto como resultado de las herramientas de Biteral. Un objeto JSON <Badge variant="light" icon="arrow-both" text="60000" />. Por ejemplo:
-```json
-    {
-        "videoUrl": "https://m.media-amazon.com/videos/C/dk14lkKlsnw._AC_UL1080_.mp4",
-        "currentDiscountRate": "50%",
-        "isNew": true,
-        "isFeatured": false
-    }
-```
+                ```json
+                {
+                    "code": "OW142398",
+                    "name": "Nike"
+                }
+                ```
+            </td>
+        </tr>
+
+        <tr>
+            <td><Badge variant="api parameter" icon="parameter" text="category" /></td>
+            <td>
+                La categoría del producto. Un objeto JSON donde <Badge variant="property required" icon="required" text="code" /> <Badge variant="value-restriction" icon="max-length" text="255" /> es el código de la categoría, <Badge variant="property" text="title" /> <Badge variant="value-restriction" icon="max-length" text="255" /> el título y <Badge variant="property" text="description" /> <Badge variant="value-restriction" icon="max-length" text="60000" /> su descripción. Por ejemplo:
+
+                ```json
+                {
+                    "code": "MC418298",
+                    "title": "Zapatillas deportivas",
+                    "description": "Calzado diseñado para ofrecer comodidad, soporte y
+                    rendimiento en actividades físicas o deportivas. Estas zapatillas
+                    también se adaptan al uso urbano y diario gracias a sus diseños
+                    modernos y materiales versátiles. Incluyen características como suelas
+                    antideslizantes, tejidos transpirables y estilos que combinan
+                    funcionalidad con moda."
+                }
+                ```
+            </td>
+        </tr>
+
+        <tr>
+            <td><Badge variant="api parameter" icon="parameter" text="imageUrl" /></td>
+            <td>La URL de la imagen del producto, preferiblemente una imagen de aproximadamente 600 píxeles de ancho. Por ejemplo: <Badge variant="value" text="https://m.media-amazon.com/images/I/61cELGQXXhL._AC_UL320_.jpg" /></td>
+        </tr>
+
+        <tr>
+            <td><Badge variant="api parameter" icon="parameter" text="url" /></td>
+            <td>La URL pública del producto. Por ejemplo: <Badge variant="value" text="https://www.amazon.es/Hitmars-Zapatillas-Deportivas-Transpirables-Sneakers/dp/B0CYGMZVL7" /></td>
+        </tr>
+
+        <tr>
+            <td><Badge variant="api parameter" icon="parameter" text="metadata" /></td>
+            <td>
+                Datos adicionales que te resulten útiles cuando recibas el producto como resultado de las herramientas de Biteral. Un objeto JSON <Badge variant="value-restriction" icon="max-length" text="60000" />. Por ejemplo:
+
+                ```json
+                {
+                    "videoUrl": "https://m.media-amazon.com/videos/C/dk14lkKlsnw._AC_UL1080_.mp4",
+                    "currentDiscountRate": "50%",
+                    "isNew": true,
+                    "isFeatured": false
+                }
+                ```
+            </td>
+        </tr>
+
+    </tbody>
+</table>
 
 </TabItem>
 </Tabs>
 
 ### Actualizar un producto
 
-Para actualizar los datos sobre un producto, realiza la misma petición `POST` a este endpoint con los nuevos datos.
+Para actualizar los datos sobre un producto, realiza la misma petición <Badge variant="http-post" text="POST" /> a este endpoint con los nuevos datos.
 
-Los datos que no especifiques mantendrán su valor anterior. Para eliminar un dato, pásalo como `null`
+Los datos que no especifiques mantendrán su valor anterior. Para eliminar un dato, pásalo como <Badge variant="value" text="null" />
 
 ### Cargar varios productos a la vez
 
@@ -152,10 +208,10 @@ Puedes cargar los productos uno a uno, pero es más rápido cargarlos en bloques
 ]
 ```
 
-!!!
+:::tip
 Puedes cargar hasta 100 productos a la vez utilizando este método
-!!!
+:::
 
-!!!
+:::info
 Cuando cargas muchos productos a Biteral muy rápidamente, puede pasar un rato hasta que todos están disponibles para las herramientas de Biteral.
-!!!
+:::

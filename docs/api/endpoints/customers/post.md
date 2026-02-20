@@ -28,7 +28,7 @@ Crear o modificar un cliente.
 </TabItem>
 <TabItem value=":icon-book: Documentación" label=":icon-book: Documentación">
 
-<Badge variant="danger" icon="lock" text="code" />
+<Badge variant="danger" icon="required" text="code" />
 : Código de cliente, por ejemplo `D314K1432` <Badge variant="light" icon="arrow-both" text="255" />
 
 <Badge variant="warning" text="isActive" />

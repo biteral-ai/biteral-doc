@@ -10,7 +10,7 @@ Obtener una lista de productos que encajan con una búsqueda realizada en lengua
 <Tabs>
 <TabItem value=":icon-tasklist: Parámetros" label=":icon-tasklist: Parámetros">
 
-<Badge variant="danger" icon="lock" text="query" />
+<Badge variant="danger" icon="required" text="query" />
 : La cadena escrita por el usuario para encontrar productos en lenguaje natural, por ejemplo `Un regalo para un aficionado a la cocina`
 
 <Badge variant="warning" text="limit" />

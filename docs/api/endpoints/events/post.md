@@ -25,7 +25,7 @@ Enviar un evento.
 </TabItem>
 <TabItem value=":icon-book: Documentación" label=":icon-book: Documentación">
 
-<Badge variant="danger" icon="lock" text="type" />
+<Badge variant="danger" icon="required" text="type" />
 : Tipo de evento, de entre los [tipos de eventos disponibles](/guide/integration-data/events/types). Por ejemplo `EventAddedToCart`.
 
 <Badge variant="warning" text="timestamp" />

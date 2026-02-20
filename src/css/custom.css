@@ -61,6 +61,7 @@
     --ifm-tabs-padding-horizontal: 10px;
     --ifm-tabs-color-active: var(--foregroundColor);
 
+    --ifm-table-stripe-background: none;
 
     --ifm-global-shadow-lw: none;
 
@@ -75,6 +76,7 @@
     --color-ok: vaR(--color-success);
     --color-ko: var(--color-critical);
 
+    --color-version: var(--color-api);
     --color-event: #EEF9FE;
     --color-api: #7a27f6;
     --color-sdk: #d2fbff;
@@ -83,6 +85,7 @@
     --color-parameter: #fcffb3;
     --color-property: var(--color-parameter);
     --color-required: #fff3a4;
+    --color-header: var(--color-parameter);
 
     --color-http-post: var(--color-warning);
     --color-http-put: var(--color-warning);
@@ -178,6 +181,10 @@ table {
 
 table thead tr {
     border-width: 1px;
+}
+
+table td {
+    vertical-align: top;
 }
 
 ul.tabs {

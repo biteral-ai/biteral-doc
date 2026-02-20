@@ -7,7 +7,7 @@ sidebar_position: 1
 Obtiene información sobre el estado de la API y otros parámetros útiles como tus credenciales, la versión que estás utilizando y las versiones disponibles.
 
 <Tabs>
-<TabItem value=":icon-project-roadmap: Resultado" label=":icon-project-roadmap: Resultado">
+<TabItem value="result" label={<Badge icon="json" text="Resultado" transparent />}>
 ```json
 {
     "object": "status",

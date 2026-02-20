@@ -11,7 +11,7 @@
     display: inline-flex;
     align-items: center;
     gap: var(--badgeGap);
-    vertical-align: absmiddle;
+    vertical-align: middle;
 
     background: var(--badgeBackgroundColor);
     color: var(--badgeForegroundColor);
@@ -32,8 +32,8 @@ a.badge {
 }
 
 .badge > .icon {
-    width: 1.2em;
-    height: 1.2em;
+    width: 1em;
+    height: 1em;
 }
 
 .badge.light {
@@ -59,6 +59,13 @@ a.badge {
 
 .badge.warning {
     --badgeBaseColor: var(--color-warning);
+}
+
+.badge.version {
+    --badgeBaseColor: var(--color-version);
+    background: transparent;
+    --badgeForegroundColor: var(--badgeBaseColor);
+    --badgeBorderColor: var(--badgeBaseColor);
 }
 
 .badge.event {
@@ -117,7 +124,12 @@ a.badge {
     --badgeBaseColor: var(--color-required);
 }
 
-.badge.value {
+.badge.header {
+    --badgeBaseColor: var(--color-header);
+}
+
+.badge.value,
+.badge.value-restriction {
     background: transparent;
     --badgeForegroundColor: currentColor;
     --badgeBorderColor: currentColor;

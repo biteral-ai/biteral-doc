@@ -31,8 +31,8 @@ La API key de pruebas os permite utilizar Biteral gratuitamente, ideal para real
 
 Realiza peticiones `HTTPS` a **`api.biteral.ai`** incluyendo los siguientes headers:
 
-- <Badge variant="parameter" text="X-API-Key" /> Vuestra API key
-- <Badge variant="parameter" text="X-API-Version" /> La versión principal de la API que vas a utilizar, por ejemplo: <Badge variant="value" text="1" />
+- <Badge variant="header" text="X-API-Key" /> Vuestra API key
+- <Badge variant="header" text="X-API-Version" /> La versión principal de la API que vas a utilizar, por ejemplo: <Badge variant="value" text="1" />
 
 <Tabs>
 <TabItem value="curl" label={<Badge icon="terminal" text="Curl" transparent />}>
@@ -59,7 +59,7 @@ print_r($status);
 
 ### Enviar y recibir datos en la API
 
-Los endpoints <Badge variant="http-post" text="POST" />, <Badge variant="http-put" text="PUT" /> y <Badge variant="http-patch" text="PATCH" /> normalmente aceptan los datos en formato JSON a través del `body` de la petición. Por ejemplo, éste es el cuerpo de una petición <Badge variant="http-post" text="POST" /> al endpoint <Badge>/products</Badge>(/api/endpoints/products/post) para enviar un producto a Biteral:
+Los endpoints <Badge variant="http-post" text="POST" />, <Badge variant="http-put" text="PUT" /> y <Badge variant="http-patch" text="PATCH" /> normalmente aceptan los datos en formato JSON a través del `body` de la petición. Por ejemplo, éste es el cuerpo de una petición <Badge variant="http-post" text="POST" /> al endpoint <Badge variant="api-endpoint" text="/products" to="/api/endpoints/products/post" /> para enviar un producto a Biteral:
 
 ```json
 {
