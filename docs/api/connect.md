@@ -16,14 +16,18 @@ Si utilizas PHP, es muy recomendable utilizar el [SDK de Biteral para PHP](/php-
 <details>
 <summary>Limitaciones de la API key de pruebas</summary>
 
-La API key de pruebas os permite utilizar Biteral gratuitamente, ideal para realizar pruebas desde vuestro entorno de desarrollo y ver resultados reales sobre cómo funcionaría Biteral con vuestro sistema. Sin embargo, la API key de pruebas tiene algunos límites:
+La API key de pruebas os permite utilizar Biteral gratuitamente, ideal para realizar pruebas desde vuestro entorno de desarrollo y ver resultados reales sobre cómo funcionaría Biteral con vuestro sistema. Sin embargo, tiene algunos límites:
 
 :::warning
-***Límite de peticiones por segundo estricto*** Algunos endpoints tienen el máximo de peticiones por segundo limitado, así que es posible que obtengas un código de respuesta `429 Too Many Requests` al utilizar una API key de pruebas y realizar demasiadas peticiones en un breve espacio de tiempo.
+***Límite de peticiones por segundo estricto***
+
+Algunos endpoints tienen el máximo de peticiones por segundo limitado, así que es posible que obtengas un código de respuesta `429 Too Many Requests` al utilizar una API key de pruebas y realizar demasiadas peticiones en un breve espacio de tiempo.
 :::
 
 :::warning
-***Límite máximo de peticiones diarias*** Algunos endpoints sólo pueden recibir cierto número de peticiones por día. Al utilizar una API key de pruebas, si alcanzas este límite obtendrás también un código de respuesta `429 Too Many Requests`
+***Límite máximo de peticiones diarias***
+
+Algunos endpoints sólo pueden recibir cierto número de peticiones por día. Al utilizar una API key de pruebas, si alcanzas este límite obtendrás un código de respuesta `429 Too Many Requests`
 :::
 </details>
 

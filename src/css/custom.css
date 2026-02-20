@@ -54,7 +54,7 @@
 
     --ifm-alert-border-radius: var(--baseBorderRadius);
 
-    --ifm-alert-shadow: 0 1px 3px hsla(from currentColor h 70% 50% / .3);
+    --ifm-alert-shadow: none;
 
     --ifm-tabs-color-active-border: var(--foregroundColor);
     --ifm-tabs-padding-vertical: 5px;
@@ -69,11 +69,18 @@
     --ifm-code-padding-vertical: 2px;
     --ifm-code-padding-horizontal: 5px;
 
-    --color-success: #36da90;
+    --ifm-color-success-contrast-background: hsl(from var(--color-success) h s 90%);
+    --ifm-color-success-dark: var(--color-success);
+
+    --ifm-color-info-contrast-background: hsl(from var(--color-info) h s 97%);
+    --ifm-color-info-dark: hsl(from var(--color-info) h s 75%);
+
+    --color-info: var(--ifm-color-primary);
+    --color-success: #1ebbbf;
     --color-warning: #ff9500;
     --color-critical: #f33fae;
 
-    --color-ok: vaR(--color-success);
+    --color-ok: var(--color-success);
     --color-ko: var(--color-critical);
 
     --color-version: var(--color-api);

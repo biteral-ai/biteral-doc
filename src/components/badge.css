@@ -46,6 +46,7 @@ a.badge {
 
 .badge.ok {
     --badgeBaseColor: var(--color-ok);
+    color: #fff;
 }
 
 .badge.ko {
@@ -55,10 +56,12 @@ a.badge {
 
 .badge.success {
     --badgeBaseColor: var(--color-success);
+    color: #fff;
 }
 
 .badge.warning {
     --badgeBaseColor: var(--color-warning);
+    color: #fff;
 }
 
 .badge.version {
