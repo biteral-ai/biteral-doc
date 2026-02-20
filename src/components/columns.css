@@ -3,7 +3,7 @@
 
     display: flex;
     gap: var(--columnsGap);
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
 
     & > .column {
     }

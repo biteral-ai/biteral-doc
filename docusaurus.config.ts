@@ -163,9 +163,9 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} Biteral`,
     },
     prism: {
-      theme: prismThemes.github,
+      theme: prismThemes.oneLight,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ['php', 'bash'],
+      additionalLanguages: ['php', 'bash', 'json'],
     },
   } satisfies Preset.ThemeConfig,
 };
