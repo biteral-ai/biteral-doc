@@ -1,5 +1,8 @@
 # Biteral API documentation
 
+## Multilanguage
+Every change made inside `/docs` in english should also be made in spanish to the same file under `/i18n/es/docusaurus-plugin-content-docs/current`.
+
 ## Docusaurus usage
 Inside the `biteral-api-doc` directory:
 
