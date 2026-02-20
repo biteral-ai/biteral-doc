@@ -56,9 +56,17 @@
 
     --ifm-alert-shadow: 0 1px 3px hsla(from currentColor h 70% 50% / .3);
 
+    --ifm-tabs-color-active-border: var(--foregroundColor);
+    --ifm-tabs-padding-vertical: 5px;
+    --ifm-tabs-padding-horizontal: 10px;
+    --ifm-tabs-color-active: var(--foregroundColor);
+
     --color-success: #36da90;
     --color-warning: #ff9500;
     --color-critical: #f33fae;
+
+    --color-ok: vaR(--color-success);
+    --color-ko: var(--color-critical);
 
     --color-event: #EEF9FE;
     --color-api: #7a27f6;
@@ -159,4 +167,8 @@ table {
 
 table thead tr {
     border-width: 1px;
+}
+
+ul.tabs {
+    border-bottom: solid var(--ifm-tabs-color-active-border) 1px;
 }

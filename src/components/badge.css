@@ -36,6 +36,15 @@
     --badgeBaseColor: var(--ifm-color-info-contrast-background);
 }
 
+.badge.ok {
+    --badgeBaseColor: var(--color-ok);
+}
+
+.badge.ko {
+    --badgeBaseColor: var(--color-ko);
+    --badgeForegroundColor: #fff;
+}
+
 .badge.success {
     --badgeBaseColor: var(--color-success);
 }
