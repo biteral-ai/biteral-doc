@@ -13,5 +13,5 @@ We process product, customer, and event data as soon as we receive it, allowing 
 
 <Button variant="primary" icon="go" text="Integrate tools" to="/guide/integration-tools/intro"/>
 #
-Integrate Biteral tools like [natural search](https://biteral.ai/natural-search), [personalized recommendations](https://biteral.ai/personalized-recommend), [trend analysis](https://biteral.ai/trend-analysis) or [customer tags](http://biteral.ai/profile-tags) into your system.
+Integrate Biteral tools like [natural search](https://biteral.ai/natural-search), [personalized recommendations](https://biteral.ai/personalized-recommend), [trend analysis](https://biteral.ai/trend-analysis) or [customer tags](http://biteral.ai/client-tags) into your system.
 For example, with a simple API request or a line of code using the SDK, you can get recommended products for a customer or search results.

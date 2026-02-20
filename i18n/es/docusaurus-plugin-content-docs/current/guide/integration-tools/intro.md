@@ -6,7 +6,7 @@ icon: arrow-right
 ---
 # Integrar herramientas
 
-Las herramientas de Biteral como el [buscador natural](https://biteral.ai/natural-search), las [recomendaciones personalizadas](https://biteral.ai/personalized-recommend), el [análisis de tendencias](https://biteral.ai/trend-analysis) o las [etiquetas de cliente](http://biteral.ai/profile-tags) pueden integrarse manualmente en vuestro sistema utilzando la API o el SDK, lo que permite crear integraciones personalizadas según vuestras necesidades.
+Las herramientas de Biteral como el [buscador natural](https://biteral.ai/natural-search), las [recomendaciones personalizadas](https://biteral.ai/personalized-recommend), el [análisis de tendencias](https://biteral.ai/trend-analysis) o las [etiquetas de cliente](http://biteral.ai/client-tags) pueden integrarse manualmente en vuestro sistema utilzando la API o el SDK, lo que permite crear integraciones personalizadas según vuestras necesidades.
 
 :::tip
 La API y el SDK también permiten integrar la inteligencia artificial de Biteral de forma más profunda en vuestros procesos, o desarrollar nuevas herramientas basadas en IA adaptadas específicamente a vuestro modelo de negocio.
