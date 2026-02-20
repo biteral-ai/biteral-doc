@@ -1,4 +1,5 @@
 ---
+title: Get
 sidebar_label: Get
 sidebar_position: 1
 icon: arrow-right

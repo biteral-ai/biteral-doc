@@ -1,4 +1,5 @@
 ---
+title: Delete
 sidebar_label: Delete
 sidebar_position: 3
 icon: arrow-right
@@ -8,13 +9,24 @@ icon: arrow-right
 Eliminar un cliente.
 
 <Tabs>
-<TabItem value=":icon-tasklist: Parámetros" label=":icon-tasklist: Parámetros">
+<TabItem value="parameters" label={<Badge icon="parameter" text="Parámetros" transparent />}>
 Especifica uno de estos dos parámetros para eliminar un cliente a través de su código o de su Id en Biteral:
 
-<Badge variant="warning" text="code" />
-: Código de cliente, por ejemplo `D314K1432`
+<table>
+    <tbody>
 
-<Badge variant="warning" text="id" />
-: Identificador del cliente en Biteral, por ejemplo: `cus_C0fCLwecMysLj9`
+        <tr>
+            <td><Badge variant="api parameter" icon="parameter" text="code" /></td>
+            <td>Código de cliente, por ejemplo <Badge variant="value" text="D314K1432" /></td>
+        </tr>
+
+        <tr>
+            <td><Badge variant="api parameter" icon="parameter" text="id" /></td>
+            <td>Identificador del cliente en Biteral, por ejemplo <Badge variant="value" text="cus_C0fCLwecMysLj9" /></td>
+        </tr>
+
+    </tbody>
+</table>
+
 </TabItem>
 </Tabs>

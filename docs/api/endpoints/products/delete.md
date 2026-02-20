@@ -1,4 +1,5 @@
 ---
+title: Delete
 sidebar_label: Delete
 sidebar_position: 3
 icon: arrow-right
