@@ -75,6 +75,9 @@
     --ifm-color-info-contrast-background: hsl(from var(--color-info) h s 97%);
     --ifm-color-info-dark: hsl(from var(--color-info) h s 75%);
 
+    --ifm-footer-color: #666;
+    --ifm-footer-background-color: #fff;
+
     --color-primary: #0016FF;
 
     --color-info: #8f00ff;
@@ -144,6 +147,7 @@
     --foregroundColor: hsl(from var(--ifm-color-primary) h s 95%);
 
     --ifm-alert-shadow: none;
+    --ifm-footer-background-color: var(--ifm-background-color);
 }
 
 .navbar {
@@ -204,5 +208,23 @@ ul.tabs {
 .theme-code-block {
     & pre {
         font-weight: 600;
+    }
+}
+
+footer {
+    border-top: solid var(--ifm-toc-border-color) 1px;
+    color: var(--ifm-footer-color) !important;
+
+    a {
+        color: var(--ifm-footer-color);
+        &:hover {
+            color: var(--ifm-link-hover-color);
+        }
+    }
+
+    & .footer__items {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
     }
 }
