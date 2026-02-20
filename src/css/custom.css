@@ -161,6 +161,7 @@
 .navbar__brand {
     font-family: var(--ifm-heading-font-family);
     /* font-family: 'Inconsolata'; */
+    color: var(--ifm-link-color);
     font-size: 14pt;
     font-weight: 500;
 }
