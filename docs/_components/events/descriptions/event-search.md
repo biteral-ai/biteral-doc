@@ -1,0 +1,1 @@
+A product search has been performed.

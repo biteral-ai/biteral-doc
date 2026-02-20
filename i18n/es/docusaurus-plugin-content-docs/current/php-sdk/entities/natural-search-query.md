@@ -1,0 +1,11 @@
+---
+sidebar_position: 6
+---
+# NaturalSearchQuery
+
+Representa una petición de búsqueda para el [buscador natural](https://biteral.ai/natural-search).
+
+Propiedad|Tipo|Descripción
+---|---|---
+<Badge variant="sdk php property" icon="property" text="query" />|string|La cadena escrita por el usuario para encontrar productos en lenguaje natural, por ejemplo <Badge variant="value" text="Un regalo para alguien a quien le encanta cocinar" />
+<Badge variant="sdk php property" icon="property" text="limit" />|int|El número máximo de productos a obtener, por ejemplo 5. Por defecto, se obtienen 10 productos como máximo.

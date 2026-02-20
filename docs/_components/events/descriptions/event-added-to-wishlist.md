@@ -1,0 +1,1 @@
+A product has been added to the wishlist.

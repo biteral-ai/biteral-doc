@@ -1,0 +1,147 @@
+.badge {
+    --badgeBaseColor: var(--ifm-color-emphasis-200);
+
+    --badgeBackgroundColor: var(--badgeBaseColor);
+    --badgeForegroundColor: hsl(from var(--badgeBaseColor) h s calc(l * .25));
+
+    --badgeBorderColor: transparent;
+
+    --badgeGap: 0.25rem;
+
+    display: inline-flex;
+    align-items: center;
+    gap: var(--badgeGap);
+    vertical-align: middle;
+
+    background: var(--badgeBackgroundColor);
+    color: var(--badgeForegroundColor);
+    border: solid var(--badgeBorderColor) 1px;
+
+    padding: 0.15em .25em;
+
+    font-size: inherit;
+    font-weight: 700;
+}
+
+a.badge {
+    text-decoration: none;
+
+    &:hover {
+        filter: brightness(1.05);
+    }
+}
+
+.badge > .icon {
+    width: 1em;
+    height: 1em;
+}
+
+.badge.light {
+    --badgeBaseColor: var(--ifm-color-emphasis-200);
+}
+
+.badge.info {
+    --badgeBaseColor: var(--ifm-color-info-contrast-background);
+}
+
+.badge.ok {
+    --badgeBaseColor: var(--color-ok);
+    color: #fff;
+}
+
+.badge.ko {
+    --badgeBaseColor: var(--color-ko);
+    --badgeForegroundColor: #fff;
+}
+
+.badge.success {
+    --badgeBaseColor: var(--color-success);
+    color: #fff;
+}
+
+.badge.warning {
+    --badgeBaseColor: var(--color-warning);
+    color: #fff;
+}
+
+.badge.version {
+    --badgeBaseColor: var(--color-version);
+    background: transparent;
+    --badgeForegroundColor: var(--badgeBaseColor);
+    --badgeBorderColor: var(--badgeBaseColor);
+}
+
+.badge.event {
+    --badgeBaseColor: var(--color-event);
+}
+
+.badge.sdk {
+    --badgeBaseColor: var(--color-sdk);
+}
+
+.badge.payload {
+    --badgeBaseColor: var(--color-payload);
+}
+
+.badge.entity {
+    --badgeBaseColor: var(--color-entity);
+}
+
+.badge.api-endpoint {
+    --badgeBaseColor: var(--color-api);
+    --badgeForegroundColor: #fff;
+}
+
+.badge.http-post,
+.badge.http-put,
+.badge.http-patch {
+    --badgeBaseColor: var(--color-http-post);
+    background: transparent;
+    --badgeForegroundColor: var(--badgeBaseColor);
+    --badgeBorderColor: var(--badgeBaseColor);
+}
+
+.badge.http-get {
+    --badgeBaseColor: var(--color-http-get);
+    background: transparent;
+    --badgeForegroundColor: var(--badgeBaseColor);
+    --badgeBorderColor: var(--badgeBaseColor);
+}
+
+.badge.http-delete {
+    --badgeBaseColor: var(--color-http-delete);
+    background: transparent;
+    --badgeForegroundColor: var(--badgeBaseColor);
+    --badgeBorderColor: var(--badgeBaseColor);
+}
+
+.badge.parameter {
+    --badgeBaseColor: var(--color-parameter);
+}
+
+.badge.property {
+    --badgeBaseColor: var(--color-property);
+}
+
+.badge.required {
+    --badgeBaseColor: var(--color-required);
+}
+
+.badge.header {
+    --badgeBaseColor: var(--color-header);
+}
+
+.badge.value,
+.badge.value-restriction {
+    background: transparent;
+    --badgeForegroundColor: currentColor;
+    --badgeBorderColor: currentColor;
+    border-style: dashed;
+    font-weight: 500;
+}
+
+.badge.transparent {
+    background: transparent;
+    --badgeForegroundColor: currentColor;
+    --badgeGap: 0.35rem;
+}

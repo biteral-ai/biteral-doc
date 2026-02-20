@@ -1,0 +1,1 @@
+The page showing the products of a specific category has been viewed.

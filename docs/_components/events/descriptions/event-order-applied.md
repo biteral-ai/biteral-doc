@@ -1,0 +1,1 @@
+The sorting of a product list has been changed. It should be sent when, for example, the customer sorts a product list by price, by novelty, etc.

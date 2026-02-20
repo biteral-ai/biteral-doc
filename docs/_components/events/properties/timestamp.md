@@ -1,0 +1,1 @@
+The time when the event occurred. If not specified, the current time will be used. When using the SDK for PHP, a `DateTimeImmutable` object. When using the API, an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) string.

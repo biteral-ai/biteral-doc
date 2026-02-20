@@ -1,0 +1,10 @@
+.columns {
+    --columnsGap: 40px;
+
+    display: flex;
+    gap: var(--columnsGap);
+    flex-wrap: no-wrap;
+
+    & > .column {
+    }
+}

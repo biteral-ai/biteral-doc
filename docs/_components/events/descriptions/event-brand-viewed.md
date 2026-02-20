@@ -1,0 +1,1 @@
+The page showing the products of a specific brand has been viewed.

@@ -1,0 +1,1 @@
+A product has been removed from the wishlist.

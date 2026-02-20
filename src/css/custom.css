@@ -1,0 +1,207 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --ifm-color-primary: #0016FF;
+    --ifm-color-primary-dark: #0016FF;
+    --ifm-color-primary-darker: #0016FF;
+    --ifm-color-primary-darkest: #0016FF;
+    --ifm-color-primary-light: #0016FF;
+    --ifm-color-primary-lighter: #0016FF;
+    --ifm-color-primary-lightest: #0016FF;
+
+    --ifm-background-color: #fff;
+
+    --ifm-link-color: var(--ifm-color-primary);
+    --ifm-link-decoration: none;
+    --ifm-link-hover-color: hsl(from var(--ifm-color-primary) h s calc(l * 1.3));
+    --ifm-link-hover-decoration: none;
+
+    --ifm-code-font-size: 80%;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+    --ifm-navbar-link-color: var(--ifm-color-primary);
+
+    --ifm-font-family-base: 'Inconsolata';
+    --ifm-font-size-base: 10.5pt;
+    --ifm-font-weight-bold: 700;
+
+    --ifm-heading-font-weight: 700;
+    --ifm-line-height-base: 1.4em;
+    /* --ifm-heading-font-family: 'Radio Canada'; */
+    --ifm-heading-font-family: 'Inter';
+    --ifm-heading-line-height: 1.2em;
+
+    --ifm-global-spacing: 20px;
+    --ifm-spacing-horizontal: 40px;
+
+    --ifm-navbar-shadow: 0 1px 0 var(--ifm-toc-border-color);
+    --ifm-navbar-background-color: var(--ifm-background-color);
+
+    --ifm-breadcrumb-color-active: currentColor;
+    --ifm-breadcrumb-item-background-active: transparent;
+    --ifm-breadcrumb-padding-horizontal: 5px;
+
+    --ifm-alert-padding-vertical: 15px;
+    --ifm-alert-padding-horizontal: 20px;
+
+    --ifm-alert-border-radius: var(--baseBorderRadius);
+
+    --ifm-alert-shadow: none;
+
+    --ifm-tabs-color-active-border: var(--foregroundColor);
+    --ifm-tabs-padding-vertical: 5px;
+    --ifm-tabs-padding-horizontal: 10px;
+    --ifm-tabs-color-active: var(--foregroundColor);
+
+    --ifm-table-stripe-background: none;
+
+    --ifm-global-shadow-lw: none;
+
+    --ifm-code-border-radius: 5px;
+    --ifm-code-padding-vertical: 2px;
+    --ifm-code-padding-horizontal: 5px;
+
+    --ifm-color-success-contrast-background: hsl(from var(--color-success) h s 90%);
+    --ifm-color-success-dark: var(--color-success);
+
+    --ifm-color-info-contrast-background: hsl(from var(--color-info) h s 97%);
+    --ifm-color-info-dark: hsl(from var(--color-info) h s 75%);
+
+    --color-primary: #0016FF;
+
+    --color-info: #8f00ff;
+    --color-success: #1ebbbf;
+    --color-warning: #ff9500;
+    --color-critical: #f33fae;
+
+    --color-ok: var(--color-success);
+    --color-ko: var(--color-critical);
+
+    --color-version: var(--color-api);
+    --color-event: #F9F0FF;
+    --color-api: #7a27f6;
+    --color-sdk: #d2fbff;
+    --color-payload: #dff3a3;
+    --color-entity: #f3efa3;
+    --color-parameter: #fcffb3;
+    --color-property: var(--color-parameter);
+    --color-required: #fff3a4;
+    --color-header: var(--color-parameter);
+
+    --color-http-post: var(--color-warning);
+    --color-http-put: var(--color-warning);
+    --color-http-patch: var(--color-warning);
+    --color-http-get: hsl(from var(--color-success) h s calc(l * .8));
+    --color-http-delete: var(--color-critical);
+
+    --baseBorderRadius: 10px;
+
+    --foregroundColor: hsl(from var(--ifm-color-primary) h 50% 30%);
+
+    color: var(--foregroundColor);
+
+
+    font-weight: 500;
+
+    .table-of-contents {
+        font-size: var(--ifm-font-size-base);
+    }
+}
+
+[data-theme='dark'] {
+    --ifm-color-primary: #507bfe;
+    --ifm-color-primary-dark: #235AFF;
+    --ifm-color-primary-darker: #235AFF;
+    --ifm-color-primary-darkest: #235AFF;
+    --ifm-color-primary-light: #235AFF;
+    --ifm-color-primary-lighter: #235AFF;
+    --ifm-color-primary-lightest: #235AFF;
+
+    --ifm-background-color: #00002A;
+
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+    /* Background for cards, sidebars, and dropdowns */
+    --ifm-background-surface-color: #040D47;
+
+    /* Optional: Adjust the border colors to match your new background */
+    --ifm-border-color: #000943;
+
+    --ifm-heading-color: #fff;
+    --ifm-font-color-base: #fff;
+
+    --ifm-toc-border-color: #232b5f;
+
+    --foregroundColor: hsl(from var(--ifm-color-primary) h s 95%);
+
+    --ifm-alert-shadow: none;
+}
+
+.navbar {
+    --ifm-navbar-padding-horizontal: 10px;
+}
+
+.navbar__link>svg {
+    display: none;
+}
+
+.navbar__brand {
+    font-family: var(--ifm-heading-font-family);
+    /* font-family: 'Inconsolata'; */
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+.navbar__inner .clean-btn>svg {
+    color: var(--ifm-color-primary);
+    width: 20px;
+}
+
+.menu__caret:before,
+.menu__link--sublist-caret:after,
+.tocCollapsibleButton_TO0P::after {
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+.dropdown > .navbar__link:after {
+    margin-left: 0.4em;
+    border-width: 0.3em 0.3em 0;
+    top: 0;
+}
+
+.theme-admonition > [class^="admonitionHeading"] {
+    display: none;
+}
+
+table {
+    max-width: max-content;
+    border-radius: var(--baseBorderRadius);
+    box-shadow: inset 0 0 0 1px var(--ifm-table-border-color) !important;
+}
+
+table thead tr {
+    border-width: 1px;
+}
+
+table td {
+    vertical-align: top;
+}
+
+ul.tabs {
+    border-bottom: solid var(--ifm-tabs-color-active-border) 1px;
+}
+
+.theme-code-block {
+    & pre {
+        font-weight: 600;
+    }
+}

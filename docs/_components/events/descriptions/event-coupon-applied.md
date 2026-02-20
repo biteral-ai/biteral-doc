@@ -1,0 +1,1 @@
+A discount coupon has been applied.

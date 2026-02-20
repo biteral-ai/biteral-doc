@@ -1,0 +1,1 @@
+How many events are considered **many**? As a general rule, if your system produces more than 1 event every 5 seconds (0.2 events/second) in a relatively continuous way, it is better to send events in batches.

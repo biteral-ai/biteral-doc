@@ -1,0 +1,1 @@
+Your internal identifier code for the customer. Must match the one you specified when adding the customer to Biteral. For example: `JD934828`

@@ -1,0 +1,1 @@
+Your internal identifier code for the category. Must match the one you specified when adding products to Biteral. For example: `MC418292`

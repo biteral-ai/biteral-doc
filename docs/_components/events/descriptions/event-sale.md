@@ -1,0 +1,1 @@
+A product has been purchased. It should be sent when the customer expresses their will to buy and pay for the product, even if the payment has not yet been made or has failed. For example: By clicking the "Checkout" button in the cart.

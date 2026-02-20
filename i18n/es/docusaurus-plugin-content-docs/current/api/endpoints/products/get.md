@@ -1,0 +1,146 @@
+---
+title: Get
+sidebar_label: Get
+sidebar_position: 2
+icon: arrow-right
+---
+# <Badge variant="api-endpoint" text="/products" /> <Badge variant="http-get" text="GET" />
+
+Obtener un producto.
+
+<Tabs>
+<TabItem value="parameters" label={<Badge icon="parameter" text="Parámetros" transparent />}>
+
+Especifica uno de estos dos parámetros para obtener un producto a través de su código o de su Id en Biteral:
+
+<table>
+    <tbody>
+
+        <tr>
+            <td><Badge variant="api parameter" icon="parameter" text="code" /></td>
+            <td>Código de producto, por ejemplo <Badge variant="value" text="N39291" /></td>
+        </tr>
+
+        <tr>
+            <td><Badge variant="api parameter" icon="parameter" text="id" /></td>
+            <td>Identificador del producto en Biteral, por ejemplo <Badge variant="value" text="pro_f28Jfk0i28iXIs" /></td>
+        </tr>
+
+    </tbody>
+</table>
+
+</TabItem>
+<TabItem value="result" label={<Badge icon="json" text="Resultado" transparent />}>
+
+```json
+{
+    "object": "product",
+    "id": "pro_T743ujEHOI3Fz4",
+    "createdAt": "2025-07-02T17:51:50+00:00",
+    "updatedAt": null,
+    "payload": {
+        "code": "N30122",
+        "isActive": true,
+        "title": "Zapatillas deportivas urbanas para hombre – modelo AirFlow",
+        "description": "Estas zapatillas combinan estilo y comodidad para el uso diario. Diseñadas con materiales transpirables, suela de goma antideslizante y plantilla ergonómica, son ideales tanto para caminar por la ciudad como para entrenar en interiores. El modelo AirFlow ofrece un ajuste perfecto y un diseño moderno que se adapta a cualquier look casual. Disponibles en varias tallas y colores.",
+        "attributes": [
+            {
+                "object": "product_attribute",
+                "id": "att_emMDUSQtOUH7Ms",
+                "createdAt": "2025-07-02T17:51:50+00:00",
+                "updatedAt": null,
+                "payload": {
+                    "title": "Material",
+                    "value": "Cuero"
+                }
+            },
+            {
+                "object": "product_attribute",
+                "id": "att_gXRdrp7X3XMA1l",
+                "createdAt": "2025-07-02T17:51:50+00:00",
+                "updatedAt": null,
+                "payload": {
+                    "title": "Color",
+                    "value": "negro con detalles en gris"
+                }
+            },
+            {
+                "object": "product_attribute",
+                "id": "att_lIVqsz91O5QzYc",
+                "createdAt": "2025-07-02T17:51:50+00:00",
+                "updatedAt": null,
+                "payload": {
+                    "title": "Suela",
+                    "value": "goma antideslizante"
+                }
+            },
+            {
+                "object": "product_attribute",
+                "id": "att_qbOmTRs9pEbOll",
+                "createdAt": "2025-07-02T17:51:50+00:00",
+                "updatedAt": null,
+                "payload": {
+                    "title": "Uso recomendado",
+                    "value": "Uso diario y entrenamiento ligero"
+                }
+            },
+            {
+                "object": "product_attribute",
+                "id": "att_qN9PKSTG7mhyI5",
+                "createdAt": "2025-07-02T17:51:50+00:00",
+                "updatedAt": null,
+                "payload": {
+                    "title": "Tallas disponibles",
+                    "value": "39, 40, 41, 42, 43, 44"
+                }
+            },
+            {
+                "object": "product_attribute",
+                "id": "att_xFON2UUYKQYMLg",
+                "createdAt": "2025-07-02T17:51:50+00:00",
+                "updatedAt": null,
+                "payload": {
+                    "title": "Peso",
+                    "value": "850g (par, talla 42)"
+                }
+            }
+        ],
+        "brand": {
+            "object": "product_brand",
+            "id": "bra_npTCsTj4PCvziZ",
+            "createdAt": "2025-07-02T17:51:50+00:00",
+            "updatedAt": null,
+            "payload": {
+                "code": "OW142302",
+                "name": "Nike"
+            }
+        },
+        "category": {
+            "object": "product_category",
+            "id": "cat_QLEPkCAVbYFELo",
+            "createdAt": "2025-07-02T17:51:50+00:00",
+            "updatedAt": null,
+            "payload": {
+                "code": "MC418292",
+                "title": "Zapatillas deportivas",
+                "description": "Calzado diseñado para ofrecer comodidad, soporte y rendimiento en actividades físicas o deportivas. Estas zapatillas también se adaptan al uso urbano y diario gracias a sus diseños modernos y materiales versátiles. Incluyen características como suelas antideslizantes, tejidos transpirables y estilos que combinan funcionalidad con moda."
+            }
+        },
+        "price": {
+            "amount": "49.95",
+            "currency": "EUR"
+        },
+        "imageUrl": "https://m.media-amazon.com/images/I/61cELGQXXhL._AC_UL320_.jpg",
+        "url": "https://www.amazon.es/Hitmars-Zapatillas-Deportivas-Transpirables-Sneakers/dp/B0CYGMZVL7",
+        "metadata": {
+            "videoUrl": "https://m.media-amazon.com/videos/C/dk14lkKlsnw._AC_UL1080_.mp4",
+            "currentDiscountRate": "50%",
+            "isNew": true,
+            "isFeatured": false
+        }
+    }
+}
+```
+
+</TabItem>
+</Tabs>

@@ -1,0 +1,1 @@
+A product list has been filtered. It should be sent, for example, when the customer specifies a product filter by color, by price, by material, etc.
