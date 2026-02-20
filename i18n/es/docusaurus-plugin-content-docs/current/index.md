@@ -6,8 +6,6 @@ slug: /
 #
 Esta documentación está orientada a desarrolladores y describe los métodos disponibles para integrar Biteral en vuestro comercio electrónico. La integración se divide en dos pasos principales:
 
-# En Español
-
 <Button variant="primary" icon="go" text="Integrar datos" to="/guide/integration-data/intro"/>
 #
 Envía los datos sobre vuestros productos y las acciones que realizan los clientes a Biteral mediante el método de integración que mejor se adapte a vuestro sistema.
