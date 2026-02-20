@@ -9,16 +9,26 @@ icon: arrow-right
 Obtener una lista de productos que encajan con una búsqueda realizada en lenguage natural.
 
 <Tabs>
-<TabItem value=":icon-tasklist: Parámetros" label=":icon-tasklist: Parámetros">
+<TabItem value="parameters" label={<Badge icon="parameter" text="Parámetros" transparent />}>
 
-<Badge variant="danger" icon="required" text="query" />
-: La cadena escrita por el usuario para encontrar productos en lenguaje natural, por ejemplo `Un regalo para un aficionado a la cocina`
+<table>
+    <tbody>
 
-<Badge variant="warning" text="limit" />
-: Limita el número máximo de productos a obtener, por ejemplo `5`. Por defecto, se obtienen `10` productos como máximo.
+        <tr>
+            <td><Badge variant="api parameter required" icon="required" text="query" /></td>
+            <td>La cadena escrita por el usuario para encontrar productos en lenguaje natural, por ejemplo <Badge variant="value" text="Un regalo para un aficionado a la cocina" /></td>
+        </tr>
+
+        <tr>
+            <td><Badge variant="api parameter" icon="parameter" text="limit" /></td>
+            <td>Limita el número máximo de productos a obtener, por ejemplo <Badge variant="value" text="5" />. Por defecto, se obtienen <Badge variant="value" text="10" /> productos como máximo.</td>
+        </tr>
+
+    </tbody>
+</table>
 
 </TabItem>
-<TabItem value=":icon-project-roadmap: Resultado" label=":icon-project-roadmap: Resultado">
+<TabItem value="result" label={<Badge icon="json" text="Resultado" transparent />}>
 
 ```json
 {
