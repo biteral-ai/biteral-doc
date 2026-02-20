@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link'; // Import the Docusaurus Link
 import Icon from './Icon';
 import './badge.css';
 
-export default function Badge({ children, text, variant, icon, transparent, to }) {
+export default function Badge({ children, text, tooltip, variant, icon, transparent, to }) {
     const content = (
         <>
             {icon && <Icon name={icon} />}
@@ -19,14 +19,18 @@ export default function Badge({ children, text, variant, icon, transparent, to }
     // If 'to' prop exists, wrap in a Link; otherwise, just a span
     if (to) {
         return (
-            <Link to={to} className={clsx(classes, 'badge-anchor')}>
+            <Link
+                to={to}
+                className={clsx(classes, 'badge-anchor')}
+                title={tooltip}
+            >
                 {content}
             </Link>
         );
     }
 
     return (
-        <span className={classes}>
+        <span className={classes} title={tooltip}>
             {content}
         </span>
     );

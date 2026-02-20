@@ -2,7 +2,7 @@
     --badgeBaseColor: var(--ifm-color-emphasis-200);
 
     --badgeBackgroundColor: var(--badgeBaseColor);
-    --badgeForegroundColor: hsl(from var(--badgeBaseColor) h s calc(l * .35));
+    --badgeForegroundColor: hsl(from var(--badgeBaseColor) h s calc(l * .25));
 
     --badgeBorderColor: transparent;
 
@@ -44,6 +44,10 @@
     --badgeBaseColor: var(--color-warning);
 }
 
+.badge.event {
+    --badgeBaseColor: var(--color-event);
+}
+
 .badge.sdk {
     --badgeBaseColor: var(--color-sdk);
 }
@@ -77,15 +81,12 @@
     --badgeBaseColor: var(--color-parameter);
 }
 
-.badge.locked {
-    --badgeBaseColor: var(--color-locked);
-}
-
 .badge.value {
     background: transparent;
     --badgeForegroundColor: currentColor;
     --badgeBorderColor: currentColor;
-    border-style: dotted;
+    border-style: dashed;
+    font-weight: 500;
 }
 
 .badge.transparent {
