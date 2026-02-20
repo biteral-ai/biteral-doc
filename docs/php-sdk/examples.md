@@ -5,9 +5,9 @@ icon: arrow-right
 ---
 El SDK incluye varios ejemplos en [/examples](https://github.com/biteral-ai/biteral-sdk-php/tree/main/examples) que puedes utilizar como referencia.
 
-!!!
+:::info
 Si instalaste el SDK con composer, encontrarás todos los ejemplos en el directorio `vendor/biteral-ai/biteral-sdk-php/examples` de tu proyecto.
-!!!
+:::
 
 Puedes ejecutar los ejemplos utilizando el script `bin/example` incluído en el SDK:
 

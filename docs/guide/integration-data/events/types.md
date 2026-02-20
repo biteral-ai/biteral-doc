@@ -33,11 +33,11 @@ import EventPropertyBrandCode from '@site/src/components/events/properties/brand
 
 | Parámetro| Valor |
 | :--- | :--- |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventAddedToCart" /> |
-| <Badge variant="parameter" icon="parameter" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
-| <Badge variant="parameter" icon="parameter" text="quantity" /> | La cantidad de unidades de este producto añadidas al carrito. Si no se especifica, el valor por defecto es `1` |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventAddedToCart" /> |
+| <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property" icon="property" text="quantity" /> | La cantidad de unidades de este producto añadidas al carrito. Si no se especifica, el valor por defecto es `1` |
 
 </details>
 
@@ -49,11 +49,11 @@ import EventPropertyBrandCode from '@site/src/components/events/properties/brand
 
 | Parámetro| Valor |
 | :--- | :--- |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventRemovedFromCart" /> |
-| <Badge variant="parameter" icon="parameter" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
-| <Badge variant="parameter" icon="parameter" text="quantity" /> | La cantidad de unidades de este producto retiradas del carrito. Si no se especifica, el valor por defecto es `1` |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventRemovedFromCart" /> |
+| <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property" icon="property" text="quantity" /> | La cantidad de unidades de este producto retiradas del carrito. Si no se especifica, el valor por defecto es `1` |
 
 </details>
 
@@ -65,10 +65,10 @@ import EventPropertyBrandCode from '@site/src/components/events/properties/brand
 
 | Parámetro| Valor |
 | :--- | :--- |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventAddedToWishlist" /> |
-| <Badge variant="parameter" icon="parameter" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventAddedToWishlist" /> |
+| <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
 
 </details>
 
@@ -80,10 +80,10 @@ import EventPropertyBrandCode from '@site/src/components/events/properties/brand
 
 | Parámetro| Valor |
 | :--- | :--- |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventRemovedFromWishlist" /> |
-| <Badge variant="parameter" icon="parameter" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventRemovedFromWishlist" /> |
+| <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
 
 </details>
 
@@ -95,11 +95,11 @@ import EventPropertyBrandCode from '@site/src/components/events/properties/brand
 
 | Parámetro| Valor |
 | :--- | :--- |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventSale" /> |
-| <Badge variant="parameter" icon="parameter" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
-| <Badge variant="parameter" icon="parameter" text="quantity" /> | La cantidad de unidades de este producto compradas. Si no se especifica, el valor por defecto es `1` |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventSale" /> |
+| <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property" icon="property" text="quantity" /> | La cantidad de unidades de este producto compradas. Si no se especifica, el valor por defecto es `1` |
 
 </details>
 
@@ -115,10 +115,10 @@ Debe enviarse cuando el cliente solicita la devolución, aunque ésta no sea ace
 
 | Parámetro| Valor |
 | :--- | :--- |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventReturnRequested" /> |
-| <Badge variant="parameter" icon="parameter" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventReturnRequested" /> |
+| <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
 
 </details>
 
@@ -130,10 +130,10 @@ Debe enviarse cuando el cliente solicita la devolución, aunque ésta no sea ace
 
 | Parámetro| Valor |
 | :--- | :--- |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventProductViewed" /> |
-| <Badge variant="parameter" icon="parameter" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventProductViewed" /> |
+| <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
 
 </details>
 
@@ -145,10 +145,10 @@ Debe enviarse cuando el cliente solicita la devolución, aunque ésta no sea ace
 
 | Parámetro| Valor |
 | :--- | :--- |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventCategoryViewed" /> |
-| <Badge variant="parameter" icon="parameter" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="categoryCode" /> | <EventPropertyCategoryCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventCategoryViewed" /> |
+| <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="categoryCode" /> | <EventPropertyCategoryCode /> |
 
 </details>
 
@@ -160,10 +160,10 @@ Debe enviarse cuando el cliente solicita la devolución, aunque ésta no sea ace
 
 | Parámetro| Valor |
 | :--- | :--- |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventBrandViewed" /> |
-| <Badge variant="parameter" icon="parameter" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="brandCode" /> | <EventPropertyBrandCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventBrandViewed" /> |
+| <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="brandCode" /> | <EventPropertyBrandCode /> |
 
 </details>
 
@@ -179,10 +179,10 @@ Este evento debe enviarse si vuestro web tiene su propio buscador textual. Si ut
 
 | Parámetro| Valor |
 | :--- | :--- |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventSearch" /> |
-| <Badge variant="parameter" icon="parameter" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="query" /> | El texto de la búsqueda tal como lo escribió el cliente. |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventSearch" /> |
+| <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="query" /> | El texto de la búsqueda tal como lo escribió el cliente. |
 
 </details>
 
@@ -194,11 +194,11 @@ Este evento debe enviarse si vuestro web tiene su propio buscador textual. Si ut
 
 | Parámetro| Valor |
 | :--- | :--- |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventFilterApplied" /> |
-| <Badge variant="parameter" icon="parameter" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="filterName" /> | El nombre del filtro, por ejemplo: `color` |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="filterValue" /> | El valor del filtro, por ejemplo: `rojo` |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventFilterApplied" /> |
+| <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="filterName" /> | El nombre del filtro, por ejemplo: `color` |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="filterValue" /> | El valor del filtro, por ejemplo: `rojo` |
 
 </details>
 
@@ -210,11 +210,11 @@ Este evento debe enviarse si vuestro web tiene su propio buscador textual. Si ut
 
 | Parámetro| Valor |
 | :--- | :--- |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventOrderApplied" /> |
-| <Badge variant="parameter" icon="parameter" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="orderDescription" /> | La descripción del orden aplicado. Puede ser cualquier palabra o frase que describa el orden, por ejemplo: `price`, `newest products first`, `screen size`, etcétera. |
-| <Badge variant="parameter" icon="parameter" text="orderDirection" /> | Si es relevante, la dirección del orden: `asc` para dirección ascendente, `desc` para dirección descendente |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventOrderApplied" /> |
+| <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="orderDescription" /> | La descripción del orden aplicado. Puede ser cualquier palabra o frase que describa el orden, por ejemplo: `price`, `newest products first`, `screen size`, etcétera. |
+| <Badge variant="property" icon="property" text="orderDirection" /> | Si es relevante, la dirección del orden: `asc` para dirección ascendente, `desc` para dirección descendente |
 
 </details>
 
@@ -230,9 +230,9 @@ Debe enviarse sólo cuando el código del cupón introducido por el cliente haya
 
 | Parámetro| Valor |
 | :--- | :--- |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventCouponApplied" /> |
-| <Badge variant="parameter" icon="parameter" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventCouponApplied" /> |
+| <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
 
 </details>
 
@@ -244,11 +244,11 @@ Debe enviarse sólo cuando el código del cupón introducido por el cliente haya
 
 | Parámetro| Valor |
 | :--- | :--- |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventReviewWritten" /> |
-| <Badge variant="parameter" icon="parameter" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
-| <Badge variant="parameter" icon="parameter" text="review" /> | El texto de la review, tal como la escribió el cliente. |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventReviewWritten" /> |
+| <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property" icon="property" text="review" /> | El texto de la review, tal como la escribió el cliente. |
 
 </details>
 
@@ -264,9 +264,9 @@ Debe enviarse cuando un cliente solicita ser notificado cuando un producto vuelv
 
 | Parámetro| Valor |
 | :--- | :--- |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventStockAlertRequested" /> |
-| <Badge variant="parameter" icon="parameter" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="parameter required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="type" /> | <Badge variant="value" text="EventStockAlertRequested" /> |
+| <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Requerido" icon="lock" text="productCode" /> | <EventPropertyProductCode /> |
 
 </details>

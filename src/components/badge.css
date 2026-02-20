@@ -82,7 +82,9 @@ a.badge {
     --badgeForegroundColor: #fff;
 }
 
-.badge.http-post {
+.badge.http-post,
+.badge.http-put,
+.badge.http-patch {
     --badgeBaseColor: var(--color-http-post);
     background: transparent;
     --badgeForegroundColor: var(--badgeBaseColor);
@@ -105,6 +107,14 @@ a.badge {
 
 .badge.parameter {
     --badgeBaseColor: var(--color-parameter);
+}
+
+.badge.property {
+    --badgeBaseColor: var(--color-property);
+}
+
+.badge.required {
+    --badgeBaseColor: var(--color-required);
 }
 
 .badge.value {

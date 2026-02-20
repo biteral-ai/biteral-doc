@@ -31,7 +31,7 @@
 
     --ifm-font-family-base: 'Inconsolata';
     --ifm-font-size-base: 10.5pt;
-    --ifm-font-weight-bold: 800;
+    --ifm-font-weight-bold: 700;
 
     --ifm-heading-font-weight: 700;
     --ifm-line-height-base: 1.4em;
@@ -61,9 +61,12 @@
     --ifm-tabs-padding-horizontal: 10px;
     --ifm-tabs-color-active: var(--foregroundColor);
 
-    --ifm-code-border-radius: var(--baseBorderRadius);
 
     --ifm-global-shadow-lw: none;
+
+    --ifm-code-border-radius: 5px;
+    --ifm-code-padding-vertical: 2px;
+    --ifm-code-padding-horizontal: 5px;
 
     --color-success: #36da90;
     --color-warning: #ff9500;
@@ -78,8 +81,12 @@
     --color-payload: #dff3a3;
     --color-entity: #f3efa3;
     --color-parameter: #fcffb3;
+    --color-property: var(--color-parameter);
+    --color-required: #fff3a4;
 
     --color-http-post: var(--color-warning);
+    --color-http-put: var(--color-warning);
+    --color-http-patch: var(--color-warning);
     --color-http-get: hsl(from var(--color-success) h s calc(l * .8));
     --color-http-delete: var(--color-critical);
 
@@ -178,7 +185,6 @@ ul.tabs {
 }
 
 .theme-code-block {
-    border: solid hsl(from var(--prism-background-color) h s calc(l * .8)) 1px;
     & pre {
         font-weight: 600;
     }

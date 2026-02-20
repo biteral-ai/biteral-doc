@@ -2,10 +2,10 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:1.4296;">
     <g transform="matrix(0.543279,0,0,0.543279,25.6809,25.8168)">
-        <g transform="matrix(0.445102,0,0,0.445102,15.8082,4.27263)">
-            <path vector-effect="non-scaling-stroke" d="M7.3,48.7L48.3,7.7L7.3,-33.3" style="fill:none;fill-rule:nonzero;stroke:currentColor;stroke-width:1.2px;"/>
+        <g transform="matrix(0.384044,0,0,0.445102,18.7268,22.5218)">
+            <path vector-effect="non-scaling-stroke" d="M-32.4,7.7L48.3,7.7" style="fill:none;fill-rule:nonzero;stroke:currentColor;stroke-width:1.2px;"/>
         </g>
-        <g transform="matrix(-0.445102,5.45093e-17,-5.45093e-17,-0.445102,0.0919194,11.1272)">
+        <g transform="matrix(0.445102,0,0,0.445102,-25.4584,4.27263)">
             <path vector-effect="non-scaling-stroke" d="M7.3,48.7L48.3,7.7L7.3,-33.3" style="fill:none;fill-rule:nonzero;stroke:currentColor;stroke-width:1.2px;"/>
         </g>
         <g transform="matrix(1.84067,0,0,1.84067,-47.4938,-48.0107)">
