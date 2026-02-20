@@ -61,6 +61,10 @@
     --ifm-tabs-padding-horizontal: 10px;
     --ifm-tabs-color-active: var(--foregroundColor);
 
+    --ifm-code-border-radius: var(--baseBorderRadius);
+
+    --ifm-global-shadow-lw: none;
+
     --color-success: #36da90;
     --color-warning: #ff9500;
     --color-critical: #f33fae;
@@ -171,4 +175,11 @@ table thead tr {
 
 ul.tabs {
     border-bottom: solid var(--ifm-tabs-color-active-border) 1px;
+}
+
+.theme-code-block {
+    border: solid hsl(from var(--prism-background-color) h s calc(l * .8)) 1px;
+    & pre {
+        font-weight: 600;
+    }
 }

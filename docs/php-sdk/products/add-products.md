@@ -10,7 +10,7 @@ El SDK para PHP permite cargar productos en Biteral, modificarlos y eliminarlos,
 
 ### Cargar un producto
 
-Llama a <Badge variant="light" text="products()->ingest()" /> con un objeto <Badge variant="info" text="ProductPayload" />(/php-sdk/payloads/product-payload) como parámetro:
+Llama a <Badge variant="sdk php method" text="products()->ingest()" /> con un objeto <Badge variant="sdk php payload" text="ProductPayload" to="/php-sdk/payloads/product-payload" /> como parámetro:
 
 ```php
 use Biteral\Payload\Brand\BrandPayload;
@@ -48,6 +48,6 @@ $client->products()->ingest($productPayload);
 
 Esto añadirá el producto a Biteral.
 
-!!!
+:::info
 Ten en cuenta que el producto se añadirá al proyecto que corresponde a la API key que estés utilizando.
-!!!
+:::
