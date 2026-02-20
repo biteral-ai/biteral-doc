@@ -1,11 +1,19 @@
 .button {
-    --buttonBaseColor: var(--foregroundColor);
+    --buttonBaseColor: var(--color-primary);
 
     --buttonForegroundColor: var(--buttonBaseColor);
-    --buttonBackgroundColor: transparent;
     --buttonBorderColor: var(--buttonForegroundColor);
     --buttonGap: 0.5rem;
     --buttonBorderRadius: 7px;
+
+    --buttonBackgroundColor: transparent;
+    --buttonBackgroundColorHover: transparent;
+    --buttonBackgroundColorActive: transparent;
+
+    --buttonColorHover: hsl(from var(--buttonBaseColor) h s calc(l * 1.3));
+    --buttonColorActive: hsl(from var(--buttonBaseColor) h s calc(l * 1.4));
+
+    --buttonBorderSize: 1px;
 
     display: inline-flex;
     align-items: center;
@@ -15,7 +23,7 @@
     background: var(--buttonBackgroundColor);
     color: var(--buttonForegroundColor);
 
-    border: solid var(--buttonBorderColor) 1px;
+    border: solid var(--buttonBorderColor) var(--buttonBorderSize);
 
     font-size: var(--ifm-font-size-base);
 
@@ -26,11 +34,13 @@
     border-radius: var(--buttonBorderRadius);
 
     &:hover {
-        --buttonBaseColor: var(--ifm-color-primary);
+        --buttonForegroundColor: var(--buttonColorHover);
+        border-color: var(--buttonColorHover);
     }
 
     &:active {
-        --buttonBaseColor: hsl(from var(--ifm-color-primary) h s calc(l * 1.5));
+        --buttonForegroundColor: var(--buttonColorActive);
+        border-color: var(--buttonColorActive);
     }
 }
 
@@ -39,8 +49,21 @@
     height: 1em;
 }
 
-.button.primary {
-    --buttonBaseColor: var(--ifm-color-primary);
+/* Button styles with banckground */
+.button:is(
+    .primary
+) {
     --buttonBackgroundColor: var(--buttonBaseColor);
     --buttonForegroundColor: #fff;
+    --buttonBorderSize: 0;
+
+    &:hover {
+        --buttonBackgroundColor: var(--buttonColorHover);
+    }
+
+    &:active {
+        --buttonBackgroundColor: var(--buttonColorActive);
+    }
 }
+
+.button.primary { --buttonBaseColor: var(--color-primary); }

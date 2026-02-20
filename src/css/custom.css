@@ -75,6 +75,8 @@
     --ifm-color-info-contrast-background: hsl(from var(--color-info) h s 97%);
     --ifm-color-info-dark: hsl(from var(--color-info) h s 75%);
 
+    --color-primary: #0016FF;
+
     --color-info: #8f00ff;
     --color-success: #1ebbbf;
     --color-warning: #ff9500;
