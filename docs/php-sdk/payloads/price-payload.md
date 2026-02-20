@@ -5,9 +5,7 @@ sidebar_position: 4
 
 Representa un precio de uno de vuestros productos.
 
-### Propiedades
-
-||
+Propiedad|Tipo|Descripción
 ---|---|---
-<Badge icon="screen-full" text="amount" />|string|El precio, con un número arbitrario de decimales, con el símbolo `.` como separador de la parte decimal. Por ejemplo: `24.95`
-<Badge icon="screen-full" text="currency" />|string|La moneda en la que se expresa el precio, según el estándar [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217). Por ejemplo `EUR`
+<Badge variant="sdk php property" icon="property" text="amount" />|string|El precio, con un número arbitrario de decimales, con el símbolo `.` como separador de la parte decimal. Por ejemplo: <Badge variant="value" text="24.95" />
+<Badge variant="sdk php property" icon="property" text="currency" />|string|La moneda en la que se expresa el precio, según el estándar [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217). Por ejemplo <Badge variant="value" text="EUR" />
