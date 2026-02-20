@@ -23,6 +23,10 @@
     font-weight: 700;
 }
 
+a.badge:hover {
+    filter: brightness(1.05);
+}
+
 .badge > .icon {
     width: 1.2em;
     height: 1.2em;
