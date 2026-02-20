@@ -1,1 +1,1 @@
-Se ha escrito una review sobre un producto.
+A review about a product has been written.

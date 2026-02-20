@@ -1,32 +1,32 @@
 ---
-title: Enviar eventos en grupo
+title: Send events in batches
 expanded: false
 sidebar_position: 2
 icon: arrow-right
 ---
-import LotsOfEvents from '@site/src/components/note_lots_of_events.md';
+import LotsOfEvents from '../../_components/note_lots_of_events.md';
 
-# Enviar eventos en grupo
+# Send events in batches
 
-Si vuestro sistema genera muchos eventos, es mejor enviar los eventos en grupo.
+If your system generates many events, it is better to send events in batches.
 
 :::info
 <LotsOfEvents />
 :::
 
-Para enviar eventos en grupo, en lugar de utilizar <Badge variant="sdk php method" text="events()->ingest()" /> cada vez que se produce un evento en vuestro sistema, utiliza algún mecanismo que recopile los eventos cuando se producen, y envíalos después en grupo cada poco tiempo o cuando hayas recopilado muchos, utilizando <Badge variant="sdk php method" text="eventsBatchIngest()->ingest()" />. Mira cómo funciona:
+To send events in batches, instead of using <Badge variant="sdk php method" text="events()->ingest()" /> every time an event occurs in your system, use some mechanism that collects events when they occur, and send them later in a batch every so often or when you have collected a lot, using <Badge variant="sdk php method" text="eventsBatchIngest()->ingest()" />. See how it works:
 
 ```php
-// Obtén un objeto EventsBatchIngestService para poder reutilizarlo
+// Get an EventsBatchIngestService object to be able to reuse it
 $eventsBatchIngestService = $client->eventsBatchIngest();
 
-// Inicia una sesión de ingestión de events
+// Start an event ingestion session
 $eventsBatchIngestService->startIngestionSession();
 
-// Recorre tus eventos pendientes por enviar en un bucle
+// Loop through your pending events to send
 while ($event = $query->getRow()) {
 
-    // Crea un objeto EventPayload tal como hacías al cargar productos individualmente
+    // Create an EventPayload object just like when loading products individually
     $eventPayload =
         new EventPayload([
             'type' => $event->getType(),
@@ -35,22 +35,22 @@ while ($event = $query->getRow()) {
             'productCode' => $event->getProductCode()
         ]);
 
-    // Envía el evento para que sea cargado por bloques
+    // Send the event to be loaded in batches
     $eventsBatchIngestService->ingest($eventPayload);
 }
 
-// Cuando el bucle haya terminado, no olvides cerrar la sesión de ingestión
+// When the loop is finished, do not forget to close the ingestion session
 $batchIngestResult = $eventsBatchIngestService->finishIngestionSession();
 ```
 
-> Cuando envías los eventos en grupo, es imprescindible especificar <Badge variant="parameter" text="timestamp" />, puesto que el momento en que envias el evento puede ser diferente al momento en que realmente se produjo.
+> When you send events in batches, it is essential to specify <Badge variant="parameter" text="timestamp" />, since the time you send the event may be different from the time it actually occurred.
 
-Recuerda que cada tipo <Badge variant="parameter" text="type" /> de evento requiere parámetros adicionales diferentes, consulta la guía de eventos disponibles para saber qué parametros debes añadir a cada tipo de evento:
+Remember that each event <Badge variant="parameter" text="type" /> requires different additional parameters. Check the available events guide to know what parameters you must add to each event type:
 
-<Button text="Tipos de eventos disponibles" to="/guide/integration-data/events/types" />
+<Button text="Available event types" to="/guide/integration-data/events/types" />
 
-### Ideas para recopilar los eventos en grupo
+### Ideas to collect events in batches
 
-Una forma sencilla de enviar los eventos en grupo es crear un proceso que se ejecute regularmente cada `N` minutos, y que envíe todos los eventos que se hayan producido en los últimos `N` minutos en grupo, utilizando el método descrito arriba.
+A simple way to send events in batches is to create a process that runs regularly every `N` minutes, and sends all events that have occurred in the last `N` minutes in a batch, using the method described above.
 
-Algunas implementaciones más avanzadas guardan los eventos en una cola antes de enviarlos a Biteral, y realizan un envío en grupo de los eventos acumulados cuando la cola alcanza cierto tamaño. Esta cola de eventos puede implementarse de muchas formas, como una base de datos convencional tipo MySQL, un sistema en memoria como Redis o un bróker de mensajes como RabbitMQ.
+Some more advanced implementations save events in a queue before sending them to Biteral, and perform a bulk send of the accumulated events when the queue reaches a certain size. This event queue can be implemented in many ways, such as a conventional database like MySQL, an in-memory system like Redis or a message broker like RabbitMQ.

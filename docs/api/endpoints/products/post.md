@@ -6,7 +6,7 @@ icon: arrow-right
 ---
 # <Badge variant="api-endpoint" text="/products" /> <Badge variant="http-post" text="POST" />
 
-Crear o modificar un producto.
+Create or update a product.
 
 <Tabs>
 <TabItem value="result" label={<Badge icon="json" text="JSON request body" transparent />}>
@@ -14,19 +14,19 @@ Crear o modificar un producto.
 ```json
 {
     "code": "N30123",
-    "title": "Zapatillas deportivas urbanas para hombre – modelo AirFlow",
-    "description": "Estas zapatillas combinan estilo y comodidad para el uso diario. Diseñadas con materiales transpirables, suela de goma antideslizante y plantilla ergonómica, son ideales tanto para caminar por la ciudad como para entrenar en interiores. El modelo AirFlow ofrece un ajuste perfecto y un diseño moderno que se adapta a cualquier look casual. Disponibles en varias tallas y colores.",
+    "title": "Urban sports shoes for men – AirFlow model",
+    "description": "These shoes combine style and comfort for everyday use. Designed with breathable materials, a non-slip rubber sole, and an ergonomic insole, they are ideal for both city walking and indoor training. The AirFlow model offers a perfect fit and a modern design that adapts to any casual look. Available in various sizes and colors.",
     "price": {
         "amount": "49.95",
         "currency": "EUR"
     },
     "attributes": [
-        {"title": "Material", "value": "Cuero"},
-        {"title": "Color", "value": "negro con detalles en gris"},
-        {"title": "Tallas disponibles", "value": "39, 40, 41, 42, 43, 44"},
-        {"title": "Suela", "value": "goma antideslizante"},
-        {"title": "Peso", "value": "850g (par, talla 42)"},
-        {"title": "Uso recomendado", "value": "Uso diario y entrenamiento ligero"}
+        {"title": "Material", "value": "Leather"},
+        {"title": "Color", "value": "black with gray details"},
+        {"title": "Available sizes", "value": "39, 40, 41, 42, 43, 44"},
+        {"title": "Sole", "value": "non-slip rubber"},
+        {"title": "Weight", "value": "850g (pair, size 42)"},
+        {"title": "Recommended use", "value": "Daily use and light training"}
     ],
     "brand": {
         "code": "OW142302",
@@ -34,8 +34,8 @@ Crear o modificar un producto.
     },
     "category": {
         "code": "MC418292",
-        "title": "Zapatillas deportivas",
-        "description": "Calzado diseñado para ofrecer comodidad, soporte y rendimiento en actividades físicas o deportivas. Estas zapatillas también se adaptan al uso urbano y diario gracias a sus diseños modernos y materiales versátiles. Incluyen características como suelas antideslizantes, tejidos transpirables y estilos que combinan funcionalidad con moda."
+        "title": "Sports shoes",
+        "description": "Footwear designed to offer comfort, support, and performance in physical or sports activities. These shoes also adapt to urban and daily use thanks to their modern designs and versatile materials. They include features like non-slip soles, breathable fabrics, and styles that combine functionality with fashion."
     },
     "imageUrl": "https://m.media-amazon.com/images/I/61cELGQXXhL._AC_UL320_.jpg",
     "url": "https://www.amazon.es/Hitmars-Zapatillas-Deportivas-Transpirables-Sneakers/dp/B0CYGMZVL7",
@@ -56,30 +56,30 @@ Crear o modificar un producto.
 
         <tr>
             <td><Badge variant="api parameter required" icon="required" text="code" /></td>
-            <td>Código de producto <Badge variant="value-restriction" icon="max-length" text="255" />. Por ejemplo <Badge variant="value" text="N39291" /> </td>
+            <td>Product code <Badge variant="value-restriction" icon="max-length" text="255" />. For example <Badge variant="value" text="N39291" /> </td>
         </tr>
 
         <tr>
             <td><Badge variant="api parameter" icon="parameter" text="isActive" /></td>
             <td>
-                Indica si el producto está habilitado para ser utilizado por los servicios de Biteral, como recomendaciones, búsqueda o análisis. Si no se incluye este campo al enviar o actualizar el producto, se asume automáticamente que el producto está activo <Badge variant="value" text="true" />. Poner <Badge variant="api parameter" text="isActive" /> a <Badge variant="value" text="false" /> permite mantener el producto en el sistema sin que participe en ningún procesamiento ni aparezca en ningún resultado.
+                Indicates if the product is enabled to be used by Biteral's services, such as recommendations, search, or analysis. If this field is not included when sending or updating the product, it is automatically assumed that the product is active <Badge variant="value" text="true" />. Setting <Badge variant="api parameter" text="isActive" /> to <Badge variant="value" text="false" /> allows keeping the product in the system without it participating in any processing or appearing in any results.
             </td>
         </tr>
 
         <tr>
             <td><Badge variant="api parameter required" icon="required" text="title" /></td>
-            <td>Título del producto. <Badge variant="value-restriction" icon="max-length" text="10000" /></td>
+            <td>Product title. <Badge variant="value-restriction" icon="max-length" text="10000" /></td>
         </tr>
 
         <tr>
             <td><Badge variant="api parameter" icon="parameter" text="description" /></td>
-            <td>Descripción del producto. <Badge variant="value-restriction" icon="max-length" text="60000" /></td>
+            <td>Product description. <Badge variant="value-restriction" icon="max-length" text="60000" /></td>
         </tr>
 
         <tr>
             <td><Badge variant="api parameter" icon="parameter" text="price" /></td>
             <td>
-                El precio del producto. Un objeto JSON donde <Badge variant="property required" icon="required" text="amount" /> es el precio del producto, y <Badge variant="property required" icon="required" text="currency" /> es la moneda en la que se expresa el precio, según el estándar [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217). Por ejemplo:
+                The price of the product. A JSON object where <Badge variant="property required" icon="required" text="amount" /> is the product price, and <Badge variant="property required" icon="required" text="currency" /> is the currency in which the price is expressed, according to the [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) standard. For example:
 
                 ```json
                 {
@@ -93,16 +93,16 @@ Crear o modificar un producto.
         <tr>
             <td><Badge variant="api parameter" icon="parameter" text="attributes" /></td>
             <td>
-                Los atributos del producto. Un array de objetos JSON donde <Badge variant="property required" icon="required" text="title" /> <Badge variant="value-restriction" icon="max-length" text="255" /> es el título del atributo y <Badge variant="property" icon="required" text="value" /> <Badge variant="value-restriction" icon="max-length" text="60000" /> es su valor. Por ejemplo:
+                The product attributes. An array of JSON objects where <Badge variant="property required" icon="required" text="title" /> <Badge variant="value-restriction" icon="max-length" text="255" /> is the attribute title and <Badge variant="property" icon="required" text="value" /> <Badge variant="value-restriction" icon="max-length" text="60000" /> is its value. For example:
 
                 ```json
                 [
-                    {"title": "Material", "value": "Cuero"},
-                    {"title": "Color", "value": "negro con detalles en gris"},
-                    {"title": "Tallas disponibles", "value": "39, 40, 41, 42, 43, 44"},
-                    {"title": "Suela", "value": "goma antideslizante"},
-                    {"title": "Peso", "value": "850g (par, talla 42)"},
-                    {"title": "Uso recomendado", "value": "Uso diario y entrenamiento ligero"},
+                    {"title": "Material", "value": "Leather"},
+                    {"title": "Color", "value": "black with gray details"},
+                    {"title": "Available sizes", "value": "39, 40, 41, 42, 43, 44"},
+                    {"title": "Sole", "value": "non-slip rubber"},
+                    {"title": "Weight", "value": "850g (pair, size 42)"},
+                    {"title": "Recommended use", "value": "Daily use and light training"}
                 ]
                 ```
             </td>
@@ -111,7 +111,7 @@ Crear o modificar un producto.
         <tr>
             <td><Badge variant="api parameter" icon="parameter" text="brand" /></td>
             <td>
-                La marca del producto. Un objeto JSON donde <Badge variant="property required" icon="required" text="code" /> <Badge variant="value-restriction" icon="max-length" text="255" /> es el código de la marca y <Badge variant="property" text="name" /> <Badge variant="value-restriction" icon="max-length" text="255" /> su nombre. Por ejemplo:
+                The product brand. A JSON object where <Badge variant="property required" icon="required" text="code" /> <Badge variant="value-restriction" icon="max-length" text="255" /> is the brand code and <Badge variant="property" text="name" /> <Badge variant="value-restriction" icon="max-length" text="255" /> is its name. For example:
 
                 ```json
                 {
@@ -125,18 +125,13 @@ Crear o modificar un producto.
         <tr>
             <td><Badge variant="api parameter" icon="parameter" text="category" /></td>
             <td>
-                La categoría del producto. Un objeto JSON donde <Badge variant="property required" icon="required" text="code" /> <Badge variant="value-restriction" icon="max-length" text="255" /> es el código de la categoría, <Badge variant="property" text="title" /> <Badge variant="value-restriction" icon="max-length" text="255" /> el título y <Badge variant="property" text="description" /> <Badge variant="value-restriction" icon="max-length" text="60000" /> su descripción. Por ejemplo:
+                The product category. A JSON object where <Badge variant="property required" icon="required" text="code" /> <Badge variant="value-restriction" icon="max-length" text="255" /> is the category code, <Badge variant="property" text="title" /> <Badge variant="value-restriction" icon="max-length" text="255" /> its title and <Badge variant="property" text="description" /> <Badge variant="value-restriction" icon="max-length" text="60000" /> its description. For example:
 
                 ```json
                 {
                     "code": "MC418298",
-                    "title": "Zapatillas deportivas",
-                    "description": "Calzado diseñado para ofrecer comodidad, soporte y
-                    rendimiento en actividades físicas o deportivas. Estas zapatillas
-                    también se adaptan al uso urbano y diario gracias a sus diseños
-                    modernos y materiales versátiles. Incluyen características como suelas
-                    antideslizantes, tejidos transpirables y estilos que combinan
-                    funcionalidad con moda."
+                    "title": "Sports shoes",
+                    "description": "Footwear designed to offer comfort, support, and performance in physical or sports activities. These shoes also adapt to urban and daily use thanks to their modern designs and versatile materials. They include features like non-slip soles, breathable fabrics, and styles that combine functionality with fashion."
                 }
                 ```
             </td>
@@ -144,18 +139,18 @@ Crear o modificar un producto.
 
         <tr>
             <td><Badge variant="api parameter" icon="parameter" text="imageUrl" /></td>
-            <td>La URL de la imagen del producto, preferiblemente una imagen de aproximadamente 600 píxeles de ancho. Por ejemplo: <Badge variant="value" text="https://m.media-amazon.com/images/I/61cELGQXXhL._AC_UL320_.jpg" /></td>
+            <td>The URL of the product image, preferably an image of approximately 600 pixels wide. For example: <Badge variant="value" text="https://m.media-amazon.com/images/I/61cELGQXXhL._AC_UL320_.jpg" /></td>
         </tr>
 
         <tr>
             <td><Badge variant="api parameter" icon="parameter" text="url" /></td>
-            <td>La URL pública del producto. Por ejemplo: <Badge variant="value" text="https://www.amazon.es/Hitmars-Zapatillas-Deportivas-Transpirables-Sneakers/dp/B0CYGMZVL7" /></td>
+            <td>The public URL of the product. For example: <Badge variant="value" text="https://www.amazon.es/Hitmars-Zapatillas-Deportivas-Transpirables-Sneakers/dp/B0CYGMZVL7" /></td>
         </tr>
 
         <tr>
             <td><Badge variant="api parameter" icon="parameter" text="metadata" /></td>
             <td>
-                Datos adicionales que te resulten útiles cuando recibas el producto como resultado de las herramientas de Biteral. Un objeto JSON <Badge variant="value-restriction" icon="max-length" text="60000" />. Por ejemplo:
+                Additional data that is useful to you when receiving the product as a result from Biteral's tools. A JSON object <Badge variant="value-restriction" icon="max-length" text="60000" />. For example:
 
                 ```json
                 {
@@ -174,22 +169,22 @@ Crear o modificar un producto.
 </TabItem>
 </Tabs>
 
-### Actualizar un producto
+### Update a product
 
-Para actualizar los datos sobre un producto, realiza la misma petición <Badge variant="http-post" text="POST" /> a este endpoint con los nuevos datos.
+To update a product's data, make the same <Badge variant="http-post" text="POST" /> request to this endpoint with the new data.
 
-Los datos que no especifiques mantendrán su valor anterior. Para eliminar un dato, pásalo como <Badge variant="value" text="null" />
+The data you don't specify will keep its previous value. To remove data, pass it as <Badge variant="value" text="null" />.
 
-### Cargar varios productos a la vez
+### Load multiple products at once
 
-Puedes cargar los productos uno a uno, pero es más rápido cargarlos en bloques. Para hacerlo, pasa los productos en forma de un array, por ejemplo:
+You can load products one by one, but it is faster to load them in batches. To do this, pass the products as an array, for example:
 
 ```json
 [
     {
         "code": "N30123",
-        "title": "Zapatillas deportivas urbanas para hombre – modelo AirFlow",
-        "description": "Estas zapatillas combinan estilo y comodidad para el uso diario. Diseñadas con materiales transpirables, suela de goma antideslizante y plantilla ergonómica, son ideales tanto para caminar por la ciudad como para entrenar en interiores. El modelo AirFlow ofrece un ajuste perfecto y un diseño moderno que se adapta a cualquier look casual. Disponibles en varias tallas y colores.",
+        "title": "Urban sports shoes for men – AirFlow model",
+        "description": "These shoes combine style and comfort for everyday use. Designed with breathable materials, a non-slip rubber sole, and an ergonomic insole, they are ideal for both city walking and indoor training. The AirFlow model offers a perfect fit and a modern design that adapts to any casual look. Available in various sizes and colors.",
         "price": {
             "amount": "49.95",
             "currency": "EUR"
@@ -197,16 +192,14 @@ Puedes cargar los productos uno a uno, pero es más rápido cargarlos en bloques
     },
     {
         "code" : "J481955"
-        ...
-    },
-    ...
+    }
 ]
 ```
 
 :::tip
-Puedes cargar hasta 100 productos a la vez utilizando este método
+You can load up to 100 products at once using this method
 :::
 
 :::info
-Cuando cargas muchos productos a Biteral muy rápidamente, puede pasar un rato hasta que todos están disponibles para las herramientas de Biteral.
+When you load many products to Biteral very quickly, it might take a while until they are all available for Biteral's tools.
 :::

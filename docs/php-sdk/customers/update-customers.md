@@ -1,10 +1,10 @@
 ---
-title: Actualizar clientes
+title: Update customers
 expanded: false
 sidebar_position: 3
 icon: arrow-right
 ---
-Para cambiar los datos de un cliente que ya cargaste, llama a <Badge variant="sdk php method" text="customers()->ingest()" /> nuevamente, pero esta vez especifica sólo los datos que cambian. También puedes especificar los demás datos si te resulta más cómodo, aunque no hayan cambiado.
+To change the data of a customer you already loaded, call <Badge variant="sdk php method" text="customers()->ingest()" /> again, but this time specify only the data that changes. You can also specify the other data if it's more convenient for you, even if it hasn't changed.
 
 ```php
 use Biteral\Payload\Customer\CustomerPayload;
@@ -18,13 +18,13 @@ $customerPayload =
 $client->customers()->ingest($customerPayload);
 ```
 
-Al actualizar clientes, es imprescindible especificar al menos <Badge variant="parameter" text="code" />
+When updating customers, it is mandatory to specify at least <Badge variant="parameter" text="code" />
 
 :::tip
-Si quieres eliminar un dato de un cliente, establece su valor a <Badge variant="value" text="null" />
+If you want to remove a property from a customer, set its value to <Badge variant="value" text="null" />
 :::
 
 
 :::info
-Si los datos que envías al actualizar un cliente no contienen ningún cambio respecto a los valores actuales, no se considera una actualización. En ese caso, la petición `ingest` no cuenta para tu cuota de peticiones `ingest` facturables.
+If the data you send when updating a customer does not contain any changes compared to the current values, it is not considered an update. In that case, the `ingest` request does not count towards your billable `ingest` requests quota.
 :::

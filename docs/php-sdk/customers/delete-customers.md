@@ -1,15 +1,15 @@
 ---
-title: Eliminar clientes
+title: Delete customers
 expanded: false
 sidebar_position: 5
 icon: arrow-right
 ---
-# Eliminar clientes
+# Delete customers
 
-Cuando un cliente deja de serlo, es mejor eliminarlo también de Biteral para asegurarte de que no se utilizan recursos en Biteral para datos que ya están obsoletos. Elimínalo de Biteral con el método <Badge variant="sdk php method" text="customers()->deleteByCode()" />:
+When a customer is no longer a customer, it is better to delete them from Biteral as well to make sure you do not use resources in Biteral for data that is already obsolete. Delete it from Biteral with the <Badge variant="sdk php method" text="customers()->deleteByCode()" /> method:
 
 ```php
 $client->customers()->deleteByCode('D314K1432');
 ```
 
-También puedes utilizar <Badge variant="sdk php method" text="customers()->deleteById()" />, que te permitie eliminar un cliente utilizando su id en Biteral.
+You can also use <Badge variant="sdk php method" text="customers()->deleteById()" />, which allows you to delete a customer using its Biteral id.

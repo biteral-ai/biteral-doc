@@ -1,51 +1,51 @@
 ---
-title: Calidad de datos
+title: Data quality
 sidebar_position: 5
 icon: thumbsup
 ---
-Cuanta más información precisa, estructurada y actualizada recibimos, mejores son las recomendaciones, análisis y resultados que podemos generar para tu e-commerce. Asegúrate de proporcionar títulos claros, descripciones completas y atributos relevantes.
+The more accurate, structured, and updated information we receive, the better recommendations, analysis, and results we can generate for your e-commerce. Make sure to provide clear titles, complete descriptions, and relevant attributes.
 
 :::tip
-La eficacia de las herramientas de Biteral depende directamente de la calidad de los datos de producto que proporciones.
+The effectiveness of Biteral's tools depends directly on the quality of the product data you provide.
 :::
 
-Si no puedes proporcionar datos de calidad en todos los campos (título, descripción o atributos), asegúrate de que al menos uno de ellos contenga información completa y relevante.
+If you cannot provide quality data in all fields (title, description, or attributes), make sure that at least one of them contains complete and relevant information.
 
-### Ejemplos de títulos
+### Title examples
 
-| <Badge variant="ko" icon="ko" text="Mala calidad" /> | <Badge variant="ok" icon="ok" text="Buena calidad" /> |
+| <Badge variant="ko" icon="ko" text="Poor quality" /> | <Badge variant="ok" icon="ok" text="Good quality" /> |
 | :--- | :--- |
-| Camiseta | Camiseta técnica de running para mujer, transpirable, color azul marino |
-| Móvil Android | Smartphone Samsung Galaxy A54 5G, 128 GB, pantalla AMOLED 6.4” |
-| Sartén antiadherente | Sartén antiadherente de aluminio fundido 24 cm, apta para inducción |
-| Oso de peluche | Oso de peluche Disney gigante, 100 cm, color marrón claro |
-| Silla de oficina | Silla ergonómica de oficina con respaldo de malla, reposabrazos ajustables y ruedas giratorias |
-| Novela histórica | “La sombra del viento” de Carlos Ruiz Zafón, edición tapa blanda, 576 páginas |
+| T-shirt | Women's technical running t-shirt, breathable, navy blue color |
+| Android phone | Samsung Galaxy A54 5G Smartphone, 128 GB, 6.4” AMOLED screen |
+| Non-stick pan | 24 cm cast aluminum non-stick pan, induction suitable |
+| Teddy bear | Giant Disney teddy bear, 100 cm, light brown color |
+| Office chair | Ergonomic office chair with mesh backrest, adjustable armrests, and swivel wheels |
+| Historical novel | "The Shadow of the Wind" by Carlos Ruiz Zafón, paperback edition, 576 pages |
 
-### Ejemplos de descripciones
+### Description examples
 
-| <Badge variant="ko" icon="ko" text="Mala calidad" /> | <Badge variant="ok" icon="ok" text="Buena calidad" /> |
+| <Badge variant="ko" icon="ko" text="Poor quality" /> | <Badge variant="ok" icon="ok" text="Good quality" /> |
 | :--- | :--- |
-| Chaqueta cómoda y bonita para invierno. Ideal para el frío. | Chaqueta acolchada impermeable para mujer, perfecta para climas fríos y húmedos. Con capucha ajustable, bolsillos laterales con cremallera y forro térmico suave. Disponible en tallas S a XL. Ideal para uso diario o actividades al aire libre. |
-| Teléfono con buena cámara y muchas funciones. Muy rápido. | El Samsung Galaxy A54 5G cuenta con una pantalla AMOLED de 6.4” FHD+, cámara triple de hasta 50 MP, 128 GB de almacenamiento interno y batería de 5000 mAh. Ideal para fotografía, redes sociales y juegos. Incluye cargador y funda transparente. |
-| Sartén resistente y fácil de limpiar. Buena para cocinar de todo. | Sartén antiadherente de 24 cm fabricada en aluminio fundido, compatible con todo tipo de cocinas, incluida inducción. Revestimiento libre de PFOA, mango ergonómico de baquelita resistente al calor. Apta para lavavajillas. |
-| Vela con olor agradable. Perfecta para casa. | Vela aromática fabricada con cera de soja natural, fragancia de vainilla con notas de madera. Duración aproximada: 40 horas. Presentación en frasco de vidrio ámbar con tapa metálica. Ideal para ambientes relajantes. |
+| Comfortable and nice winter jacket. Ideal for the cold. | Women's waterproof quilted jacket, perfect for cold and wet climates. With adjustable hood, zippered side pockets, and soft thermal lining. Available in sizes S to XL. Ideal for daily use or outdoor activities. |
+| Phone with a good camera and many features. Very fast. | The Samsung Galaxy A54 5G features a 6.4” FHD+ AMOLED screen, triple camera up to 50 MP, 128 GB of internal storage, and a 5000 mAh battery. Ideal for photography, social media, and gaming. Includes charger and transparent case. |
+| Sturdy and easy-to-clean pan. Good for cooking anything. | 24 cm non-stick pan made of cast aluminum, compatible with all types of stoves, including induction. PFOA-free coating, ergonomic heat-resistant bakelite handle. Dishwasher safe. |
+| Nice smelling candle. Perfect for home. | Scented candle made with natural soy wax, vanilla fragrance with woody notes. Approximate duration: 40 hours. Presented in an amber glass jar with a metal lid. Ideal for relaxing environments. |
 
-### Ejemplos de atributos
+### Attribute examples
 
-#### Cámara fotográfica
+#### Digital camera
 
-- Zoom: <Badge variant="ko" icon="ko" text="Sí" /> <Badge variant="ok" icon="ok" text="Óptico 10x, digital 100x" />
-- Vídeo: <Badge variant="ko" icon="ko" text="Sí" /> <Badge variant="ok" icon="ok" text="Full HD 1080p a 60 fps" />
-- Sensor: <Badge variant="ko" icon="ko" text="24.2 MP" /> <Badge variant="ok" icon="ok" text="CMOS APS-C de 24.2 MP" />
+- Zoom: <Badge variant="ko" icon="ko" text="Yes" /> <Badge variant="ok" icon="ok" text="10x optical, 100x digital" />
+- Video: <Badge variant="ko" icon="ko" text="Yes" /> <Badge variant="ok" icon="ok" text="Full HD 1080p at 60 fps" />
+- Sensor: <Badge variant="ko" icon="ko" text="24.2 MP" /> <Badge variant="ok" icon="ok" text="24.2 MP APS-C CMOS" />
 
-#### Colchón
+#### Mattress
 
-- Tamaño: <Badge variant="ko" icon="ko" text="Cama grande" /> <Badge variant="ok" icon="ok" text="Queen size, 150x190cm" />
-- Material: <Badge variant="ko" icon="ko" text="Espuma viscoelástica" /> <Badge variant="ok" icon="ok" text="Capa viscoelástica de 4cm, espuma HR 30 kg/m³, con tratamiento antibacteriano" />
+- Size: <Badge variant="ko" icon="ko" text="Large bed" /> <Badge variant="ok" icon="ok" text="Queen size, 150x190cm" />
+- Material: <Badge variant="ko" icon="ko" text="Memory foam" /> <Badge variant="ok" icon="ok" text="4cm memory foam layer, 30 kg/m³ HR foam, with antibacterial treatment" />
 
-#### Gel de ducha
+#### Shower gel
 
-- Aroma: <Badge variant="ko" icon="ko" text="Cítrico" /> <Badge variant="ok" icon="ok" text="Cítrico fresco con notas de lima y mandarina" />
-- Tipo de piel: <Badge variant="ko" icon="ko" text="Todo tipo" /> <Badge variant="ok" icon="ok" text="Apto para todo tipo de piel, incluso sensible" />
-- Envase: <Badge variant="ko" icon="ko" text="500ml" /> <Badge variant="ok" icon="ok" text="500 ml, botella reciclable con dosificador" />
+- Scent: <Badge variant="ko" icon="ko" text="Citrus" /> <Badge variant="ok" icon="ok" text="Fresh citrus with lime and tangerine notes" />
+- Skin type: <Badge variant="ko" icon="ko" text="All types" /> <Badge variant="ok" icon="ok" text="Suitable for all skin types, even sensitive" />
+- Packaging: <Badge variant="ko" icon="ko" text="500ml" /> <Badge variant="ok" icon="ok" text="500 ml, recyclable bottle with dispenser" />

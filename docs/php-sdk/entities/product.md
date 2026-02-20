@@ -3,12 +3,12 @@ sidebar_position: 2
 ---
 # Product
 
-Representa uno de vuestros productos en Biteral. Además de los datos que habéis proporcionado sobre el producto, incluye información propia de Biteral, como el identificador interno del producto, la fecha en que se añadió o la fecha de la última actualización.
+Represents one of your products in Biteral. In addition to the data you provided about the product, it includes Biteral's own information, such as the product's internal identifier, the date it was added, or the date of the last update.
 
-Propiedad|Tipo|Descripción
+Property|Type|Description
 ---|---|---
-<Badge variant="sdk php property" icon="property" text="id" />|string|Id del producto en Biteral. Por ejemplo: <Badge variant="value" text="pro_hs14jd193K1ndJ" />
-<Badge variant="sdk php property" icon="property" text="projectId" />|string|Id del proyecto en Biteral al que pertenece el producto. Por ejemplo: <Badge variant="value" text="prj_18vn8R74uvSijf" />
-<Badge variant="sdk php property" icon="property" text="createdAt" />|DateTimeImmutable|Fecha de creación del producto.
-<Badge variant="sdk php property" icon="property" text="updatedAt" />|DateTimeImmutable|Fecha en la que el producto se actualizó por última vez.
-<Badge variant="sdk php property" icon="property" text="payload" />|<Badge variant="sdk php payload" text="ProductPayload" to="/php-sdk/payloads/product-payload" />|Payload de los datos del producto
+<Badge variant="sdk php property" icon="property" text="id" />|string|Product ID in Biteral. For example: <Badge variant="value" text="pro_hs14jd193K1ndJ" />
+<Badge variant="sdk php property" icon="property" text="projectId" />|string|Project ID in Biteral to which the product belongs. For example: <Badge variant="value" text="prj_18vn8R74uvSijf" />
+<Badge variant="sdk php property" icon="property" text="createdAt" />|DateTimeImmutable|Product creation date.
+<Badge variant="sdk php property" icon="property" text="updatedAt" />|DateTimeImmutable|Date when the product was last updated.
+<Badge variant="sdk php property" icon="property" text="payload" />|<Badge variant="sdk php payload" text="ProductPayload" to="/php-sdk/payloads/product-payload" />|Payload of the product data

@@ -1,1 +1,1 @@
-Vuestro código interno identificador del cliente. Debe coincidir con el que especificaste al añadir el cliente a Biteral. Por ejemplo: `JD934828`
+Your internal identifier code for the customer. Must match the one you specified when adding the customer to Biteral. For example: `JD934828`

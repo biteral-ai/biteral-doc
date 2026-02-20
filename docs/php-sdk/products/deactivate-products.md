@@ -1,16 +1,16 @@
 ---
-title: Desactivar productos
+title: Deactivate products
 expanded: false
 sidebar_position: 4
 icon: arrow-right
 ---
-# Desactivar productos temporalmente
+# Deactivate products temporarily
 
-En algunas ocasiones es posible que necesites desactivar temporalmente algunos productos de forma que no formen parte de los datos que manejan las herramientas de Biteral.
+Sometimes you may need to temporarily deactivate some products so they are not part of the data handled by Biteral's tools.
 
-> Por ejemplo, lo más probable es que no desees obtener productos que están **fuera de stock** en los resultados de la búsqueda natural.
+> For example, you most likely do not want to get **out of stock** products in the natural search results.
 
-En tales casos, pon <Badge variant="parameter" text="isActive" /> en tu producto a <Badge variant="value" text="false" />:
+In such cases, set <Badge variant="parameter" text="isActive" /> on your product to <Badge variant="value" text="false" />:
 
 ```php
 use Biteral\Payload\Product\ProductPayload;
@@ -24,8 +24,8 @@ $productPayload =
 $client->products()->ingest($productPayload);
 ```
 
-Cuando el producto vuelva a estar disponible, reactívalo poniendo <Badge variant="parameter" text="isActive" /> a <Badge variant="value" text="true" />.
+When the product is available again, reactivate it by setting <Badge variant="parameter" text="isActive" /> to <Badge variant="value" text="true" />.
 
 :::info
-Cuando cargas un producto por primera vez, <Badge variant="parameter" text="isActive" /> será <Badge variant="value" text="true" /> si no especificas lo contrario.
+When you load a product for the first time, <Badge variant="parameter" text="isActive" /> will be <Badge variant="value" text="true" /> unless you specify otherwise.
 :::

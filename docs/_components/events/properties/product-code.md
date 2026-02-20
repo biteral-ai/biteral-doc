@@ -1,1 +1,1 @@
-Vuestro código interno identificador del producto. Debe coincidir con el que especificaste al añadir el producto a Biteral. Por ejemplo: `N30122`
+Your internal identifier code for the product. Must match the one you specified when adding the product to Biteral. For example: `N30122`

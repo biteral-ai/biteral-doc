@@ -1,1 +1,1 @@
-Se ha quitado un producto del carrito.
+A product has been removed from the cart.

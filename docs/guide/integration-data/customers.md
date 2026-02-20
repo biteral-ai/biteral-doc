@@ -1,41 +1,41 @@
 ---
-title: Clientes
+title: Customers
 sidebar_position: 3
 icon: /static/icons/customer.svg
 ---
-# Integrar clientes
+# Integrate customers
 
-Biteral utiliza información sobre vuestros clientes para para alimentar herramientas como las recomendaciones personalizadas. Los datos de vuestros clientes siempre se envían anonimizados, de forma que no existe un vínculo directo entre la información que envías y el cliente final.
+Biteral uses information about your customers to power tools like personalized recommendations. Your customer data is always sent anonymized, so there is no direct link between the information you send and the final customer.
 
-### Cargar un cliente
+### Load a customer
 
 <Tabs>
-<TabItem value="php" label={<Badge icon="code" text="SDK PHP" transparent />}>
+<TabItem value="php" label={<Badge icon="code" text="PHP SDK" transparent />}>
 
-Llama a <Badge variant="sdk php method" text="customers()->ingest" to="/php-sdk/customers/add-customers" /> con un objeto <Badge variant="sdk php payload" text="CustomerPayload" to="/php-sdk/payloads/customer-payload" /> como parámetro.
+Call <Badge variant="sdk php method" text="customers()->ingest" to="/php-sdk/customers/add-customers" /> with a <Badge variant="sdk php payload" text="CustomerPayload" to="/php-sdk/payloads/customer-payload" /> object as parameter.
 
-<Button text="Cargar un cliente con PHP" to="/php-sdk/customers/add-customers" />
+<Button text="Load a customer with PHP" to="/php-sdk/customers/add-customers" />
 
 </TabItem>
 <TabItem value="api" label={<Badge icon="technology/api" text="API" transparent />}>
 
-Haz una petición <Badge variant="http-post" text="POST" /> al endpoint <Badge variant="api-endpoint" text="/customers" to="/api/endpoints/customers/post" />
+Make a <Badge variant="http-post" text="POST" /> request to the <Badge variant="api-endpoint" text="/customers" to="/api/endpoints/customers/post" /> endpoint.
 
-<Button text="Cargar un cliente con la API" to="/api/endpoints/customers/post" />
+<Button text="Load a customer with the API" to="/api/endpoints/customers/post" />
 
 </TabItem>
 </Tabs>
 
-### Cargar muchos clientes a la vez
+### Load multiple customers at once
 
-Igual que cuando cargas muchos productos a la vez, puedes cargar varios clientes de forma eficiente utilizando el método de carga masiva de clientes:
+Just like when you load multiple products at once, you can load multiple customers efficiently using the bulk customer load method:
 
-<Button text="Carga masiva con PHP" to="/php-sdk/customers/add-customers-batch" />
-<Button text="Carga masiva con la API" to="/api/endpoints/customers/post/#cargar-varios-clientes-a-la-vez" />
+<Button text="Bulk load with PHP" to="/php-sdk/customers/add-customers-batch" />
+<Button text="Bulk load with the API" to="/api/endpoints/customers/post/#load-multiple-customers-at-once" />
 
-### Otras operaciones con clientes
+### Other customer operations
 
-También puedes realizar otras operaciones con clientes, como modificarlos, desactivarlos o eliminarlos:
+You can also perform other operations with customers, like updating, deactivating or deleting them:
 
-<Button text="Otras operaciones con clientes con PHP" to="/php-sdk/customers/update-customers" />
-<Button text="Otras operaciones con clientes con la API" to="/api/endpoints/customers/post" />
+<Button text="Other customer operations with PHP" to="/php-sdk/customers/update-customers" />
+<Button text="Other customer operations with the API" to="/api/endpoints/customers/post" />

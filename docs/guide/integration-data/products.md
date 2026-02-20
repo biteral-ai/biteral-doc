@@ -1,41 +1,41 @@
 ---
-title: Productos
+title: Products
 sidebar_position: 2
 icon: /static/icons/product.svg
 ---
-# Integrar productos
+# Integrate products
 
-Lo más recomendable es comenzar cargando todos los productos disponibles en vuestro e-commerce para que Biteral pueda empezar a trabajar con ellos, pero primero veamos cómo cargar un único producto:
+We highly recommend you start by loading all available products in your e-commerce so Biteral can start working with them, but first let's see how to load a single product:
 
-### Cargar tu primer producto
+### Load your first product
 
 <Tabs>
-<TabItem value="php" label={<Badge icon="code" text="SDK PHP" transparent />}>
+<TabItem value="php" label={<Badge icon="code" text="PHP SDK" transparent />}>
 
-Una vez hayas [instalado el SDK](/php-sdk/install), llama a <Badge variant="sdk php method" text="products()->ingest" to="/php-sdk/products/add-products" /> con un objeto <Badge variant="php sdk payload" text="ProductPayload" to="/php-sdk/payloads/product-payload" /> como parámetro.
+Once you have [installed the SDK](/php-sdk/install), call <Badge variant="sdk php method" text="products()->ingest" to="/php-sdk/products/add-products" /> with a <Badge variant="php sdk payload" text="ProductPayload" to="/php-sdk/payloads/product-payload" /> object as parameter.
 
-<Button text="Cargar un producto con PHP" to="/php-sdk/products/add-products" />
+<Button text="Load a product with PHP" to="/php-sdk/products/add-products" />
 
 </TabItem>
 <TabItem value="api" label={<Badge icon="technology/api" text="API" transparent />}>
 
-Una vez hayas aprendido [cómo conectar con la API](/api/connect), haz una petición <Badge variant="http-post" text="POST" /> al endpoint <Badge variant="api-endpoint" text="/products" to="/api/endpoints/products/post" />
+Once you have learned [how to connect to the API](/api/connect), make a <Badge variant="http-post" text="POST" /> request to the <Badge variant="api-endpoint" text="/products" to="/api/endpoints/products/post" /> endpoint.
 
-<Button text="Cargar un producto con la API" to="/api/endpoints/products/post" />
+<Button text="Load a product with the API" to="/api/endpoints/products/post" />
 
 </TabItem>
 </Tabs>
 
-### Cargar muchos productos a la vez
+### Load multiple products at once
 
-Al cargar todo vuestro catálogo, realizar una petición por cada producto sería muy lento. En su lugar, utiliza el método de carga masiva de productos:
+When loading your entire catalog, making a request for each product would be very slow. Instead, use the bulk product load method:
 
-<Button text="Carga masiva con PHP" to="/php-sdk/products/add-products-batch" />
-<Button text="Carga masiva con la API" to="/api/endpoints/products/post/#cargar-varios-productos-a-la-vez" />
+<Button text="Bulk load with PHP" to="/php-sdk/products/add-products-batch" />
+<Button text="Bulk load with the API" to="/api/endpoints/products/post/#load-multiple-products-at-once" />
 
-### Otras operaciones con productos
+### Other product operations
 
-También puedes realizar otras operaciones con productos, como modificarlos, desactivarlos o eliminarlos:
+You can also perform other operations with products, like updating, deactivating, or deleting them:
 
-<Button text="Otras operaciones con productos con PHP" to="/php-sdk/products/update-products" />
-<Button text="Otras operaciones con productos con la API" to="/api/endpoints/products/post" />
+<Button text="Other product operations with PHP" to="/php-sdk/products/update-products" />
+<Button text="Other product operations with the API" to="/api/endpoints/products/post" />

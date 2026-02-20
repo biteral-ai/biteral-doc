@@ -1,42 +1,42 @@
 ---
-title: Conectar
+title: Connect
 sidebar_position: 1
 ---
-# Conectar con la API
+# Connect to the API
 
-La API REST de Biteral es el principal método de conexión de vuestro sistema a Biteral, y es el método recomendado para integraciones de cualquier tamaño flexibles y fiables.
+The Biteral REST API is the primary method to connect your system to Biteral, and it is the recommended method for flexible and reliable integrations of any size.
 
-Si utilizas PHP, es muy recomendable utilizar el [SDK de Biteral para PHP](/php-sdk/install), que proporciona un interfaz extremadamente sencillo y fiable para trabajar con la API de Biteral.
+If you use PHP, we highly recommend using the [Biteral PHP SDK](/php-sdk/install), which provides an extremely simple and reliable interface to work with the Biteral API.
 
-### Antes de empezar
+### Before you begin
 
-1. Crea una cuenta en [Biteral](https://biteral.ai/signup)
-1. Obtén vuestra API key de pruebas desde el [dashboard](https://biteral.ai/dashboard)
+1. Create a [Biteral](https://biteral.ai/signup) account
+1. Get your test API key from the [dashboard](https://biteral.ai/dashboard)
 
 <details>
-<summary>Limitaciones de la API key de pruebas</summary>
+<summary>Test API key limitations</summary>
 
-La API key de pruebas os permite utilizar Biteral gratuitamente, ideal para realizar pruebas desde vuestro entorno de desarrollo y ver resultados reales sobre cómo funcionaría Biteral con vuestro sistema. Sin embargo, tiene algunos límites:
+The test API key allows you to use Biteral for free, ideal for testing from your development environment and seeing real results on how Biteral would work with your system. However, it has some limits:
 
 :::warning
-***Límite de peticiones por segundo estricto***
+***Strict requests per second limit***
 
-Algunos endpoints tienen el máximo de peticiones por segundo limitado, así que es posible que obtengas un código de respuesta `429 Too Many Requests` al utilizar una API key de pruebas y realizar demasiadas peticiones en un breve espacio de tiempo.
+Some endpoints have a strict maximum requests per second limit, so you might get a `429 Too Many Requests` response code when using a test API key and making too many requests in a short amount of time.
 :::
 
 :::warning
-***Límite máximo de peticiones diarias***
+***Maximum daily requests limit***
 
-Algunos endpoints sólo pueden recibir cierto número de peticiones por día. Al utilizar una API key de pruebas, si alcanzas este límite obtendrás un código de respuesta `429 Too Many Requests`
+Some endpoints can only receive a certain number of requests per day. When using a test API key, if you reach this limit, you will get a `429 Too Many Requests` response code.
 :::
 </details>
 
-### Cómo conectar
+### How to connect
 
-Realiza peticiones `HTTPS` a **`api.biteral.ai`** incluyendo los siguientes headers:
+Make `HTTPS` requests to **`api.biteral.ai`** including the following headers:
 
-- <Badge variant="header" text="X-API-Key" /> Vuestra API key
-- <Badge variant="header" text="X-API-Version" /> La versión principal de la API que vas a utilizar, por ejemplo: <Badge variant="value" text="1" />
+- <Badge variant="header" text="X-API-Key" /> Your API key
+- <Badge variant="header" text="X-API-Version" /> The major API version you are going to use, for example: <Badge variant="value" text="1" />
 
 <Tabs>
 <TabItem value="curl" label={<Badge icon="terminal" text="Curl" transparent />}>
@@ -49,7 +49,7 @@ curl \
 ```
 
 </TabItem>
-<TabItem value="php" label={<Badge icon="code" text="SDK PHP" transparent />}>
+<TabItem value="php" label={<Badge icon="code" text="PHP SDK" transparent />}>
 
 ```php
 use Biteral\Client;
@@ -61,25 +61,25 @@ print_r($status);
 </TabItem>
 </Tabs>
 
-### Enviar y recibir datos en la API
+### Send and receive data in the API
 
-Los endpoints <Badge variant="http-post" text="POST" />, <Badge variant="http-put" text="PUT" /> y <Badge variant="http-patch" text="PATCH" /> normalmente aceptan los datos en formato JSON a través del `body` de la petición. Por ejemplo, éste es el cuerpo de una petición <Badge variant="http-post" text="POST" /> al endpoint <Badge variant="api-endpoint" text="/products" to="/api/endpoints/products/post" /> para enviar un producto a Biteral:
+The <Badge variant="http-post" text="POST" />, <Badge variant="http-put" text="PUT" /> and <Badge variant="http-patch" text="PATCH" /> endpoints normally accept data in JSON format through the request `body`. For example, this is the body of a <Badge variant="http-post" text="POST" /> request to the <Badge variant="api-endpoint" text="/products" to="/api/endpoints/products/post" /> endpoint to send a product to Biteral:
 
 ```json
 {
     "code": "N30123",
-    "title": "Zapatillas deportivas urbanas para hombre – modelo AirFlow",
-    "description": "Estas zapatillas combinan estilo y comodidad para el uso diario. Diseñadas con materiales transpirables, suela de goma antideslizante y plantilla ergonómica, son ideales tanto para caminar por la ciudad como para entrenar en interiores. El modelo AirFlow ofrece un ajuste perfecto y un diseño moderno que se adapta a cualquier look casual. Disponibles en varias tallas y colores."
+    "title": "Urban sports shoes for men – AirFlow model",
+    "description": "These shoes combine style and comfort for everyday use. Designed with breathable materials, a non-slip rubber sole, and an ergonomic insole, they are ideal for both city walking and indoor training. The AirFlow model offers a perfect fit and a modern design that adapts to any casual look. Available in various sizes and colors."
 }
 ```
 
-Otros endpoints del tipo <Badge variant="http-get" text="GET" /> o <Badge variant="http-delete" text="DELETE" /> aceptan datos a través de los parámetros en la URL de la petición. Por ejemplo, ésta es la URL para una petición <Badge variant="http-get" text="GET" /> al endpoint <Badge variant="api-endpoint" text="/products" to="/api/endpoints/products/get" /> que obtiene los datos de un producto:
+Other endpoints like <Badge variant="http-get" text="GET" /> or <Badge variant="http-delete" text="DELETE" /> accept data through parameters in the request URL. For example, this is the URL for a <Badge variant="http-get" text="GET" /> request to the <Badge variant="api-endpoint" text="/products" to="/api/endpoints/products/get" /> endpoint that retrieves product data:
 
 ```
 https://api.biteral.ai/products?code=B00YUU43VS
 ```
 
-Todos los endpoints responden siempre en formato JSON, por ejemplo:
+All endpoints always respond in JSON format, for example:
 
 ```json
 {
@@ -90,8 +90,8 @@ Todos los endpoints responden siempre en formato JSON, por ejemplo:
     "payload": {
         "code": "N30122",
         "isActive": true,
-        "title": "Zapatillas deportivas urbanas para hombre – modelo AirFlow",
-        "description": "Estas zapatillas combinan estilo y comodidad para el uso diario. Diseñadas con materiales transpirables, suela de goma antideslizante y plantilla ergonómica, son ideales tanto para caminar por la ciudad como para entrenar en interiores. El modelo AirFlow ofrece un ajuste perfecto y un diseño moderno que se adapta a cualquier look casual. Disponibles en varias tallas y colores.",
+        "title": "Urban sports shoes for men – AirFlow model",
+        "description": "These shoes combine style and comfort for everyday use. Designed with breathable materials, a non-slip rubber sole, and an ergonomic insole, they are ideal for both city walking and indoor training. The AirFlow model offers a perfect fit and a modern design that adapts to any casual look. Available in various sizes and colors.",
         "attributes": null,
         "brand": null,
         "category": null,
@@ -103,19 +103,19 @@ Todos los endpoints responden siempre en formato JSON, por ejemplo:
 }
 ```
 
-### Códigos de respuesta
+### Response codes
 
-Los códigos HTTP de respuesta indican si la petición se realizó con éxito, o si se produjo algún error:
+The HTTP response codes indicate whether the request was successful, or if an error occurred:
 
-| Código | Tipo | Descripción |
+| Code | Type | Description |
 |-----------------|------|-------------|
-| <Badge variant="ok" text="200" /> | OK | La solicitud se completó exitosamente. |
-| <Badge variant="ok" text="201" /> | Created | La solicitud se completó y se creó un nuevo recurso. |
-| <Badge variant="warning" text="400" /> | Bad Request | La petición se realizó de forma incorrecta, o alguno de los datos incluidos no tenía el formato o la sintaxis correcta. |
-| <Badge variant="warning" text="401" /> | Unauthorized | La solicitud requiere autenticación, y no proporcionaste una API Key válida. |
-| <Badge variant="warning" text="403" /> | Forbidden | El cliente no tiene permiso para acceder al recurso solicitado. |
-| <Badge variant="warning" text="404" /> | Not Found | El recurso solicitado no se encontró. |
-| <Badge variant="warning" text="405" /> | Method Not Allowed | El método HTTP utilizado no está permitido para el recurso solicitado. |
-| <Badge variant="warning" text="429" /> | Too Many Requests | Realizaste demasiadas solicitudes en un período de tiempo corto. |
-| <Badge variant="ko" text="500" /> | Internal Server Error | El servidor encontró un error interno que impidió procesar la solicitud. |
-| <Badge variant="ko" text="503" /> | Service Unavailable | El servidor no está disponible temporalmente debido a mantenimiento o sobrecarga. |
+| <Badge variant="ok" text="200" /> | OK | The request completed successfully. |
+| <Badge variant="ok" text="201" /> | Created | The request completed and a new resource was created. |
+| <Badge variant="warning" text="400" /> | Bad Request | The request was malformed, or some of the included data had incorrect format or syntax. |
+| <Badge variant="warning" text="401" /> | Unauthorized | The request requires authentication, and you didn't provide a valid API Key. |
+| <Badge variant="warning" text="403" /> | Forbidden | The client does not have permission to access the requested resource. |
+| <Badge variant="warning" text="404" /> | Not Found | The requested resource was not found. |
+| <Badge variant="warning" text="405" /> | Method Not Allowed | The HTTP method used is not allowed for the requested resource. |
+| <Badge variant="warning" text="429" /> | Too Many Requests | You made too many requests in a short period of time. |
+| <Badge variant="ko" text="500" /> | Internal Server Error | The server encountered an internal error that prevented processing the request. |
+| <Badge variant="ko" text="503" /> | Service Unavailable | The server is temporarily unavailable due to maintenance or overload. |

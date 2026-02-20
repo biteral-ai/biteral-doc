@@ -1,34 +1,34 @@
-import LotsOfEvents from '@site/src/components/note_lots_of_events.md';
+import LotsOfEvents from '../../../_components/note_lots_of_events.md';
 
-# Integrar eventos
+# Integrate events
 
-Los eventos son las acciones que vuestros clientes realizan, y permiten a Biteral aprender cómo interactúan con vuestros productos. Por ejemplo, algunos de los eventos más importantes que Biteral recopila son la compra de productos, la navegación por vuestro catálogo o incluso las devoluciones.
+Events are the actions your customers perform, and they allow Biteral to learn how they interact with your products. For example, some of the most important events Biteral collects are product purchases, catalog browsing, or even returns.
 
-### Enviar un evento
+### Send an event
 
 <Tabs>
-<TabItem value="php" label={<Badge icon="code" text="SDK PHP" transparent />}>
+<TabItem value="php" label={<Badge icon="code" text="PHP SDK" transparent />}>
 
-Llama a <Badge variant="sdk php method" text="events()->ingest" to="/php-sdk/events/send-events" /> con un objeto <Badge variant="sdk php payload" text="EventPayload" to="/php-sdk/payloads/event-payload" /> como parámetro. Consulta los [tipos de eventos disponibles](/guide/integration-data/events/types) para saber qué parametros adicionales debes añadir al objeto.
+Call <Badge variant="sdk php method" text="events()->ingest" to="/php-sdk/events/send-events" /> with an <Badge variant="sdk php payload" text="EventPayload" to="/php-sdk/payloads/event-payload" /> object as parameter. Check the [available event types](/guide/integration-data/events/types) to know what additional parameters you must add to the object.
 
-<Button text="Enviar un evento con PHP" to="/php-sdk/events/send-events" />
+<Button text="Send an event with PHP" to="/php-sdk/events/send-events" />
 
 </TabItem>
 <TabItem value="api" label={<Badge icon="technology/api" text="API" transparent />}>
 
-Haz una petición <Badge variant="http-post" text="POST" /> al endpoint <Badge variant="api-endpoint" text="/events" to="/api/endpoints/events/post" />
+Make a <Badge variant="http-post" text="POST" /> request to the <Badge variant="api-endpoint" text="/events" to="/api/endpoints/events/post" /> endpoint.
 
-<Button text="Enviar un evento con la API" to="/api/endpoints/events/post" />
+<Button text="Send an event with the API" to="/api/endpoints/events/post" />
 
 </TabItem>
 </Tabs>
 
-### Cuándo enviar un evento
+### When to send an event
 
-Lo más sencillo es enviar los eventos en el mismo instante en que se producen en tu sistema. Además, esto hará que los resultados de Biteral estén actualizados casi en tiempo real. Sin embargo, si vuestro sistema genera muchos eventos, es mejor enviar los eventos en grupo:
+The easiest way is to send events the exact moment they occur in your system. Besides, this will make Biteral's results updated in near real-time. However, if your system generates many events, it is better to send them in batches:
 
-<Button text="Enviar eventos en grupo con PHP" to="/php-sdk/events/send-events-batch" />
-<Button text="Enviar eventos en grupo con la API" to="/api/endpoints/events/post/#enviar-varios-eventos-a-la-vez" />
+<Button text="Send events in batches with PHP" to="/php-sdk/events/send-events-batch" />
+<Button text="Send events in batches with the API" to="/api/endpoints/events/post/#send-multiple-events-at-once" />
 
 #
 

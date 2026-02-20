@@ -1,1 +1,1 @@
-Se ha solicitado una alerta de stock disponible sobre un producto.
+An available stock alert about a product has been requested.

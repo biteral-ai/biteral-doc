@@ -1,20 +1,20 @@
 ---
-title: Introducción
+title: Introduction
 expanded: true
 sidebar_position: 1
 icon: arrow-right
 ---
-# Integrar herramientas
+# Integrate tools
 
-Las herramientas de Biteral como el [buscador natural](https://biteral.ai/natural-search), las [recomendaciones personalizadas](https://biteral.ai/personalized-recommend), el [análisis de tendencias](https://biteral.ai/trend-analysis) o las [etiquetas de cliente](http://biteral.ai/profile-tags) pueden integrarse manualmente en vuestro sistema utilzando la API o el SDK, lo que permite crear integraciones personalizadas según vuestras necesidades.
+Biteral's tools such as [natural search](https://biteral.ai/natural-search), [personalized recommendations](https://biteral.ai/personalized-recommend), [trend analysis](https://biteral.ai/trend-analysis) or [customer tags](http://biteral.ai/profile-tags) can be manually integrated into your system using the API or the SDK, allowing you to create custom integrations according to your needs.
 
 :::tip
-La API y el SDK también permiten integrar la inteligencia artificial de Biteral de forma más profunda en vuestros procesos, o desarrollar nuevas herramientas basadas en IA adaptadas específicamente a vuestro modelo de negocio.
+The API and SDK also allow integrating Biteral's artificial intelligence more deeply into your processes, or developing new AI-based tools tailored specifically to your business model.
 :::
 
-### Componentes listos para producción
-Ofrecemos componentes listos para usar que permiten integrar algunas de las herramientas de Biteral con solo copiar y pegar unas pocas líneas de código.
+### Production-ready components
+We offer ready-to-use components that allow integrating some of Biteral's tools simply by copying and pasting a few lines of code.
 
 ---
 
-Como primer paso, continúa a la siguiente página para aprender cómo integrar el buscador natural:
+As a first step, continue to the next page to learn how to integrate the natural search:

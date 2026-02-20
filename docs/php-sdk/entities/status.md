@@ -3,16 +3,16 @@ sidebar_position: 1
 ---
 # Status
 
-Representa el estado actual de la API de Biteral, y además proporciona información sobre tu petición, tus credenciales y otros datos útiles como las versiones de API disponibles, o la versión que estás actualizando actualmente.
+Represents the current status of the Biteral API, and additionally provides information about your request, your credentials, and other useful data such as available API versions, or the version you are currently using.
 
-Propiedad|Tipo|Descripción
+Property|Type|Description
 ---|---|---
-<Badge variant="sdk php property" icon="property" text="availableApiVersions" />|<Badge variant="sdk php payload" text="array<ApiVersion>" to="/php-sdk/payloads/api-version-payload" />|Las versiones de la API que están disponibles.
-<Badge variant="sdk php property" icon="property" text="latestStableMajorApiVersion" />|int|La versión mayor de API que se considera estable actualmente. Por ejemplo: <Badge variant="value" text="1" />
-<Badge variant="sdk php property" icon="property" text="requestMajorApiVersion" />|int|La versión mayor de API que se ha utilizado para esta petición a la API. Por ejemplo: <Badge variant="value" text="1" />
-<Badge variant="sdk php property" icon="property" text="clientId" />|string|El ID de cliente con el que se está realizando esta petición a la API. Por ejemplo: <Badge variant="value" text="cli_2YyNEfr5gcl139" />
-<Badge variant="sdk php property" icon="property" text="projectId" />|string|El ID de proyecto con el que se está realizando esta petición a la API. Por ejemplo: <Badge variant="value" text="prj_skd2kjn1j4aO1K" />
-<Badge variant="sdk php property" icon="property" text="roles" />|array\<string\>|Los roles que posee la API key utilizada en esta petición a la API. Por ejemplo: <Badge variant="value" text="['ROLE_API_USER']" />
-<Badge variant="sdk php property" icon="property" text="permissions" />|array\<string\>|Los permisos que posee la API key utilizada en esta petición a la API. Por ejemplo: <Badge variant="value" text="['all']" />.
-<Badge variant="sdk php property" icon="property" text="serverTime" />|DateTimeImmutable|La fecha y hora del servidor de API en el momento de realizar la petición.
-<Badge variant="sdk php property" icon="property" text="environment" />|string|El entorno en el que está funcionando la API. Por ejemplo <Badge variant="value" text="prod" />
+<Badge variant="sdk php property" icon="property" text="availableApiVersions" />|<Badge variant="sdk php payload" text="array<ApiVersion>" to="/php-sdk/payloads/api-version-payload" />|The available API versions.
+<Badge variant="sdk php property" icon="property" text="latestStableMajorApiVersion" />|int|The major API version currently considered stable. For example: <Badge variant="value" text="1" />
+<Badge variant="sdk php property" icon="property" text="requestMajorApiVersion" />|int|The major API version used for this API request. For example: <Badge variant="value" text="1" />
+<Badge variant="sdk php property" icon="property" text="clientId" />|string|The Client ID making this API request. For example: <Badge variant="value" text="cli_2YyNEfr5gcl139" />
+<Badge variant="sdk php property" icon="property" text="projectId" />|string|The Project ID making this API request. For example: <Badge variant="value" text="prj_skd2kjn1j4aO1K" />
+<Badge variant="sdk php property" icon="property" text="roles" />|array\<string\>|The roles held by the API key used in this API request. For example: <Badge variant="value" text="['ROLE_API_USER']" />
+<Badge variant="sdk php property" icon="property" text="permissions" />|array\<string\>|The permissions held by the API key used in this API request. For example: <Badge variant="value" text="['all']" />.
+<Badge variant="sdk php property" icon="property" text="serverTime" />|DateTimeImmutable|The API server's date and time when the request was made.
+<Badge variant="sdk php property" icon="property" text="environment" />|string|The environment where the API is running. For example <Badge variant="value" text="prod" />

@@ -6,29 +6,29 @@ icon: arrow-right
 ---
 # <Badge variant="api-endpoint" text="/natural-search" /> <Badge variant="http-get" text="GET" />
 
-Obtener una lista de productos que encajan con una búsqueda realizada en lenguage natural.
+Get a list of products that match a natural language search query.
 
 <Tabs>
-<TabItem value="parameters" label={<Badge icon="parameter" text="Parámetros" transparent />}>
+<TabItem value="parameters" label={<Badge icon="parameter" text="Parameters" transparent />}>
 
 <table>
     <tbody>
 
         <tr>
             <td><Badge variant="api parameter required" icon="required" text="query" /></td>
-            <td>La cadena escrita por el usuario para encontrar productos en lenguaje natural, por ejemplo <Badge variant="value" text="Un regalo para un aficionado a la cocina" /></td>
+            <td>The string typed by the user to find products in natural language, for example <Badge variant="value" text="A gift for a cooking enthusiast" /></td>
         </tr>
 
         <tr>
             <td><Badge variant="api parameter" icon="parameter" text="limit" /></td>
-            <td>Limita el número máximo de productos a obtener, por ejemplo <Badge variant="value" text="5" />. Por defecto, se obtienen <Badge variant="value" text="10" /> productos como máximo.</td>
+            <td>Limits the maximum number of products to return, for example <Badge variant="value" text="5" />. By default, a maximum of <Badge variant="value" text="10" /> products are returned.</td>
         </tr>
 
     </tbody>
 </table>
 
 </TabItem>
-<TabItem value="result" label={<Badge icon="json" text="Resultado" transparent />}>
+<TabItem value="result" label={<Badge icon="json" text="Result" transparent />}>
 
 ```json
 {
@@ -39,8 +39,8 @@ Obtener una lista de productos que encajan con una búsqueda realizada en lengua
     "payload": {
         "code": "DJA8298",
         "isActive": true,
-        "title": "Set de regalo para aficionados a la cocina – edición gourmet",
-        "description": "Este set de regalo es perfecto para quienes disfrutan cocinando. Incluye una tabla de cortar de bambú, cuchillo de chef profesional de acero inoxidable, delantal personalizado, y un libro de recetas gourmet. Todo presentado en una elegante caja de regalo. Ideal para sorprender a cualquier amante de la cocina con herramientas prácticas y de alta calidad.",
+        "title": "Gift set for cooking enthusiasts – gourmet edition",
+        "description": "This gift set is perfect for those who enjoy cooking. It includes a bamboo cutting board, a professional stainless steel chef's knife, a custom apron, and a gourmet recipe book. All presented in an elegant gift box. Ideal for surprising any cooking lover with high-quality and practical tools.",
         "attributes": null,
         "brand": null,
         "category": null,
@@ -57,8 +57,8 @@ Obtener una lista de productos que encajan con una búsqueda realizada en lengua
         "isActive": true,
         "payload": {
             "code": "FNN1848",
-            "title": "Kit de especias del mundo – 12 sabores internacionales",
-            "description": "Descubre una colección exclusiva de 12 especias seleccionadas de diferentes rincones del mundo. Presentado en frascos de vidrio con etiquetas artesanales, este kit es perfecto para dar un toque especial a cualquier plato y ampliar el repertorio culinario del destinatario.",
+            "title": "World spices kit – 12 international flavors",
+            "description": "Discover an exclusive collection of 12 spices selected from different corners of the world. Presented in glass jars with handmade labels, this kit is perfect to add a special touch to any dish and expand the recipient's culinary repertoire.",
             "attributes": null,
             "brand": null,
             "category": null,
@@ -76,8 +76,8 @@ Obtener una lista de productos que encajan con una búsqueda realizada en lengua
         "isActive": true,
         "payload": {
             "code": "SJD2818",
-            "title": "Delantal personalizado con bolsillo – diseño vintage",
-            "description": "Un delantal elegante y funcional con diseño vintage, confeccionado en algodón grueso. Cuenta con bolsillo frontal y puede personalizarse con nombre o frase. Un detalle práctico y original para chefs aficionados.",
+            "title": "Custom apron with pocket – vintage design",
+            "description": "An elegant and functional apron with a vintage design, made of thick cotton. It features a front pocket and can be customized with a name or phrase. A practical and original gift for amateur chefs.",
             "attributes": null,
             "brand": null,
             "category": null,

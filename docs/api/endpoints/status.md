@@ -4,10 +4,10 @@ sidebar_position: 1
 ---
 # <Badge variant="api-endpoint" text="/status" /> <Badge variant="http-get" text="GET" />
 
-Obtiene información sobre el estado de la API y otros parámetros útiles como tus credenciales, la versión que estás utilizando y las versiones disponibles.
+Gets information about the API status and other useful parameters like your credentials, the version you are using, and the available versions.
 
 <Tabs>
-<TabItem value="result" label={<Badge icon="json" text="Resultado" transparent />}>
+<TabItem value="result" label={<Badge icon="json" text="Result" transparent />}>
 ```json
 {
     "object": "status",

@@ -1,1 +1,1 @@
-Se ha realizado una búsqueda de productos.
+A product search has been performed.

@@ -1,10 +1,10 @@
 ---
-title: Actualizar productos
+title: Update products
 expanded: false
 sidebar_position: 3
 icon: arrow-right
 ---
-Para cambiar los datos de un producto que ya cargaste, llama a <Badge variant="sdk php method" text="products()->ingest()" /> nuevamente, pero esta vez especifica sólo los datos que cambian. También puedes especificar los demás datos si te resulta más cómodo, aunque no hayan cambiado.
+To change the data of a product you already loaded, call <Badge variant="sdk php method" text="products()->ingest()" /> again, but this time specify only the data that changes. You can also specify the other data if it's more convenient for you, even if it hasn't changed.
 
 ```php
 use Biteral\Payload\Product\ProductPayload;
@@ -18,13 +18,13 @@ $productPayload =
 $client->products()->ingest($productPayload);
 ```
 
-Al actualizar productos, es imprescindible especificar al menos <Badge variant="parameter" text="code" />
+When updating products, it is mandatory to specify at least <Badge variant="parameter" text="code" />
 
 :::tip
-Si quieres eliminar un dato de un producto, establece su valor a <Badge variant="value" text="null" />
+If you want to remove a property from a product, set its value to <Badge variant="value" text="null" />
 :::
 
 
 :::info
-Si los datos que envías al actualizar un producto no contienen ningún cambio respecto a los valores actuales, no se considera una actualización. En ese caso, la petición `ingest` no cuenta para tu cuota de peticiones `ingest` facturables.
+If the data you send when updating a product does not contain any changes compared to the current values, it is not considered an update. In that case, the `ingest` request does not count towards your billable `ingest` requests quota.
 :::

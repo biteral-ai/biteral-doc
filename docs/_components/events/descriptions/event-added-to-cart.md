@@ -1,1 +1,1 @@
-Se ha añadido un producto al carrito.
+A product has been added to the cart.

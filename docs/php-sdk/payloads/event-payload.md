@@ -3,13 +3,13 @@ sidebar_position: 8
 ---
 # EventPayload
 
-Representa un evento ocurrido en vuestro sistema. Por ejemplo, una venta realizada.
+Represents an event that occurred in your system. For example, a successful sale.
 
-Propiedad|Tipo|Descripción
+Property|Type|Description
 ---|---|---
-<Badge variant="sdk php property" icon="property" text="type" />|string|El nombre del tipo de evento, de entre los [tipos de eventos disponibles](/guide/integration-data/events/types). Por ejemplo: <Badge variant="value" text="EventAddedToCart" />
-<Badge variant="sdk php property" icon="property" text="timestamp" />|DateTimeImmutable|El momento en el que se produjo el evento. Si no lo especificas, se utilizará el momento actual.
+<Badge variant="sdk php property" icon="property" text="type" />|string|The name of the event type, from among the [available event types](/guide/integration-data/events/types). For example: <Badge variant="value" text="EventAddedToCart" />
+<Badge variant="sdk php property" icon="property" text="timestamp" />|DateTimeImmutable|The moment the event occurred. If you do not specify it, the current moment will be used.
 
 :::warning
-Cada tipo <Badge variant="sdk php property" text="type" /> de evento requiere algunas propiedades adicionales. Consulta los [tipos de eventos disponibles y sus propiedades adicionales](/guide/integration-data/events/types).
+Each event <Badge variant="sdk php property" text="type" /> requires some additional properties. Check the [available event types and their additional properties](/guide/integration-data/events/types).
 :::

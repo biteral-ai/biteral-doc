@@ -1,1 +1,1 @@
-Vuestro código interno identificador de la marca. Debe coincidir con el que especificaste al añadir productos a Biteral. Por ejemplo: `OW142302`
+Your internal identifier code for the brand. Must match the one you specified when adding products to Biteral. For example: `OW142302`

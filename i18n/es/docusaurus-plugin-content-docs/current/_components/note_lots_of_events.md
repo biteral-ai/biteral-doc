@@ -1,0 +1,1 @@
+¿Cuántos eventos se consideran **muchos**? Por norma general, si vuestro sistema produce más de 1 evento cada 5 segundos (0.2 eventos/segundo) de forma relativamente continuada, es mejor enviar los eventos en grupo.

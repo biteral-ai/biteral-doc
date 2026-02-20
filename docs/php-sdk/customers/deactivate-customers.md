@@ -1,14 +1,14 @@
 ---
-title: Desactivar clientes
+title: Deactivate customers
 expanded: false
 sidebar_position: 4
 icon: arrow-right
 ---
-# Desactivar clientes temporalmente
+# Deactivate customers temporarily
 
-En algunas ocasiones es posible que necesites desactivar temporalmente algunos clientes de forma que no formen parte de los datos que manejan las herramientas de Biteral.
+Sometimes you may need to temporarily deactivate some customers so they are not part of the data handled by Biteral's tools.
 
-En tales casos, pon <Badge variant="parameter" text="isActive" /> en tu cliente a <Badge variant="value" text="false" />:
+In such cases, set <Badge variant="parameter" text="isActive" /> on your customer to <Badge variant="value" text="false" />:
 
 ```php
 use Biteral\Payload\Customer\CustomerPayload;
@@ -22,8 +22,8 @@ $customerPayload =
 $client->customers()->ingest($customerPayload);
 ```
 
-Cuando el cliente vuelva a estar disponible, reactívalo poniendo <Badge variant="parameter" text="isActive" /> a <Badge variant="value" text="true" />
+When the customer is available again, reactivate it by setting <Badge variant="parameter" text="isActive" /> to <Badge variant="value" text="true" />
 
 :::info
-Cuando cargas un cliente por primera vez, <Badge variant="parameter" text="isActive" /> será <Badge variant="value" text="true" /> si no especificas lo contrario.
+When you load a customer for the first time, <Badge variant="parameter" text="isActive" /> will be <Badge variant="value" text="true" /> unless you specify otherwise.
 :::

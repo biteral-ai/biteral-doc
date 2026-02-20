@@ -4,7 +4,7 @@ expanded: false
 sidebar_position: 2
 icon: arrow-right
 ---
-import LotsOfEvents from '@site/src/components/note_lots_of_events.md';
+import LotsOfEvents from '../../_components/note_lots_of_events.md';
 
 # Enviar eventos en grupo
 

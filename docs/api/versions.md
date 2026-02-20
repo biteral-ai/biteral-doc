@@ -1,17 +1,17 @@
 ---
-title: Versiones
+title: Versions
 sidebar_position: 2
 ---
-# Versiones
+# Versions
 
-Cada vez que añadimos o mejoramos funcionalidades que implican cambios en la especificación de la API y podrían afectar a tu implementación, publicamos una nueva versión principal. La versión anterior sigue disponible, por lo que puedes estar seguro de que tu integración seguirá funcionando sin interrupciones, incluso si actualizamos la API en el futuro.
+Every time we add or improve features that involve changes to the API specification and could affect your implementation, we release a new major version. The previous version remains available, so you can be confident that your integration will continue working without interruption, even if we update the API in the future.
 
-Por eso, es imprescindible que añadas el header <Badge variant="header" text="X-API-Version" /> a las peticiones a la API, que especifica la versión de la API que quieres utilizar.
+Because of this, it is essential that you add the <Badge variant="header" text="X-API-Version" /> header to API requests, which specifies the API version you want to use.
 
 :::tip
-En la documentación marcamos cada funcionalidad con una etiqueta como <Badge variant="version" text="v1" /> para que sepas en qué versión está disponible.
+In the documentation, we mark each feature with a tag like <Badge variant="version" text="v1" /> so you know in which version it is available.
 :::
 
 :::info
-Para obtener información sobre las versiones disponibles, utiliza el endpoint <Badge variant="api-endpoint" text="/products" to="/api/endpoints/status" />
+To get information about available versions, use the <Badge variant="api-endpoint" text="/status" to="/api/endpoints/status" /> endpoint.
 :::

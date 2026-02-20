@@ -1,25 +1,25 @@
 # Payloads
 
-Los Payloads son los objetos que utilizas para proporcionar datos a Biteral sobre vuestro e-commerce.
+Payloads are the objects you use to provide data to Biteral about your e-commerce.
 
-Por ejemplo, cuando [añades un producto a Biteral](/php-sdk/products/add-products) con <Badge variant="sdk php method" text="$client->products()->post()" />, debes proporcionar como parámetro un objeto de la clase <Badge variant="sdk php payload" text="ProductPayload" to="/php-sdk/payloads/product-payload" />
+For example, when you [add a product to Biteral](/php-sdk/products/add-products) with <Badge variant="sdk php method" text="$client->products()->post()" />, you must provide an object of the <Badge variant="sdk php payload" text="ProductPayload" to="/php-sdk/payloads/product-payload" /> class as a parameter.
 
-Además, muchos métodos del SDK devuelven datos en forma de [entidades](/php-sdk/entities), que son objetos que a su vez contienen Payloads de uno de estos tipos. Por ejemplo, cuando obtienes un producto con <Badge variant="sdk php method" text="$client->products()->get()" />, obtienes como resultado un objeto (entidad) de la clase <Badge variant="sdk php entity" text="Product" to="/php-sdk/entities/product" /> que incluye, entre otras cosas, el Payload original del objeto, disponible en <Badge variant="sdk php property" text="$result->payload" />
+Additionally, many SDK methods return data in the form of [entities](/php-sdk/entities), which are objects that in turn contain Payloads of one of these types. For example, when you get a product with <Badge variant="sdk php method" text="$client->products()->get()" />, you result in an object (entity) of the <Badge variant="sdk php entity" text="Product" to="/php-sdk/entities/product" /> class that includes, among other things, the object's original Payload, available at <Badge variant="sdk php property" text="$result->payload" />
 
-### Ejemplo
+### Example
 
 ```php
-// Añadir un producto
+// Add a product
 $client->products()->post(
     new ProductPayload(
         code: 'N39291',
-        title: 'Zapatillas deportivas urbanas para hombre – modelo AirFlow'
+        title: 'Urban sports shoes for men – AirFlow model'
     )
 );
 
-// Obtener el producto que acabas de añadir
+// Get the product you just added
 $result = $client->products()->getByCode('N39291');
 
-// Muestra el título del producto
-echo $result->payload->title; // "Zapatillas deportivas urbanas para hombre – modelo AirFlow"
+// Shows the product's title
+echo $result->payload->title; // "Urban sports shoes for men – AirFlow model"
 ```

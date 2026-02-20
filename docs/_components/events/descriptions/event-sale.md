@@ -1,1 +1,1 @@
-Se ha comprado un producto. Debe enviarse cuando el cliente manifiesta su voluntad de comprar y pagar por el producto, aunque el pago aún no se haya realizado o haya fallado. Por ejemplo: Al pulsar el botón "Pagar" en el carrito.
+A product has been purchased. It should be sent when the customer expresses their will to buy and pay for the product, even if the payment has not yet been made or has failed. For example: By clicking the "Checkout" button in the cart.

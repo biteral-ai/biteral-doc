@@ -86,7 +86,7 @@
     --color-ko: var(--color-critical);
 
     --color-version: var(--color-api);
-    --color-event: #EEF9FE;
+    --color-event: #F9F0FF;
     --color-api: #7a27f6;
     --color-sdk: #d2fbff;
     --color-payload: #dff3a3;

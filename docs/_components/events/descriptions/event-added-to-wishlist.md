@@ -1,1 +1,1 @@
-Se ha añadido un producto a la lista de productos deseados.
+A product has been added to the wishlist.

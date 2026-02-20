@@ -3,14 +3,14 @@ sidebar_position: 5
 ---
 # CategoryPayload
 
-Representa una de las categorías de los productos con los que trabajáis.
+Represents one of the categories of the products you work with.
 
 :::info
-Si trabajáis con una estructura jerárquica con varios niveles de categorías y subcategorías, siempre representa a la subcategoría final a la que pertenece el producto.
+If you work with a hierarchical structure with several levels of categories and subcategories, it always represents the final subcategory to which the product belongs.
 :::
 
-Propiedad|Tipo|Descripción
+Property|Type|Description
 ---|---|---
-<Badge variant="sdk php property" icon="property" text="code" />|string|Código de la categoría. Puede ser cualquier identificador único que utilicéis internamente o públicamente para identificar la marca. Puede incluir números, letras y caracteres especiales. Por ejemplo: <Badge variant="value" text="JD934828" />
-<Badge variant="sdk php property" icon="property" text="title" />|string|Nombre de la categoría, por ejemplo: <Badge variant="value" text="Zapatillas deportivas" />
-<Badge variant="sdk php property" icon="property" text="description" />|description|Descripción del tipo de productos que contiene la categoría, por ejemplo: <Badge variant="value" text="Calzado diseñado para actividades físicas y deportivas. Incluye zapatillas para correr, entrenar, practicar deportes específicos o vestir con estilo deportivo en el día a día." />
+<Badge variant="sdk php property" icon="property" text="code" />|string|Category code. It can be any unique identifier you use internally or publicly to identify the brand. It can include numbers, letters, and special characters. For example: <Badge variant="value" text="JD934828" />
+<Badge variant="sdk php property" icon="property" text="title" />|string|Category name, for example: <Badge variant="value" text="Sneakers" />
+<Badge variant="sdk php property" icon="property" text="description" />|description|Description of the type of products the category contains, for example: <Badge variant="value" text="Footwear designed for physical and sports activities. Includes running shoes, training shoes, shoes for specific sports, or casual sporty outfits for daily use." />

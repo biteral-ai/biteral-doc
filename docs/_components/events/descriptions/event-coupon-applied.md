@@ -1,1 +1,1 @@
-Se ha aplicado un cupón de descuento.
+A discount coupon has been applied.

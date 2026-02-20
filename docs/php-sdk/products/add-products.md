@@ -1,16 +1,16 @@
 ---
-title: Cargar productos
+title: Load products
 expanded: false
 sidebar_position: 1
 icon: arrow-right
 ---
-# Cargar productos
+# Load products
 
-El SDK para PHP permite cargar productos en Biteral, modificarlos y eliminarlos, además de otras operaciones que te resultarán útiles cuando implementes las herramientas.
+The PHP SDK allows loading products into Biteral, updating them and deleting them, in addition to other operations that will be useful when implementing the tools.
 
-### Cargar un producto
+### Load a product
 
-Llama a <Badge variant="sdk php method" text="products()->ingest()" /> con un objeto <Badge variant="sdk php payload" text="ProductPayload" to="/php-sdk/payloads/product-payload" /> como parámetro:
+Call <Badge variant="sdk php method" text="products()->ingest()" /> with a <Badge variant="sdk php payload" text="ProductPayload" to="/php-sdk/payloads/product-payload" /> object as a parameter:
 
 ```php
 use Biteral\Payload\Brand\BrandPayload;
@@ -22,21 +22,21 @@ use Biteral\Payload\Product\ProductAttributePayload;
 $productPayload =
     new ProductPayload([
         'code' => 'N30122',
-        'title' => 'Zapatillas deportivas urbanas para hombre – modelo AirFlow',
-        'description' => 'Estas zapatillas combinan estilo y comodidad para el uso diario. Diseñadas con materiales transpirables, suela de goma antideslizante y plantilla ergonómica, son ideales tanto para caminar por la ciudad como para entrenar en interiores. El modelo AirFlow ofrece un ajuste perfecto y un diseño moderno que se adapta a cualquier look casual. Disponibles en varias tallas y colores.',
+        'title' => 'Urban sports shoes for men – AirFlow model',
+        'description' => 'These shoes combine style and comfort for daily use. Designed with breathable materials, non-slip rubber sole, and ergonomic insole, they are ideal for both walking around the city and indoor training. The AirFlow model offers a perfect fit and a modern design that adapts to any casual look. Available in various sizes and colors.',
         'attributes' => [
-            new ProductAttributePayload(['title' => 'Material', 'value' => 'Cuero']),
-            new ProductAttributePayload(['title' => 'Color', 'value' => 'Negro con acentos en gris']),
-            new ProductAttributePayload(['title' => 'Tallas disponibles', 'value' => '39, 40, 41, 42, 43, 44']),
-            new ProductAttributePayload(['title' => 'Suela', 'value' => 'Goma no-deslizante']),
-            new ProductAttributePayload(['title' => 'Peso', 'value' => '850g (par, talla 42)']),
-            new ProductAttributePayload(['title' => 'Uso recomendado', 'value' => 'Uso diario y entrenamiento suave'])
+            new ProductAttributePayload(['title' => 'Material', 'value' => 'Leather']),
+            new ProductAttributePayload(['title' => 'Color', 'value' => 'Black with gray accents']),
+            new ProductAttributePayload(['title' => 'Available sizes', 'value' => '39, 40, 41, 42, 43, 44']),
+            new ProductAttributePayload(['title' => 'Sole', 'value' => 'Non-slip rubber']),
+            new ProductAttributePayload(['title' => 'Weight', 'value' => '850g (pair, size 42)']),
+            new ProductAttributePayload(['title' => 'Recommended use', 'value' => 'Daily use and light training'])
         ],
         'brand' => new BrandPayload(['code' => 'OW142302', 'name' => 'Nike']),
         'category' => new ProductCategoryPayload([
             'code' => 'MC418292',
-            'title' => 'Zapatillas deportivas',
-            'description' => 'Calzado diseñado para proporcionar comodidad, soporte y rendimiento en actividades físicas o deportivas. Estas zapatillas también son adecuadas para el uso urbano y diario gracias a sus diseños modernos y materiales versátiles. Cuentan con suelas antideslizantes, tejidos transpirables y estilos que combinan funcionalidad con moda.'
+            'title' => 'Sports shoes',
+            'description' => 'Footwear designed to provide comfort, support, and performance in physical or sporting activities. These shoes are also suitable for urban and daily use thanks to their modern designs and versatile materials. They feature non-slip soles, breathable fabrics, and styles that combine functionality with fashion.'
         ]),
         'price' => new PricePayload(['amount' => '49.95', 'currency' => 'EUR']),
         'imageUrl' => 'https://m.media-amazon.com/images/I/61cELGQXXhL._AC_UL320_.jpg',
@@ -46,8 +46,8 @@ $productPayload =
 $client->products()->ingest($productPayload);
 ```
 
-Esto añadirá el producto a Biteral.
+This will add the product to Biteral.
 
 :::info
-Ten en cuenta que el producto se añadirá al proyecto que corresponde a la API key que estés utilizando.
+Please note that the product will be added to the project corresponding to the API key you are using.
 :::

@@ -1,23 +1,23 @@
 ---
-title: Ejemplos
+title: Examples
 position: 6
 icon: arrow-right
 ---
-El SDK incluye varios ejemplos en [/examples](https://github.com/biteral-ai/biteral-sdk-php/tree/main/examples) que puedes utilizar como referencia.
+The SDK includes several examples in [/examples](https://github.com/biteral-ai/biteral-sdk-php/tree/main/examples) that you can use as reference.
 
 :::info
-Si instalaste el SDK con composer, encontrarás todos los ejemplos en el directorio `vendor/biteral-ai/biteral-sdk-php/examples` de tu proyecto.
+If you installed the SDK with composer, you will find all the examples in the `vendor/biteral-ai/biteral-sdk-php/examples` directory of your project.
 :::
 
-Puedes ejecutar los ejemplos utilizando el script `bin/example` incluído en el SDK:
+You can run the examples using the `bin/example` script included in the SDK:
 
-Primero asegúrate de que `bin/example` es ejecutable:
+First make sure that `bin/example` is executable:
 
 ```bash
 chmod +x bin/example
 ```
 
-Ejecuta `bin/example` sin ningún parámetro para obtener una lista de los ejemplos disponibles:
+Run `bin/example` without any parameters to get a list of the available examples:
 
 ```bash
 Usage: bin/example <example-name>

@@ -1,15 +1,15 @@
 ---
-title: Descatalogados
+title: Discontinued
 expanded: false
 sidebar_position: 5
 icon: arrow-right
 ---
-# Productos descatalogados
+# Discontinued products
 
-Cuando un producto ya no está a la venta, elimínalo de Biteral con el método <Badge variant="sdk php method" text="products()->deleteByCode()" />:
+When a product is no longer for sale, delete it from Biteral with the <Badge variant="sdk php method" text="products()->deleteByCode()" /> method:
 
 ```php
 $client->products()->deleteByCode('N39291');
 ```
 
-También puedes utilizar <Badge variant="sdk php method" text="products()->deleteById()" />, que te permitie eliminar un producto utilizando su id en Biteral.
+You can also use <Badge variant="sdk php method" text="products()->deleteById()" />, which allows you to delete a product using its Biteral id.

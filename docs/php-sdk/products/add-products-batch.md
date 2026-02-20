@@ -1,26 +1,26 @@
 ---
-title: Carga masiva
+title: Bulk load
 expanded: false
 sidebar_position: 2
 icon: arrow-right
 ---
-# Carga masiva de productos
+# Bulk load products
 
-Si necesitas cargar muchos productos en Biteral, llamar a <Badge variant="sdk php method" text="products()->ingest()" /> por cada producto que quieres cargar es lento, y puede provocar errores por consumo excesivo de memoria.
+If you need to load many products into Biteral, calling <Badge variant="sdk php method" text="products()->ingest()" /> for each product you want to load is slow, and can cause errors due to excessive memory consumption.
 
-En su lugar, usa <Badge variant="sdk php method" text="productsBatchIngest()->ingest()" />, que está diseñado específicamente para cargas masivas. Este método agrupa los productos de forma óptima para maximizar la velocidad y reducir el riesgo de problemas relacionados con el uso de recursos. Mira cómo funciona:
+Instead, use <Badge variant="sdk php method" text="productsBatchIngest()->ingest()" />, which is specifically designed for bulk loads. This method groups products optimally to maximize speed and reduce the risk of resource usage related problems. See how it works:
 
 ```php
-// Obtén un objeto ProductsBatchIngestService para poder reutilizarlo
+// Get a ProductsBatchIngestService object to reuse it
 $productsBatchIngestService = $client->productsBatchIngest();
 
-// Inicia una sesión de ingestión de productos
+// Start a product ingestion session
 $productsBatchIngestService->startIngestionSession();
 
-// Recorre los productos en un bucle tal como lo harías normalmente con tu base de datos
+// Loop through the products as you normally would with your database
 while ($product = $query->getRow()) {
 
-    // Crea un objeto ProductPayload tal como hacías al cargar productos individualmente
+    // Create a ProductPayload object just like when loading products individually
     $productPayload =
         new ProductPayload([
             'code' => $product->getCode(),
@@ -28,14 +28,14 @@ while ($product = $query->getRow()) {
             [...]
         ]);
 
-    // Envía el producto para que sea cargado por bloques
+    // Send the product to be loaded in batches
     $productsBatchIngestService->ingest($productPayload);
 }
 
-// Cuando el bucle haya terminado, no olvides cerrar la sesión de ingestión
+// When the loop is finished, do not forget to finish the ingestion session
 $batchIngestResult = $productsBatchIngestService->finishIngestionSession();
 ```
 
 :::info
-Cuando cargas muchos productos a Biteral muy rápidamente, puede pasar un rato hasta que todos están disponibles para las herramientas de Biteral.
+When you load many products to Biteral very quickly, it can take a while until they are all available for Biteral's tools.
 :::

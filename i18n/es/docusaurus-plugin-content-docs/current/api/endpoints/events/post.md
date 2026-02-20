@@ -4,7 +4,7 @@ sidebar_label: Post
 sidebar_position: 1
 icon: arrow-right
 ---
-import LotsOfEvents from '@site/src/components/note_lots_of_events.md';
+import LotsOfEvents from '../../../_components/note_lots_of_events.md';
 
 # <Badge variant="api-endpoint" text="/events" /> <Badge variant="http-post" text="POST" />
 

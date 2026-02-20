@@ -1,43 +1,43 @@
 ---
-title: Tipos de eventos
+title: Event types
 expanded: false
 icon: arrow-right
 order: 1000
 ---
-import EventDescriptionEventAddedtoCart from '@site/src/components/events/descriptions/event-added-to-cart.md';
-import EventDescriptionEventRemovedFromCart from '@site/src/components/events/descriptions/event-removed-from-cart.md';
-import EventDescriptionEventAddedToWishlist from '@site/src/components/events/descriptions/event-added-to-wishlist.md';
-import EventDescriptionEventRemovedFromWishlist from '@site/src/components/events/descriptions/event-removed-from-wishlist.md';
-import EventDescriptionEventSale from '@site/src/components/events/descriptions/event-sale.md';
-import EventDescriptionEventReturnRequested from '@site/src/components/events/descriptions/event-return-requested.md';
-import EventDescriptionEventProductViewed from '@site/src/components/events/descriptions/event-product-viewed.md';
-import EventDescriptionEventCategoryViewed from '@site/src/components/events/descriptions/event-category-viewed.md';
-import EventDescriptionEventBrandViewed from '@site/src/components/events/descriptions/event-brand-viewed.md';
-import EventDescriptionEventSearch from '@site/src/components/events/descriptions/event-search.md';
-import EventDescriptionEventFilterApplied from '@site/src/components/events/descriptions/event-filter-applied.md';
-import EventDescriptionEventOrderApplied from '@site/src/components/events/descriptions/event-order-applied.md';
-import EventDescriptionEventCouponApplied from '@site/src/components/events/descriptions/event-coupon-applied.md';
-import EventDescriptionEventReviewWritten from '@site/src/components/events/descriptions/event-review-written.md';
-import EventDescriptionEventStockAlertRequested from '@site/src/components/events/descriptions/event-stock-alert-requested.md';
+import EventDescriptionEventAddedtoCart from '../../../_components/events/descriptions/event-added-to-cart.md';
+import EventDescriptionEventRemovedFromCart from '../../../_components/events/descriptions/event-removed-from-cart.md';
+import EventDescriptionEventAddedToWishlist from '../../../_components/events/descriptions/event-added-to-wishlist.md';
+import EventDescriptionEventRemovedFromWishlist from '../../../_components/events/descriptions/event-removed-from-wishlist.md';
+import EventDescriptionEventSale from '../../../_components/events/descriptions/event-sale.md';
+import EventDescriptionEventReturnRequested from '../../../_components/events/descriptions/event-return-requested.md';
+import EventDescriptionEventProductViewed from '../../../_components/events/descriptions/event-product-viewed.md';
+import EventDescriptionEventCategoryViewed from '../../../_components/events/descriptions/event-category-viewed.md';
+import EventDescriptionEventBrandViewed from '../../../_components/events/descriptions/event-brand-viewed.md';
+import EventDescriptionEventSearch from '../../../_components/events/descriptions/event-search.md';
+import EventDescriptionEventFilterApplied from '../../../_components/events/descriptions/event-filter-applied.md';
+import EventDescriptionEventOrderApplied from '../../../_components/events/descriptions/event-order-applied.md';
+import EventDescriptionEventCouponApplied from '../../../_components/events/descriptions/event-coupon-applied.md';
+import EventDescriptionEventReviewWritten from '../../../_components/events/descriptions/event-review-written.md';
+import EventDescriptionEventStockAlertRequested from '../../../_components/events/descriptions/event-stock-alert-requested.md';
 
-import EventPropertyTimestamp from '@site/src/components/events/properties/timestamp.md';
-import EventPropertyCustomerCode from '@site/src/components/events/properties/customer-code.md';
-import EventPropertyProductCode from '@site/src/components/events/properties/product-code.md';
-import EventPropertyCategoryCode from '@site/src/components/events/properties/category-code.md';
-import EventPropertyBrandCode from '@site/src/components/events/properties/brand-code.md';
+import EventPropertyTimestamp from '../../../_components/events/properties/timestamp.md';
+import EventPropertyCustomerCode from '../../../_components/events/properties/customer-code.md';
+import EventPropertyProductCode from '../../../_components/events/properties/product-code.md';
+import EventPropertyCategoryCode from '../../../_components/events/properties/category-code.md';
+import EventPropertyBrandCode from '../../../_components/events/properties/brand-code.md';
 
 <details>
 <summary><Badge variant="event" icon="event" text="EventAddedToCart" /></summary>
 
 <EventDescriptionEventAddedtoCart />
 
-| Parámetro| Valor |
+| Parameter| Value |
 | :--- | :--- |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="type" /> | <Badge variant="value" text="EventAddedToCart" /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="type" /> | <Badge variant="value" text="EventAddedToCart" /> |
 | <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
-| <Badge variant="property" icon="property" text="quantity" /> | La cantidad de unidades de este producto añadidas al carrito. Si no se especifica, el valor por defecto es `1` |
+| <Badge variant="property required" tooltip="Required" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property" icon="property" text="quantity" /> | The number of units of this product added to the cart. If not specified, the default value is `1` |
 
 </details>
 
@@ -47,13 +47,13 @@ import EventPropertyBrandCode from '@site/src/components/events/properties/brand
 
 <EventDescriptionEventRemovedFromCart />
 
-| Parámetro| Valor |
+| Parameter| Value |
 | :--- | :--- |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="type" /> | <Badge variant="value" text="EventRemovedFromCart" /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="type" /> | <Badge variant="value" text="EventRemovedFromCart" /> |
 | <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
-| <Badge variant="property" icon="property" text="quantity" /> | La cantidad de unidades de este producto retiradas del carrito. Si no se especifica, el valor por defecto es `1` |
+| <Badge variant="property required" tooltip="Required" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property" icon="property" text="quantity" /> | The number of units of this product removed from the cart. If not specified, the default value is `1` |
 
 </details>
 
@@ -63,12 +63,12 @@ import EventPropertyBrandCode from '@site/src/components/events/properties/brand
 
 <EventDescriptionEventAddedToWishlist />
 
-| Parámetro| Valor |
+| Parameter| Value |
 | :--- | :--- |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="type" /> | <Badge variant="value" text="EventAddedToWishlist" /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="type" /> | <Badge variant="value" text="EventAddedToWishlist" /> |
 | <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
 
 </details>
 
@@ -78,12 +78,12 @@ import EventPropertyBrandCode from '@site/src/components/events/properties/brand
 
 <EventDescriptionEventRemovedFromWishlist />
 
-| Parámetro| Valor |
+| Parameter| Value |
 | :--- | :--- |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="type" /> | <Badge variant="value" text="EventRemovedFromWishlist" /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="type" /> | <Badge variant="value" text="EventRemovedFromWishlist" /> |
 | <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
 
 </details>
 
@@ -93,13 +93,13 @@ import EventPropertyBrandCode from '@site/src/components/events/properties/brand
 
 <EventDescriptionEventSale />
 
-| Parámetro| Valor |
+| Parameter| Value |
 | :--- | :--- |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="type" /> | <Badge variant="value" text="EventSale" /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="type" /> | <Badge variant="value" text="EventSale" /> |
 | <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
-| <Badge variant="property" icon="property" text="quantity" /> | La cantidad de unidades de este producto compradas. Si no se especifica, el valor por defecto es `1` |
+| <Badge variant="property required" tooltip="Required" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property" icon="property" text="quantity" /> | The number of units of this product purchased. If not specified, the default value is `1` |
 
 </details>
 
@@ -110,15 +110,15 @@ import EventPropertyBrandCode from '@site/src/components/events/properties/brand
 <EventDescriptionEventReturnRequested />
 
 :::info
-Debe enviarse cuando el cliente solicita la devolución, aunque ésta no sea aceptada, o finalmente no se produzca por cualquier motivo.
+Must be sent when the customer requests a return, even if it is not accepted, or ultimately does not occur for any reason.
 :::
 
-| Parámetro| Valor |
+| Parameter| Value |
 | :--- | :--- |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="type" /> | <Badge variant="value" text="EventReturnRequested" /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="type" /> | <Badge variant="value" text="EventReturnRequested" /> |
 | <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
 
 </details>
 
@@ -128,12 +128,12 @@ Debe enviarse cuando el cliente solicita la devolución, aunque ésta no sea ace
 
 <EventDescriptionEventProductViewed />
 
-| Parámetro| Valor |
+| Parameter| Value |
 | :--- | :--- |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="type" /> | <Badge variant="value" text="EventProductViewed" /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="type" /> | <Badge variant="value" text="EventProductViewed" /> |
 | <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
 
 </details>
 
@@ -143,12 +143,12 @@ Debe enviarse cuando el cliente solicita la devolución, aunque ésta no sea ace
 
 <EventDescriptionEventCategoryViewed />
 
-| Parámetro| Valor |
+| Parameter| Value |
 | :--- | :--- |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="type" /> | <Badge variant="value" text="EventCategoryViewed" /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="type" /> | <Badge variant="value" text="EventCategoryViewed" /> |
 | <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="categoryCode" /> | <EventPropertyCategoryCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="categoryCode" /> | <EventPropertyCategoryCode /> |
 
 </details>
 
@@ -158,12 +158,12 @@ Debe enviarse cuando el cliente solicita la devolución, aunque ésta no sea ace
 
 <EventDescriptionEventBrandViewed />
 
-| Parámetro| Valor |
+| Parameter| Value |
 | :--- | :--- |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="type" /> | <Badge variant="value" text="EventBrandViewed" /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="type" /> | <Badge variant="value" text="EventBrandViewed" /> |
 | <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="brandCode" /> | <EventPropertyBrandCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="brandCode" /> | <EventPropertyBrandCode /> |
 
 </details>
 
@@ -174,15 +174,15 @@ Debe enviarse cuando el cliente solicita la devolución, aunque ésta no sea ace
 <EventDescriptionEventSearch />
 
 :::info
-Este evento debe enviarse si vuestro web tiene su propio buscador textual. Si utilizáis el buscador natural de Biteral, no es necesario enviar este evento cuando se produce una búsqueda desde allí.
+This event must be sent if your website has its own text search engine. If you use Biteral's natural search engine, it is not necessary to send this event when a search is performed from there.
 :::
 
-| Parámetro| Valor |
+| Parameter| Value |
 | :--- | :--- |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="type" /> | <Badge variant="value" text="EventSearch" /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="type" /> | <Badge variant="value" text="EventSearch" /> |
 | <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="query" /> | El texto de la búsqueda tal como lo escribió el cliente. |
+| <Badge variant="property required" tooltip="Required" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="query" /> | The search text exactly as the customer typed it. |
 
 </details>
 
@@ -192,13 +192,13 @@ Este evento debe enviarse si vuestro web tiene su propio buscador textual. Si ut
 
 <EventDescriptionEventFilterApplied />
 
-| Parámetro| Valor |
+| Parameter| Value |
 | :--- | :--- |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="type" /> | <Badge variant="value" text="EventFilterApplied" /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="type" /> | <Badge variant="value" text="EventFilterApplied" /> |
 | <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="filterName" /> | El nombre del filtro, por ejemplo: `color` |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="filterValue" /> | El valor del filtro, por ejemplo: `rojo` |
+| <Badge variant="property required" tooltip="Required" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="filterName" /> | The filter name, for example: `color` |
+| <Badge variant="property required" tooltip="Required" icon="required" text="filterValue" /> | The filter value, for example: `red` |
 
 </details>
 
@@ -208,13 +208,13 @@ Este evento debe enviarse si vuestro web tiene su propio buscador textual. Si ut
 
 <EventDescriptionEventOrderApplied />
 
-| Parámetro| Valor |
+| Parameter| Value |
 | :--- | :--- |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="type" /> | <Badge variant="value" text="EventOrderApplied" /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="type" /> | <Badge variant="value" text="EventOrderApplied" /> |
 | <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="orderDescription" /> | La descripción del orden aplicado. Puede ser cualquier palabra o frase que describa el orden, por ejemplo: `price`, `newest products first`, `screen size`, etcétera. |
-| <Badge variant="property" icon="property" text="orderDirection" /> | Si es relevante, la dirección del orden: `asc` para dirección ascendente, `desc` para dirección descendente |
+| <Badge variant="property required" tooltip="Required" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="orderDescription" /> | The description of the applied order. It can be any word or phrase describing the order, for example: `price`, `newest products first`, `screen size`, etc. |
+| <Badge variant="property" icon="property" text="orderDirection" /> | If relevant, the order direction: `asc` for ascending direction, `desc` for descending direction |
 
 </details>
 
@@ -225,14 +225,14 @@ Este evento debe enviarse si vuestro web tiene su propio buscador textual. Si ut
 <EventDescriptionEventCouponApplied />
 
 :::info
-Debe enviarse sólo cuando el código del cupón introducido por el cliente haya sido confirmado como válido.
+Must be sent only when the coupon code entered by the customer has been confirmed as valid.
 :::
 
-| Parámetro| Valor |
+| Parameter| Value |
 | :--- | :--- |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="type" /> | <Badge variant="value" text="EventCouponApplied" /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="type" /> | <Badge variant="value" text="EventCouponApplied" /> |
 | <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
 
 </details>
 
@@ -242,13 +242,13 @@ Debe enviarse sólo cuando el código del cupón introducido por el cliente haya
 
 <EventDescriptionEventReviewWritten />
 
-| Parámetro| Valor |
+| Parameter| Value |
 | :--- | :--- |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="type" /> | <Badge variant="value" text="EventReviewWritten" /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="type" /> | <Badge variant="value" text="EventReviewWritten" /> |
 | <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
-| <Badge variant="property" icon="property" text="review" /> | El texto de la review, tal como la escribió el cliente. |
+| <Badge variant="property required" tooltip="Required" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property" icon="property" text="review" /> | The review text, exactly as the customer wrote it. |
 
 </details>
 
@@ -259,14 +259,14 @@ Debe enviarse sólo cuando el código del cupón introducido por el cliente haya
 <EventDescriptionEventStockAlertRequested />
 
 :::info
-Debe enviarse cuando un cliente solicita ser notificado cuando un producto vuelva a estar disponible para la compra, normalmente, porque encontró el producto pero no estaba disponible para comprar en ese momento debido a falta de stock.
+Must be sent when a customer requests to be notified when a product is available for purchase again, usually because they found the product but it was out of stock.
 :::
 
-| Parámetro| Valor |
+| Parameter| Value |
 | :--- | :--- |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="type" /> | <Badge variant="value" text="EventStockAlertRequested" /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="type" /> | <Badge variant="value" text="EventStockAlertRequested" /> |
 | <Badge variant="property" icon="property" text="timestamp" /> | <EventPropertyTimestamp /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
-| <Badge variant="property required" tooltip="Requerido" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="customerCode" /> | <EventPropertyCustomerCode /> |
+| <Badge variant="property required" tooltip="Required" icon="required" text="productCode" /> | <EventPropertyProductCode /> |
 
 </details>

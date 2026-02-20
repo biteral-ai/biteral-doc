@@ -1,37 +1,37 @@
 ---
-title: Instalación
+title: Installation
 sidebar_position: 1
 icon: arrow-right
 ---
-# Instalar el SDK para PHP
+# Install the PHP SDK
 
-El SDK de Biteral PHP es un package para composer que te permite integrar con facilidad Biteral en proyectos PHP versión 5.6 y superiores.
+The Biteral PHP SDK is a composer package that allows you to easily integrate Biteral into PHP projects version 5.6 and higher.
 
-<Button variant="primary" text="SDK de Biteral en GitHub" to="https://github.com/biteral-ai/biteral-sdk-php" />
+<Button variant="primary" text="Biteral SDK on GitHub" to="https://github.com/biteral-ai/biteral-sdk-php" />
 
-#### Añade el SDK a tu proyecto:
+#### Add the SDK to your project:
 
 ```bash
 composer require biteral/biteral-sdk-php
 ```
 
-#### Crea un cliente utilizando tu API key:
+#### Create a client using your API key:
 
 ```php
 use Biteral\Client;
 $client = new Client('ux3HzRTaLGKvZjTb7ufaFUgJPvXbcNX7DWbnWAAUxQjHYqZJ');
 ```
 
-#### y ya puedes realizar peticiones, como por ejemplo:
+#### and you are ready to make requests, like for example:
 
 ```php
 $status = $client->status()->get();
 ```
 
-<Badge variant="sdk php method" text="status()->get()" /> devuelve una entidad <Badge variant="sdk php entity" text="Status" to="/php-sdk/entities/status" /> con la que puedes obtener información sobre la conexión o el estado de la API, y es una forma sencilla de comprobar que la conexión con Biteral funciona correctamente. Por ejemplo:
+<Badge variant="sdk php method" text="status()->get()" /> returns a <Badge variant="sdk php entity" text="Status" to="/php-sdk/entities/status" /> entity which you can use to get information about the connection or the API status, and it is a simple way to check that the connection to Biteral works correctly. For example:
 
 ```php
 if ($status->latestStableMajorApiVersion === $status->requestMajorApiVersion) {
-    echo "Estás utilizando la versión de API más reciente";
+    echo "You are using the latest API version";
 }
 ```

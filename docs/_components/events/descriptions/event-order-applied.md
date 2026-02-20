@@ -1,1 +1,1 @@
-Se ha cambiado el orden de un listado de productos. Debe enviarse cuando, por ejemplo, el cliente ordena un listado de productos por precio, por novedad, etcétera.
+The sorting of a product list has been changed. It should be sent when, for example, the customer sorts a product list by price, by novelty, etc.

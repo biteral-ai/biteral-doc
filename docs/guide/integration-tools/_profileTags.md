@@ -1,7 +1,7 @@
 ---
-title: Etiquetas de cliente
+title: Customer tags
 sidebar_position: 4
 icon: /static/icons/products/profileTags.svg
 hidden: true
 ---
-# Etiquetas de cliente
+# Customer tags

@@ -1,29 +1,29 @@
 ---
-title: Introducción
+title: Introduction
 sidebar_position: 1
 icon: arrow-right
 ---
-# Integrar datos
+# Integrate data
 
-Biteral analiza los datos de vuestros productos y el comportamiento de vuestros clientes para ofrecer herramientas como recomendaciones personalizadas, búsqueda en lenguaje natural, análisis de tendencias o etiquetas de cliente. Por eso, enviar datos precisos y actualizados a Biteral es clave para obtener el máximo rendimiento de la plataforma.
+Biteral analyzes your product data and customer behavior to provide tools such as personalized recommendations, natural language search, trend analysis, or customer tags. Therefore, sending accurate and up-to-date data to Biteral is key to getting the most out of the platform.
 
-Aunque podéis enviarnos los datos en un archivo Excel o CSV, lo más recomendable es hacerlo a través de la API o el SDK para PHP. Esto garantiza la máxima flexibilidad y permite que Biteral funcione en tiempo real, adaptándose siempre a los datos más recientes.
+Although you can send us the data in an Excel or CSV file, it is highly recommended to do so through the API or the PHP SDK. This guarantees maximum flexibility and allows Biteral to work in real time, always adapting to the latest data.
 
 :::tip
-En muchos casos, esta inmediatez es clave: por ejemplo, Biteral puede sugerir productos más adecuados justo después de una compra, aprovechando el momento de mayor interés del cliente.
+In many cases, this immediacy is key: for example, Biteral can suggest the most suitable products right after a purchase, taking advantage of the moment of highest customer interest.
 :::
 
-Éstos son los tres tipos de datos clave que debes enviar a Biteral:
+These are the three key types of data you need to send to Biteral:
 
-| <Badge icon="product" text="Productos" transparent />| <Badge icon="customer" text="Clientes" transparent /> | <Badge icon="event" text="Eventos" transparent /> |
+| <Badge icon="product" text="Products" transparent />| <Badge icon="customer" text="Customers" transparent /> | <Badge icon="event" text="Events" transparent /> |
 | :--- | :--- | :--- |
-| Los artículos que ofrecéis: nombre, descripción, precio, características, etc.| Identificadores internos para el seguimiento: ubicación, tipo de cliente, etc. | Acciones que realizan: visitas, compras, añadir al carrito, etc. |
+| The items you offer: name, description, price, features, etc.| Internal identifiers for tracking: location, customer type, etc. | Actions they perform: visits, purchases, add to cart, etc. |
 
 
-### Métodos de integración
+### Integration methods
 
-| <Badge icon="code" text="SDK PHP" transparent /> | <Badge icon="technology/api" text="API" transparent /> |
+| <Badge icon="code" text="PHP SDK" transparent /> | <Badge icon="technology/api" text="API" transparent /> |
 | :--- | :--- |
-| Si trabajas con PHP, te recomendamos utilizar el [SDK de Biteral para PHP](/php-sdk/install). Es la forma más sencilla, flexible y segura de integrar la plataforma.| Utiliza la [API de Biteral](/api/connect) desde cualquier plataforma o lenguaje de programación conectando directamente. |
+| If you work with PHP, we recommend using the [Biteral PHP SDK](/php-sdk/install). It is the easiest, most flexible, and most secure way to integrate the platform.| Use the [Biteral API](/api/connect) from any platform or programming language by connecting directly. |
 
-Como primer paso, continúa a la siguiente página para aprender cómo enviar tus primeros productos a Biteral:
+As a first step, continue to the next page to learn how to send your first products to Biteral:

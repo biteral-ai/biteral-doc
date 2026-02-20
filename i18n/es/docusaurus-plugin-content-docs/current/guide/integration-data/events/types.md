@@ -4,27 +4,27 @@ expanded: false
 icon: arrow-right
 order: 1000
 ---
-import EventDescriptionEventAddedtoCart from '@site/src/components/events/descriptions/event-added-to-cart.md';
-import EventDescriptionEventRemovedFromCart from '@site/src/components/events/descriptions/event-removed-from-cart.md';
-import EventDescriptionEventAddedToWishlist from '@site/src/components/events/descriptions/event-added-to-wishlist.md';
-import EventDescriptionEventRemovedFromWishlist from '@site/src/components/events/descriptions/event-removed-from-wishlist.md';
-import EventDescriptionEventSale from '@site/src/components/events/descriptions/event-sale.md';
-import EventDescriptionEventReturnRequested from '@site/src/components/events/descriptions/event-return-requested.md';
-import EventDescriptionEventProductViewed from '@site/src/components/events/descriptions/event-product-viewed.md';
-import EventDescriptionEventCategoryViewed from '@site/src/components/events/descriptions/event-category-viewed.md';
-import EventDescriptionEventBrandViewed from '@site/src/components/events/descriptions/event-brand-viewed.md';
-import EventDescriptionEventSearch from '@site/src/components/events/descriptions/event-search.md';
-import EventDescriptionEventFilterApplied from '@site/src/components/events/descriptions/event-filter-applied.md';
-import EventDescriptionEventOrderApplied from '@site/src/components/events/descriptions/event-order-applied.md';
-import EventDescriptionEventCouponApplied from '@site/src/components/events/descriptions/event-coupon-applied.md';
-import EventDescriptionEventReviewWritten from '@site/src/components/events/descriptions/event-review-written.md';
-import EventDescriptionEventStockAlertRequested from '@site/src/components/events/descriptions/event-stock-alert-requested.md';
+import EventDescriptionEventAddedtoCart from '../../../_components/events/descriptions/event-added-to-cart.md';
+import EventDescriptionEventRemovedFromCart from '../../../_components/events/descriptions/event-removed-from-cart.md';
+import EventDescriptionEventAddedToWishlist from '../../../_components/events/descriptions/event-added-to-wishlist.md';
+import EventDescriptionEventRemovedFromWishlist from '../../../_components/events/descriptions/event-removed-from-wishlist.md';
+import EventDescriptionEventSale from '../../../_components/events/descriptions/event-sale.md';
+import EventDescriptionEventReturnRequested from '../../../_components/events/descriptions/event-return-requested.md';
+import EventDescriptionEventProductViewed from '../../../_components/events/descriptions/event-product-viewed.md';
+import EventDescriptionEventCategoryViewed from '../../../_components/events/descriptions/event-category-viewed.md';
+import EventDescriptionEventBrandViewed from '../../../_components/events/descriptions/event-brand-viewed.md';
+import EventDescriptionEventSearch from '../../../_components/events/descriptions/event-search.md';
+import EventDescriptionEventFilterApplied from '../../../_components/events/descriptions/event-filter-applied.md';
+import EventDescriptionEventOrderApplied from '../../../_components/events/descriptions/event-order-applied.md';
+import EventDescriptionEventCouponApplied from '../../../_components/events/descriptions/event-coupon-applied.md';
+import EventDescriptionEventReviewWritten from '../../../_components/events/descriptions/event-review-written.md';
+import EventDescriptionEventStockAlertRequested from '../../../_components/events/descriptions/event-stock-alert-requested.md';
 
-import EventPropertyTimestamp from '@site/src/components/events/properties/timestamp.md';
-import EventPropertyCustomerCode from '@site/src/components/events/properties/customer-code.md';
-import EventPropertyProductCode from '@site/src/components/events/properties/product-code.md';
-import EventPropertyCategoryCode from '@site/src/components/events/properties/category-code.md';
-import EventPropertyBrandCode from '@site/src/components/events/properties/brand-code.md';
+import EventPropertyTimestamp from '../../../_components/events/properties/timestamp.md';
+import EventPropertyCustomerCode from '../../../_components/events/properties/customer-code.md';
+import EventPropertyProductCode from '../../../_components/events/properties/product-code.md';
+import EventPropertyCategoryCode from '../../../_components/events/properties/category-code.md';
+import EventPropertyBrandCode from '../../../_components/events/properties/brand-code.md';
 
 <details>
 <summary><Badge variant="event" icon="event" text="EventAddedToCart" /></summary>

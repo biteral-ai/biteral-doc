@@ -1,1 +1,1 @@
-Se ha visualizado la página donde se muestran los productos de una categoría en concreto.
+The page showing the products of a specific category has been viewed.

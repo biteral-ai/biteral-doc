@@ -1,16 +1,16 @@
 ---
-title: Cargar clientes
+title: Load customers
 expanded: false
 sidebar_position: 1
 icon: arrow-right
 ---
-# Cargar clientes
+# Load customers
 
-El SDK para PHP permite cargar clientes en Biteral, modificarlos y eliminarlos, además de otras operaciones que te resultarán útiles cuando implementes las herramientas.
+The PHP SDK allows loading customers into Biteral, updating them and deleting them, in addition to other operations that will be useful when implementing the tools.
 
-### Crear un cliente
+### Create a customer
 
-Llama a <Badge variant="sdk php method" text="customers()->ingest()" /> con un objeto <Badge variant="sdk php payload" text="CustomerPayload" to="/php-sdk/payloads/customer-payload" /> como parámetro:
+Call <Badge variant="sdk php method" text="customers()->ingest()" /> with a <Badge variant="sdk php payload" text="CustomerPayload" to="/php-sdk/payloads/customer-payload" /> object as a parameter:
 
 ```php
 use Biteral\Entity\Customer\CustomerGender;
@@ -35,8 +35,8 @@ $customerPayload =
 $client->customers()->ingest($customerPayload);
 ```
 
-Esto añadirá el cliente a Biteral.
+This will add the customer to Biteral.
 
 :::info
-Ten en cuenta que el cliente se añadirá al proyecto que corresponde a la API key que estés utilizando.
+Please note that the customer will be added to the project corresponding to the API key you are using.
 :::

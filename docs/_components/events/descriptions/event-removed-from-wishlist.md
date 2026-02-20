@@ -1,1 +1,1 @@
-Se ha quitado un producto de la lista de productos deseados.
+A product has been removed from the wishlist.

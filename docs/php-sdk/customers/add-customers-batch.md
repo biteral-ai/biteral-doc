@@ -1,26 +1,26 @@
 ---
-title: Carga masiva
+title: Bulk load
 expanded: false
 sidebar_position: 2
 icon: arrow-right
 ---
-# Carga masiva de clientes
+# Bulk load customers
 
-Si necesitas cargar muchos clientes en Biteral, llamar a <Badge variant="sdk php method" text="customers()->ingest()" /> por cada cliente que quieres cargar es lento, y puede provocar errores por consumo excesivo de memoria.
+If you need to load many customers into Biteral, calling <Badge variant="sdk php method" text="customers()->ingest()" /> for each customer you want to load is slow, and can cause errors due to excessive memory consumption.
 
-En su lugar, usa <Badge variant="sdk php method" text="customersBatchIngest()->ingest()" />, que está diseñado específicamente para cargas masivas. Este método agrupa los clientes de forma óptima para maximizar la velocidad y reducir el riesgo de problemas relacionados con el uso de recursos. Mira cómo funciona:
+Instead, use <Badge variant="sdk php method" text="customersBatchIngest()->ingest()" />, which is specifically designed for bulk loads. This method groups customers optimally to maximize speed and reduce the risk of resource usage related problems. See how it works:
 
 ```php
-// Obtén un objeto CustomersBatchIngestService para poder reutilizarlo
+// Get a CustomersBatchIngestService object to reuse it
 $customersBatchIngestService = $client->customersBatchIngest();
 
-// Inicia una sesión de ingestión de clientes
+// Start a customer ingestion session
 $customersBatchIngestService->startIngestionSession();
 
-// Recorre los clientes en un bucle tal como lo harías normalmente con tu base de datos
+// Loop through the customers as you normally would with your database
 while ($customer = $query->getRow()) {
 
-    // Crea un objeto CustomerPayload tal como hacías al cargar clientes individualmente
+    // Create a CustomerPayload object just like when loading customers individually
     $customerPayload =
         new CustomerPayload([
             'code' => $customer->getCode(),
@@ -31,14 +31,14 @@ while ($customer = $query->getRow()) {
             [...]
         ]);
 
-    // Envía el cliente para que sea cargado por bloques
+    // Send the customer to be loaded in batches
     $customersBatchIngestService->ingest($customerPayload);
 }
 
-// Cuando el bucle haya terminado, no olvides cerrar la sesión de ingestión
+// When the loop is finished, do not forget to finish the ingestion session
 $batchIngestResult = $customersBatchIngestService->finishIngestionSession();
 ```
 
 :::info
-Cuando cargas muchos clientes a Biteral muy rápidamente, puede pasar un rato hasta que todos están disponibles para las herramientas de Biteral.
+When you load many customers to Biteral very quickly, it can take a while until they are all available for Biteral's tools.
 :::

@@ -1,1 +1,1 @@
-Se ha solicitado la devolución de un producto.
+A product return has been requested.

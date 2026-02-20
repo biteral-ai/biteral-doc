@@ -6,31 +6,31 @@ icon: arrow-right
 ---
 # <Badge variant="api-endpoint" text="/products" /> <Badge variant="http-get" text="GET" />
 
-Obtener un producto.
+Get a product.
 
 <Tabs>
-<TabItem value="parameters" label={<Badge icon="parameter" text="Parámetros" transparent />}>
+<TabItem value="parameters" label={<Badge icon="parameter" text="Parameters" transparent />}>
 
-Especifica uno de estos dos parámetros para obtener un producto a través de su código o de su Id en Biteral:
+Specify one of these two parameters to get a product using its code or its ID in Biteral:
 
 <table>
     <tbody>
 
         <tr>
             <td><Badge variant="api parameter" icon="parameter" text="code" /></td>
-            <td>Código de producto, por ejemplo <Badge variant="value" text="N39291" /></td>
+            <td>Product code, for example <Badge variant="value" text="N39291" /></td>
         </tr>
 
         <tr>
             <td><Badge variant="api parameter" icon="parameter" text="id" /></td>
-            <td>Identificador del producto en Biteral, por ejemplo <Badge variant="value" text="pro_f28Jfk0i28iXIs" /></td>
+            <td>Product identifier in Biteral, for example <Badge variant="value" text="pro_f28Jfk0i28iXIs" /></td>
         </tr>
 
     </tbody>
 </table>
 
 </TabItem>
-<TabItem value="result" label={<Badge icon="json" text="Resultado" transparent />}>
+<TabItem value="result" label={<Badge icon="json" text="Result" transparent />}>
 
 ```json
 {
@@ -41,8 +41,8 @@ Especifica uno de estos dos parámetros para obtener un producto a través de su
     "payload": {
         "code": "N30122",
         "isActive": true,
-        "title": "Zapatillas deportivas urbanas para hombre – modelo AirFlow",
-        "description": "Estas zapatillas combinan estilo y comodidad para el uso diario. Diseñadas con materiales transpirables, suela de goma antideslizante y plantilla ergonómica, son ideales tanto para caminar por la ciudad como para entrenar en interiores. El modelo AirFlow ofrece un ajuste perfecto y un diseño moderno que se adapta a cualquier look casual. Disponibles en varias tallas y colores.",
+        "title": "Urban sports shoes for men – AirFlow model",
+        "description": "These shoes combine style and comfort for everyday use. Designed with breathable materials, a non-slip rubber sole, and an ergonomic insole, they are ideal for both city walking and indoor training. The AirFlow model offers a perfect fit and a modern design that adapts to any casual look. Available in various sizes and colors.",
         "attributes": [
             {
                 "object": "product_attribute",
@@ -51,7 +51,7 @@ Especifica uno de estos dos parámetros para obtener un producto a través de su
                 "updatedAt": null,
                 "payload": {
                     "title": "Material",
-                    "value": "Cuero"
+                    "value": "Leather"
                 }
             },
             {
@@ -61,7 +61,7 @@ Especifica uno de estos dos parámetros para obtener un producto a través de su
                 "updatedAt": null,
                 "payload": {
                     "title": "Color",
-                    "value": "negro con detalles en gris"
+                    "value": "black with gray details"
                 }
             },
             {
@@ -70,8 +70,8 @@ Especifica uno de estos dos parámetros para obtener un producto a través de su
                 "createdAt": "2025-07-02T17:51:50+00:00",
                 "updatedAt": null,
                 "payload": {
-                    "title": "Suela",
-                    "value": "goma antideslizante"
+                    "title": "Sole",
+                    "value": "non-slip rubber"
                 }
             },
             {
@@ -80,8 +80,8 @@ Especifica uno de estos dos parámetros para obtener un producto a través de su
                 "createdAt": "2025-07-02T17:51:50+00:00",
                 "updatedAt": null,
                 "payload": {
-                    "title": "Uso recomendado",
-                    "value": "Uso diario y entrenamiento ligero"
+                    "title": "Recommended use",
+                    "value": "Daily use and light training"
                 }
             },
             {
@@ -90,7 +90,7 @@ Especifica uno de estos dos parámetros para obtener un producto a través de su
                 "createdAt": "2025-07-02T17:51:50+00:00",
                 "updatedAt": null,
                 "payload": {
-                    "title": "Tallas disponibles",
+                    "title": "Available sizes",
                     "value": "39, 40, 41, 42, 43, 44"
                 }
             },
@@ -100,8 +100,8 @@ Especifica uno de estos dos parámetros para obtener un producto a través de su
                 "createdAt": "2025-07-02T17:51:50+00:00",
                 "updatedAt": null,
                 "payload": {
-                    "title": "Peso",
-                    "value": "850g (par, talla 42)"
+                    "title": "Weight",
+                    "value": "850g (pair, size 42)"
                 }
             }
         ],
@@ -122,8 +122,8 @@ Especifica uno de estos dos parámetros para obtener un producto a través de su
             "updatedAt": null,
             "payload": {
                 "code": "MC418292",
-                "title": "Zapatillas deportivas",
-                "description": "Calzado diseñado para ofrecer comodidad, soporte y rendimiento en actividades físicas o deportivas. Estas zapatillas también se adaptan al uso urbano y diario gracias a sus diseños modernos y materiales versátiles. Incluyen características como suelas antideslizantes, tejidos transpirables y estilos que combinan funcionalidad con moda."
+                "title": "Sports shoes",
+                "description": "Footwear designed to offer comfort, support, and performance in physical or sports activities. These shoes also adapt to urban and daily use thanks to their modern designs and versatile materials. They include features like non-slip soles, breathable fabrics, and styles that combine functionality with fashion."
             }
         },
         "price": {

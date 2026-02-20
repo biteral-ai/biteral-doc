@@ -4,11 +4,11 @@ sidebar_label: Post
 sidebar_position: 1
 icon: arrow-right
 ---
-import LotsOfEvents from '@site/src/components/note_lots_of_events.md';
+import LotsOfEvents from '../../../_components/note_lots_of_events.md';
 
 # <Badge variant="api-endpoint" text="/events" /> <Badge variant="http-post" text="POST" />
 
-Enviar un evento.
+Send an event.
 
 <Tabs>
 <TabItem value="result" label={<Badge icon="json" text="JSON request body" transparent />}>
@@ -31,12 +31,12 @@ Enviar un evento.
 
         <tr>
             <td><Badge variant="api parameter required" icon="required" text="type" /></td>
-            <td>Tipo de evento, de entre los [tipos de eventos disponibles](/guide/integration-data/events/types). Por ejemplo <Badge variant="value" text="EventAddedToCart" /></td>
+            <td>Event type, from the [available event types](/guide/integration-data/events/types). For example <Badge variant="value" text="EventAddedToCart" /></td>
         </tr>
 
         <tr>
             <td><Badge variant="api parameter" icon="parameter" text="timestamp" /></td>
-            <td>El momento en el que se produjo el evento. Si no lo especificas, se utilizará el momento actual. Una cadena [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601), por ejemplo: <Badge variant="value" text="2025-11-18T07:21:16.527Z" /></td>
+            <td>The moment the event occurred. If you don't specify it, the current time will be used. An [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) string, for example: <Badge variant="value" text="2025-11-18T07:21:16.527Z" /></td>
         </tr>
 
     </tbody>
@@ -45,19 +45,19 @@ Enviar un evento.
 </TabItem>
 </Tabs>
 
-Recuerda que cada tipo <Badge variant="parameter" text="type" /> de evento requiere parámetros adicionales diferentes, consulta la guía de eventos disponibles para saber qué parametros debes añadir a cada tipo de evento:
+Remember that each event <Badge variant="parameter" text="type" /> requires different additional parameters. Check the available events guide to know which parameters to add to each event type:
 
-<Button text="Tipos de eventos disponibles" to="/guide/integration-data/events/types" />
+<Button text="Available event types" to="/guide/integration-data/events/types" />
 
-### Enviar varios eventos a la vez
+### Send multiple events at once
 
-Si vuestro sistema genera muchos eventos, es mejor enviar los eventos en grupo.
+If your system generates many events, it is better to send them in batches.
 
 :::info
 <LotsOfEvents />
 :::
 
-Para enviar eventos en grupo, pasa los eventos en forma de un array, por ejemplo:
+To send events in batches, pass the events as an array, for example:
 
 ```json
 [
@@ -67,21 +67,16 @@ Para enviar eventos en grupo, pasa los eventos en forma de un array, por ejemplo
         "customerCode": "D314K1432",
         "productCode": "N30122",
         "quantity": 2
-    }
+    },
     {
         "type": "EventProductViewed",
         "timestamp": "2025-11-18T07:18:13.527Z",
         "customerCode": "D314K1432",
         "productCode": "N30122"
-    },
-    {
-        "type": "EventSearch",
-        ...
-    },
-    ...
+    }
 ]
 ```
 
 :::tip
-Puedes cargar hasta 100 eventos a la vez utilizando este método
+You can load up to 100 events at once using this method
 :::
