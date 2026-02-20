@@ -10,9 +10,11 @@ import LotsOfEvents from '@site/src/components/note_lots_of_events.md';
 
 Si vuestro sistema genera muchos eventos, es mejor enviar los eventos en grupo.
 
+:::info
 <LotsOfEvents />
+:::
 
-Para enviar eventos en grupo, en lugar de utilizar <Badge variant="light" text="events()->ingest()" /> cada vez que se produce un evento en vuestro sistema, utiliza algún mecanismo que recopile los eventos cuando se producen, y envíalos después en grupo cada poco tiempo o cuando hayas recopilado muchos, utilizando <Badge variant="light" text="eventsBatchIngest()->ingest()" />. Mira cómo funciona:
+Para enviar eventos en grupo, en lugar de utilizar <Badge variant="sdk php method" text="events()->ingest()" /> cada vez que se produce un evento en vuestro sistema, utiliza algún mecanismo que recopile los eventos cuando se producen, y envíalos después en grupo cada poco tiempo o cuando hayas recopilado muchos, utilizando <Badge variant="sdk php method" text="eventsBatchIngest()->ingest()" />. Mira cómo funciona:
 
 ```php
 // Obtén un objeto EventsBatchIngestService para poder reutilizarlo
@@ -41,11 +43,11 @@ while ($event = $query->getRow()) {
 $batchIngestResult = $eventsBatchIngestService->finishIngestionSession();
 ```
 
-> Cuando envías los eventos en grupo, sí es imprescindible especificar `timestamp`, puesto que el momento en que envias el evento puede ser diferente al momento en que realmente se produjo.
+> Cuando envías los eventos en grupo, es imprescindible especificar <Badge variant="parameter" text="timestamp" />, puesto que el momento en que envias el evento puede ser diferente al momento en que realmente se produjo.
 
-Recuerda que cada tipo `type` de evento requiere parámetros adicionales diferentes, consulta la guía de eventos disponibles para saber qué parametros debes añadir a cada tipo de evento:
+Recuerda que cada tipo <Badge variant="parameter" text="type" /> de evento requiere parámetros adicionales diferentes, consulta la guía de eventos disponibles para saber qué parametros debes añadir a cada tipo de evento:
 
-[!ref icon="arrow-right" text="Tipos de eventos disponibles"](/guide/integration-data/events/types)
+<Button text="Tipos de eventos disponibles" to="/guide/integration-data/events/types" />
 
 ### Ideas para recopilar los eventos en grupo
 

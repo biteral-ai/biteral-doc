@@ -23,8 +23,12 @@
     font-weight: 700;
 }
 
-a.badge:hover {
-    filter: brightness(1.05);
+a.badge {
+    text-decoration: none;
+
+    &:hover {
+        filter: brightness(1.05);
+    }
 }
 
 .badge > .icon {

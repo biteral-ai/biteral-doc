@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(0.762488,0,0,0.762488,7.15112,7.10579)">
+        <path vector-effect="non-scaling-stroke" d="M2.8,21.81L2.8,14.538C2.8,8.134 7.999,2.935 14.404,2.935L21.992,2.935" style="fill:none;stroke:currentColor;stroke-width:1.2px;"/>
+    </g>
+    <g transform="matrix(4.66889e-17,-0.762488,0.762488,4.66889e-17,7.04839,52.7472)">
+        <path vector-effect="non-scaling-stroke" d="M2.8,21.81L2.8,14.538C2.8,8.134 7.999,2.935 14.404,2.935L21.992,2.935" style="fill:none;stroke:currentColor;stroke-width:1.2px;"/>
+    </g>
+    <g transform="matrix(0.293114,0,0,0.293114,37.1923,27.7431)">
+        <path vector-effect="non-scaling-stroke" d="M-32.4,7.7L48.3,7.7" style="fill:none;fill-rule:nonzero;stroke:currentColor;stroke-width:1.2px;stroke-linejoin:miter;stroke-miterlimit:1.2px;"/>
+    </g>
+    <g transform="matrix(0.293114,0,0,0.293114,37.1923,27.7431)">
+        <path vector-effect="non-scaling-stroke" d="M7.3,48.7L48.3,7.7L7.3,-33.3" style="fill:none;fill-rule:nonzero;stroke:currentColor;stroke-width:1.2px;stroke-linejoin:miter;stroke-miterlimit:1.2px;"/>
+    </g>
+</svg>

@@ -8,13 +8,13 @@ icon: arrow-right
 
 Cada vez que uno de vuestros clientes realice una de las acciones contempladas por Biteral, como comprar un producto o ver una categoría, debes envíar un evento a Biteral para alimentar las herramientas de inteligencia artificial.
 
-!!!
+:::info
 Hay varios [tipos de eventos](/guide/integration-data/events/types/) que debes enviar a Biteral. No es necesario implementarlos todos en vuestro sistema, pero sí es recomendable para que Biteral pueda ofrecer un análisis más completo y preciso del comportamiento del cliente.
-!!!
+:::
 
 ### Enviar un evento
 
-Llama a <Badge variant="info" text="events()->ingest" />(/php-sdk/events/send-events) con un objeto <Badge variant="info" text="EventPayload" />(/php-sdk/payloads/event-payload) como parámetro. Consulta los [tipos de eventos disponibles](/guide/integration-data/events/types) para saber qué parametros adicionales debes añadir al objeto:
+Llama a <Badge variant="sdk php method" text="events()->ingest" to="/php-sdk/events/send-events" /> con un objeto <Badge variant="sdk php payload" text="EventPayload" to="/php-sdk/payloads/event-payload" /> como parámetro. Consulta los [tipos de eventos disponibles](/guide/integration-data/events/types) para saber qué parametros adicionales debes añadir al objeto:
 
 ```php
 use Biteral\Payload\Event\EventSalePayload;
@@ -30,7 +30,7 @@ $eventPayload =
 $client->events()->ingest($eventPayload);
 ```
 
-> Si envías los eventos en el mismo momento en que se producen, no es necesario especificar `timestamp`.
+> Si envías los eventos en el mismo momento en que se producen, no es necesario especificar <Badge variant="parameter" text="timestamp" />.
 
 ### Cuándo enviar un evento
 
