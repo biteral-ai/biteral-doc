@@ -71,12 +71,12 @@
     --color-event: #EEF9FE;
     --color-api: #7a27f6;
     --color-sdk: #d2fbff;
-    --color-payload: #b1f3a3;
-    --color-entity: #dff3a3;
+    --color-payload: #dff3a3;
+    --color-entity: #f3efa3;
     --color-parameter: #fcffb3;
 
     --color-http-post: var(--color-warning);
-    --color-http-get: var(--color-success);
+    --color-http-get: hsl(from var(--color-success) h s calc(l * .8));
     --color-http-delete: var(--color-critical);
 
     --baseBorderRadius: 10px;

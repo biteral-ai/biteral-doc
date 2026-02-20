@@ -76,14 +76,23 @@
 
 .badge.http-post {
     --badgeBaseColor: var(--color-http-post);
+    background: transparent;
+    --badgeForegroundColor: var(--badgeBaseColor);
+    --badgeBorderColor: var(--badgeBaseColor);
 }
 
 .badge.http-get {
     --badgeBaseColor: var(--color-http-get);
+    background: transparent;
+    --badgeForegroundColor: var(--badgeBaseColor);
+    --badgeBorderColor: var(--badgeBaseColor);
 }
 
 .badge.http-delete {
     --badgeBaseColor: var(--color-http-delete);
+    background: transparent;
+    --badgeForegroundColor: var(--badgeBaseColor);
+    --badgeBorderColor: var(--badgeBaseColor);
 }
 
 .badge.parameter {

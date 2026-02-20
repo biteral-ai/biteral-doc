@@ -9,15 +9,15 @@ El [buscador natural](https://biteral.ai/natural-search) permite a vuestros usua
 
 Como no utilizamos sistemas tradicionales de búsqueda basados en palabras clave, diccionarios, extracción de frecuencia o analizadores sintácticos, los resultados incluyen productos que guardan una relación contextual lógica con la necesidad que el cliente expresó, incluso si no utilizó ninguna de las palabras de la descripción de vuestro producto.
 
-!!!
+:::info
 Como la búsqueda de productos se basa en información conceptualizada, los resultados también incluyen productos relevantes aunque el cliente realice consultas generales, cometa faltas de ortografía o incluso utilice otro idioma.
-!!!
+:::
 
 ### Realizar una búsqueda natural
 
 <Tabs>
-<TabItem value="PHP SDK" label="PHP SDK">
-Una vez hayas [cargado vuestros productos](/guide/integration-data/products), llama a <Badge variant="info" text="naturalSearch()->query" />(/php-sdk/products/add-products) con un objeto <Badge variant="info" text="NaturalSearchQuery" />(/php-sdk/entities/natural-search-query) como parámetro:
+<TabItem value="php" label={<Badge icon="code" text="SDK PHP" transparent />}>
+Una vez hayas [cargado vuestros productos](/guide/integration-data/products), llama a <Badge variant="sdk php method" text="naturalSearch()->query" to="/php-sdk/products/add-products" /> con un objeto <Badge variant="php sdk payload" text="NaturalSearchQuery" to="/php-sdk/entities/natural-search-query" /> como parámetro:
 
 ```php
 $products =
@@ -28,7 +28,7 @@ $products =
     );
 ```
 
-Y obtendrás un array de objetos <Badge variant="info" text="Product" />(/php-sdk/entities/product) como resultado:
+Y obtendrás un array de objetos <Badge variant="sdk php entity" text="Product" to="/php-sdk/entities/product" /> como resultado:
 
 ```php
 foreach ($products as $product) {
@@ -37,8 +37,8 @@ foreach ($products as $product) {
 ```
 
 </TabItem>
-<TabItem value="API" label="API">
-Una vez hayas [cargado vuestros productos](/guide/integration-data/products), haz una petición <Badge variant="http-get" text="GET" /> al endpoint <Badge>/natural-search</Badge>(/api/endpoints/natural-search/get) pasando la búsqueda en el parámetro <Badge variant="warning" text="query" />, por ejemplo: `Un regalo para alguien a quien le encanta cocinar`
+<TabItem value="api" label={<Badge icon="technology/api" text="API" transparent />}>
+Una vez hayas [cargado vuestros productos](/guide/integration-data/products), haz una petición <Badge variant="http-get" text="GET" /> al endpoint <Badge variant="api-endpoint" text="/natural-search" to="/api/endpoints/natural-search/get" />  pasando la búsqueda en el parámetro <Badge variant="parameter" text="query" />, por ejemplo: `Un regalo para alguien a quien le encanta cocinar`
 
 Y obtendrás los productos que coinciden así:
 
