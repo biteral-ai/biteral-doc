@@ -8,13 +8,24 @@ icon: arrow-right
 Eliminar un producto.
 
 <Tabs>
-<TabItem value=":icon-tasklist: Parámetros" label=":icon-tasklist: Parámetros">
+<TabItem value="parameters" label={<Badge icon="parameter" text="Parámetros" transparent />}>
 Especifica uno de estos dos parámetros para eliminar un producto a través de su código o de su Id en Biteral:
 
-<Badge variant="warning" text="code" />
-: Código de producto, por ejemplo `N39291`
+<table>
+    <tbody>
 
-<Badge variant="warning" text="id" />
-: Identificador del producto en Biteral, por ejemplo: `pro_f28Jfk0i28iXIs`
+        <tr>
+            <td><Badge variant="api parameter" icon="parameter" text="code" /></td>
+            <td>Código de producto, por ejemplo <Badge variant="value" text="N39291" /></td>
+        </tr>
+
+        <tr>
+            <td><Badge variant="api parameter" icon="parameter" text="id" /></td>
+            <td>Identificador del producto en Biteral, por ejemplo <Badge variant="value" text="pro_f28Jfk0i28iXIs" /></td>
+        </tr>
+
+    </tbody>
+</table>
+
 </TabItem>
 </Tabs>

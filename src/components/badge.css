@@ -17,7 +17,7 @@
     color: var(--badgeForegroundColor);
     border: solid var(--badgeBorderColor) 1px;
 
-    padding: 0.25em .3em;
+    padding: 0.15em .25em;
 
     font-size: inherit;
     font-weight: 700;

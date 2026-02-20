@@ -51,17 +51,11 @@ Crear o modificar un producto.
 <TabItem value="documentation" label={<Badge icon="parameter" text="Documentation" transparent />}>
 
 <table>
-    <thead>
-        <tr>
-            <th>Parámetro</th>
-            <th>Descripción</th>
-        </tr>
-    </thead>
     <tbody>
 
         <tr>
             <td><Badge variant="api parameter required" icon="required" text="code" /></td>
-            <td>Código de producto, por ejemplo <Badge variant="value" text="N39291" /></td>
+            <td>Código de producto <Badge variant="value-restriction" icon="max-length" text="255" />. Por ejemplo <Badge variant="value" text="N39291" /> </td>
         </tr>
 
         <tr>
