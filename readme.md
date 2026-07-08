@@ -1,4 +1,13 @@
-# Biteral API documentation
+# biteral-doc
+
+The Biteral developer documentation site (docs.biteral.ai), built with
+Docusaurus. It documents the public REST API and the PHP SDK, and is published in
+both English and Spanish.
+
+## Responsibilities
+
+- Host the public API and PHP SDK reference read by integrators.
+- Keep the EN and ES documentation in sync.
 
 ## Multilanguage
 Every change made inside `/docs` in english should also be made in spanish to the same file under `/i18n/es/docusaurus-plugin-content-docs/current`.
